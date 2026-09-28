@@ -1,0 +1,165 @@
+{
+ "idea": {
+  "idea": "Why gold plunged 3.09% in a single day before you adjust your portfolio",
+  "goal": "SAVE",
+  "emotion": "relief and fear-of-forgetting",
+  "formula": "The Question",
+  "ticker": "GC=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "the Fed rate hike bets and Treasury yields causing the drop",
+  "data_points": [
+   "Gold price: 4187.7",
+   "change_pct: -3.09",
+   "change_5d_pct: -4.48",
+   "news: Gold and silver lose $1 trillion in a day as Fed rate hike bets rise"
+  ]
+ },
+ "hook": {
+  "hook": "Why did gold drop 3.09 percent in a single day before you lose money in your portfolio?",
+  "properties": {
+   "SPECIFICITY": 56,
+   "ADDRESS": 66,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 69,
+  "band": "WORKABLE",
+  "formula": "The Question",
+  "on_screen": "GOLD DROPS 3.09%"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did gold drop 3.09 percent in a single day before you lose money in your portfolio?",
+    "osd": "GOLD DROPS 3.09%",
+    "emphasis": "3.09%",
+    "visual": "chart",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Gold prices fell to 4,187 dollars an ounce as silver and gold saw a massive one day pullback.",
+    "osd": "GOLD FALLS",
+    "emphasis": "FALLS",
+    "visual": "counter",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Reports show gold and silver lost 1 trillion dollars in a single day.",
+    "osd": "1 TRILLION LOST",
+    "emphasis": "TRILLION",
+    "visual": "text",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Today's headlines say Federal Reserve rate hike bets are suddenly rising.",
+    "osd": "FED RATE BETS",
+    "emphasis": "RISE",
+    "visual": "text",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Higher interest rate expectations keep pressure on bullion and precious metals.",
+    "osd": "HIGHER RATES",
+    "emphasis": "PRESSURE",
+    "visual": "compare",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Here is what this shift means for your portfolio before you rebalance.",
+    "osd": "YOUR PORTFOLIO",
+    "emphasis": "REBALANCE",
+    "visual": "list",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Follow Why Stocks Moved today. Not financial advice.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": "GC=F"
+   }
+  ],
+  "word_count": 90,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Gold dropped 3.09% today",
+  "chars": 24,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "24 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (3.09%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "BULLION CRASH",
+  "visual_brief": "A downward red candlestick chart filling the frame, subject centered with bright contrast pop at 150px."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why did gold drop today",
+    "gold price crash 3.09 percent",
+    "what does gold drop mean for portfolio"
+   ],
+   "description": "Why gold dropped 3.09% in a single day and what it means for your portfolio before you rebalance.\n\nNot financial advice.\n\n#Gold #PreciousMetals #Investing #Stocks #Economy #Shorts",
+   "tags": [
+    "gold price",
+    "gold dropped",
+    "gold crash",
+    "precious metals",
+    "federal reserve",
+    "interest rates",
+    "why stocks moved",
+    "portfolio rebalancing",
+    "silver price",
+    "market crash",
+    "inflation",
+    "gold market"
+   ],
+   "query_test_pass": false
+  }
+ },
+ "teardown": {
+  "hook": "How Intel became a 100 billion dollar problem for your chip portfolio.",
+  "hook_why": "It combines a household name with a massive financial figure and frames it as a personal 'problem', forcing the viewer to watch to see if they are affected.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How Intel became a 100 billion dollar problem for your chip portfolio.",
+    "shown": "A red downward-sloping stock chart of INTC with a '100B' label in bold text."
+   },
+   {
+    "t": "3-10s",
+    "said": "The company that literally powered the PC revolution is now losing billions in its foundry business.",
+    "shown": "Fast cuts of vintage Intel processors transitioning into modern news headlines about manufacturing delays."
+   },
+   {
+    "t": "10-20s",
+    "said": "While Nvidia and AMD were outsourcing, Intel tried to build its own plants, and the costs just exploded.",
+    "shown": "Split screen comparing NVDA (up green) and INTC (down red) stock performance over 5 years."
+   },
+   {
+    "t": "20-30s",
+    "said": "Now, the market is pricing in a massive identity crisis. Here is what this means for your tech index funds.",
+    "shown": "App mockup showing a portfolio screen with 'Tech ETF' highlighted and a 'What's Inside' breakdown."
+   },
+   {
+    "t": "30-40s",
+    "said": "Follow for why stocks moved today. Not financial advice.",
+    "shown": "Channel logo 'Why Stocks Moved' with a 'Follow' button animation over a 1-day chart."
+   }
+  ],
+  "pacing": "Fast-paced with cuts every 2-3 seconds. The tension builds by contrasting past success with current financial loss, maintaining a 'mystery-solving' speed.",
+  "visual_technique": "Data-heavy storytelling using contrasting charts, headline montages, and a 'money-on-the-line' UI overlay to make abstract losses feel real.",
+  "reusable_moves": [
+   "The 'High-Stakes Question' hook: Start with a massive dollar amount tied to a well-known name.",
+   "The 'Identity Crisis' framing: Explain a complex market move as a simple story of a brand losing its way."
+  ],
+  "remake_plan": "Model 'The Question' formula by applying the 'How [Brand] became a [Number] Problem' structure to Intel's recent manufacturing and stock valuation struggles."
+ },
+ "video_id": "WdfsMlTN7CQ",
+ "publish_at": "2026-09-28T17:00:00Z"
+}

@@ -1,0 +1,169 @@
+{
+ "idea": {
+  "idea": "What does the Nasdaq hitting new highs while the Dow falls mean for your trades?",
+  "goal": "FOLLOW",
+  "emotion": "FOMO and aspiration",
+  "formula": "The Question",
+  "ticker": "^IXIC",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "the divergence between chip stocks and oil-driven indexes",
+  "data_points": [
+   "Nasdaq price: 27068.72",
+   "change_pct: 0.48",
+   "change_5d_pct: 2.06",
+   "Dow Jones price: 51828.62",
+   "change_pct: 0.93"
+  ]
+ },
+ "hook": {
+  "hook": "What makes the Nasdaq climb to new highs while the Dow slides before you risk your money?",
+  "properties": {
+   "SPECIFICITY": 46,
+   "ADDRESS": 66,
+   "STAKES": 74,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 62,
+  "band": "WORKABLE",
+  "formula": "The Question",
+  "on_screen": "NASDAQ VS DOW SHOCK"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What makes the Nasdaq climb to new highs while the Dow slides before you risk your money?",
+    "osd": "NASDAQ VS DOW SHOCK",
+    "emphasis": "SHOCK",
+    "visual": "chart",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "While the Nasdaq gained 0.48 percent today, the Dow Jones moved in the opposite direction.",
+    "osd": "NASDAQ +0.48% VS DOW +0.93%",
+    "emphasis": "OPPOSITE",
+    "visual": "compare",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Reports say tech investors are weighing AI safety concerns and shifting bond yields.",
+    "osd": "YIELDS AND AI FEARS",
+    "emphasis": "YIELDS",
+    "visual": "text",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "At the same time, oil prices jumped as Middle East tensions resurfaced.",
+    "osd": "OIL PRICES SURGE",
+    "emphasis": "SURGE",
+    "visual": "chart",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "That energy shock lifts traditional industrial indexes while weighing on risk appetite.",
+    "osd": "ENERGY SHOCK LIFT",
+    "emphasis": "LIFT",
+    "visual": "list",
+    "ticker": "^DJI"
+   },
+   {
+    "say": "The real reason behind this split comes down to the divergence between chip stocks and oil driven indexes.",
+    "osd": "THE CHIP VS OIL SPLIT",
+    "emphasis": "DIVERGENCE",
+    "visual": "text",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Follow for why stocks moved today. Not financial advice.",
+    "osd": "Not financial advice",
+    "emphasis": "advice",
+    "visual": "text",
+    "ticker": "^IXIC"
+   }
+  ],
+  "word_count": 96,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nasdaq up 22% while Dow drops",
+  "chars": 29,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "29 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (22%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "INDEX GAP",
+  "visual_brief": "Split screen showing Nasdaq rising green line on top and Dow falling red line on bottom, clean dark background, 150px legible."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Nasdaq new highs Dow falls",
+    "why stocks moved today Nasdaq Dow",
+    "Nasdaq vs Dow divergence explained"
+   ],
+   "description": "Why the Nasdaq hit new highs while the Dow Jones fell, and what this index divergence means for your portfolio.\n\nNot financial advice.\n\n#shorts #nasdaq #dowjones #stocks #investing",
+   "tags": [
+    "Nasdaq",
+    "Dow Jones",
+    "stock market split",
+    "index divergence",
+    "tech stocks",
+    "industrial stocks",
+    "market news",
+    "bond yields",
+    "oil prices",
+    "stock market today",
+    "portfolio strategy",
+    "why stocks moved",
+    "finance shorts",
+    "macro economics",
+    "Wall Street"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How Intel became a 100 billion dollar problem for your chip portfolio.",
+  "hook_why": "It combines a household name with a massive financial figure and frames it as a personal 'problem', forcing the viewer to watch to see if they are affected.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How Intel became a 100 billion dollar problem for your chip portfolio.",
+    "shown": "A red downward-sloping stock chart of INTC with a '100B' label in bold text."
+   },
+   {
+    "t": "3-10s",
+    "said": "The company that literally powered the PC revolution is now losing billions in its foundry business.",
+    "shown": "Fast cuts of vintage Intel processors transitioning into modern news headlines about manufacturing delays."
+   },
+   {
+    "t": "10-20s",
+    "said": "While Nvidia and AMD were outsourcing, Intel tried to build its own plants, and the costs just exploded.",
+    "shown": "Split screen comparing NVDA (up green) and INTC (down red) stock performance over 5 years."
+   },
+   {
+    "t": "20-30s",
+    "said": "Now, the market is pricing in a massive identity crisis. Here is what this means for your tech index funds.",
+    "shown": "App mockup showing a portfolio screen with 'Tech ETF' highlighted and a 'What's Inside' breakdown."
+   },
+   {
+    "t": "30-40s",
+    "said": "Follow for why stocks moved today. Not financial advice.",
+    "shown": "Channel logo 'Why Stocks Moved' with a 'Follow' button animation over a 1-day chart."
+   }
+  ],
+  "pacing": "Fast-paced with cuts every 2-3 seconds. The tension builds by contrasting past success with current financial loss, maintaining a 'mystery-solving' speed.",
+  "visual_technique": "Data-heavy storytelling using contrasting charts, headline montages, and a 'money-on-the-line' UI overlay to make abstract losses feel real.",
+  "reusable_moves": [
+   "The 'High-Stakes Question' hook: Start with a massive dollar amount tied to a well-known name.",
+   "The 'Identity Crisis' framing: Explain a complex market move as a simple story of a brand losing its way."
+  ],
+  "remake_plan": "Model 'The Question' formula by applying the 'How [Brand] became a [Number] Problem' structure to Intel's recent manufacturing and stock valuation struggles."
+ },
+ "video_id": "ECw7t7xOJEw",
+ "publish_at": "2026-09-28T22:30:00Z"
+}

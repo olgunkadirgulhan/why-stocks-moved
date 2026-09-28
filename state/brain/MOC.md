@@ -9,3 +9,6 @@
 - [[2026-09-26-meta-drops-3-33-after-13-week]] — SHARE · hook 75
 - [[2026-09-26-oil-dropped-7-87]] — SAVE · hook 65
 - [[2026-09-26-microsoft-up-3-66-today]] — FOLLOW · hook 69
+- [[2026-09-28-microsoft-up-3-66-today]] — SHARE · hook 69
+- [[2026-09-28-gold-dropped-3-09-today]] — SAVE · hook 69
+- [[2026-09-28-nasdaq-up-22-while-dow-drops]] — FOLLOW · hook 62

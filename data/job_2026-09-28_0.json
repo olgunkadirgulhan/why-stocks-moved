@@ -1,0 +1,161 @@
+{
+ "idea": {
+  "idea": "Why Microsoft gained 3.66% today before you rebalance your tech portfolio",
+  "goal": "SHARE",
+  "emotion": "awe and status",
+  "formula": "The Question",
+  "ticker": "MSFT",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "the exact Copilot ecosystem overhaul driving the surge",
+  "data_points": [
+   "Microsoft price: 516.17",
+   "change_pct: 3.66",
+   "change_5d_pct: 4.53",
+   "news: Microsoft announced a comprehensive overhaul of its Copilot ecosystem introducing a central workspace structure"
+  ]
+ },
+ "hook": {
+  "hook": "How Microsoft added 3.66 percent in a single day before you sell your tech shares?",
+  "properties": {
+   "SPECIFICITY": 62,
+   "ADDRESS": 66,
+   "STAKES": 62,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 69,
+  "band": "WORKABLE",
+  "formula": "The Question",
+  "on_screen": "MSFT 3.66% GAIN"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "How Microsoft added 3.66 percent in a single day before you sell your tech shares?",
+    "osd": "MSFT 3.66% GAIN",
+    "emphasis": "GAIN",
+    "visual": "chart",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "The software giant just hit 516 dollars on a major AI ecosystem update.",
+    "osd": "COPIOT OVERHAUL",
+    "emphasis": "OVERHAUL",
+    "visual": "text",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "While the S and P 500 slipped and Treasury yields climbed, Microsoft pushed higher.",
+    "osd": "S AND P SLIPS",
+    "emphasis": "SLIPS",
+    "visual": "compare",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "Reports show a new workspace structure uniting Home, Code, and Autopilot.",
+    "osd": "HOME CODE AUTOPILOT",
+    "emphasis": "AUTOPILOT",
+    "visual": "list",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "This changes how your tech index funds balance AI software revenue.",
+    "osd": "TECH INDEX FUNDS",
+    "emphasis": "FUNDS",
+    "visual": "chart",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "Follow for why stocks moved today. Not financial advice.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "FINANCIAL",
+    "visual": "text",
+    "ticker": "MSFT"
+   }
+  ],
+  "word_count": 73,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Microsoft up 3.66% today",
+  "chars": 24,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "24 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (3.66%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "AI AGENT SHOCK",
+  "visual_brief": "Green Microsoft stock chart line surging upward on a dark background, subject centered, clear of UI elements."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Microsoft up 3.66% today",
+    "why did Microsoft stock go up",
+    "Microsoft stock AI update 2026"
+   ],
+   "description": "Why Microsoft gained 3.66% today and what it means for your tech index funds and portfolio.\n\nNot financial advice. #shorts #Microsoft #stocks #investing",
+   "tags": [
+    "Microsoft up 3.66% today",
+    "Microsoft stock",
+    "MSFT stock",
+    "why stocks moved",
+    "tech index funds",
+    "stock market today",
+    "Microsoft AI update",
+    "Wall Street today",
+    "stock portfolio",
+    "tech stocks",
+    "investing for beginners",
+    "market analysis",
+    "S and P 500",
+    "Nasdaq",
+    "finance shorts"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How Intel became a 100 billion dollar problem for your chip portfolio.",
+  "hook_why": "It combines a household name with a massive financial figure and frames it as a personal 'problem', forcing the viewer to watch to see if they are affected.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How Intel became a 100 billion dollar problem for your chip portfolio.",
+    "shown": "A red downward-sloping stock chart of INTC with a '100B' label in bold text."
+   },
+   {
+    "t": "3-10s",
+    "said": "The company that literally powered the PC revolution is now losing billions in its foundry business.",
+    "shown": "Fast cuts of vintage Intel processors transitioning into modern news headlines about manufacturing delays."
+   },
+   {
+    "t": "10-20s",
+    "said": "While Nvidia and AMD were outsourcing, Intel tried to build its own plants, and the costs just exploded.",
+    "shown": "Split screen comparing NVDA (up green) and INTC (down red) stock performance over 5 years."
+   },
+   {
+    "t": "20-30s",
+    "said": "Now, the market is pricing in a massive identity crisis. Here is what this means for your tech index funds.",
+    "shown": "App mockup showing a portfolio screen with 'Tech ETF' highlighted and a 'What's Inside' breakdown."
+   },
+   {
+    "t": "30-40s",
+    "said": "Follow for why stocks moved today. Not financial advice.",
+    "shown": "Channel logo 'Why Stocks Moved' with a 'Follow' button animation over a 1-day chart."
+   }
+  ],
+  "pacing": "Fast-paced with cuts every 2-3 seconds. The tension builds by contrasting past success with current financial loss, maintaining a 'mystery-solving' speed.",
+  "visual_technique": "Data-heavy storytelling using contrasting charts, headline montages, and a 'money-on-the-line' UI overlay to make abstract losses feel real.",
+  "reusable_moves": [
+   "The 'High-Stakes Question' hook: Start with a massive dollar amount tied to a well-known name.",
+   "The 'Identity Crisis' framing: Explain a complex market move as a simple story of a brand losing its way."
+  ],
+  "remake_plan": "Model 'The Question' formula by applying the 'How [Brand] became a [Number] Problem' structure to Intel's recent manufacturing and stock valuation struggles."
+ },
+ "video_id": "VXQlONaomFg",
+ "publish_at": "2026-09-28T13:30:00Z"
+}
