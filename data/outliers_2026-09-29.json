@@ -1,0 +1,311 @@
+{
+ "outliers": [
+  {
+   "channel": "The Wall Street Journal",
+   "title": "How Twinkies Became a $5 Billion Problem",
+   "views": 1747163,
+   "median": 41024,
+   "multiple": 42.59,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/QOiWrD5ZIW4"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Oracle Stock Slides After Company Issued ‘Force Majeure’ Notice For Major Data Center Project",
+   "views": 168680,
+   "median": 6011,
+   "multiple": 28.06,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/R7ZO1cUNR_8"
+  },
+  {
+   "channel": "CNBC Make It",
+   "title": "How Costco keeps gas so cheap",
+   "views": 93880,
+   "median": 5634,
+   "multiple": 16.66,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/6f5rmIYBERY"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Credit Cards 💳",
+   "views": 505381,
+   "median": 32109,
+   "multiple": 15.74,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/K7UvJQsjMOM"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Oracle Stock Slides After Company Issued ‘Force Majeure’ Notice For Major Data Center Project",
+   "views": 90720,
+   "median": 6011,
+   "multiple": 15.09,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/IHUnfqjMFcc"
+  },
+  {
+   "channel": "Forbes",
+   "title": "OpenAI Agent Hacked Into Australia’s Medicare Database",
+   "views": 83926,
+   "median": 6011,
+   "multiple": 13.96,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/XL8JanoerRc"
+  },
+  {
+   "channel": "Yahoo Finance",
+   "title": "The data said keep the Sydney Sweeney ad running.",
+   "views": 33912,
+   "median": 2886,
+   "multiple": 11.75,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/xLN1E_Hu4fs"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Josh Brown on Apple's Foldable iPhone",
+   "views": 65726,
+   "median": 5947,
+   "multiple": 11.05,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Uou5HxG1msM"
+  },
+  {
+   "channel": "Yahoo Finance",
+   "title": "Trump announces new $15 billion steel plant in Minnesota.",
+   "views": 28086,
+   "median": 2886,
+   "multiple": 9.73,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Kzqqei45XLA"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Buying A House In Cash?!",
+   "views": 293336,
+   "median": 32109,
+   "multiple": 9.14,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/OiSZT6xESdA"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "A lot under the market headline directly related to rates, says Solus' Dan Greenhaus",
+   "views": 14016,
+   "median": 1605,
+   "multiple": 8.73,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/UcN0KXHEgmg"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "China Is Behind High Gas Prices",
+   "views": 288985,
+   "median": 42584,
+   "multiple": 6.79,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/w3J7yRovEF0"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "You Have 5 Years Left To Get Rich",
+   "views": 265584,
+   "median": 42584,
+   "multiple": 6.24,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/cFugga5J1t0"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Nvidia CEO Jensen Huang on his company's new AI safety platform",
+   "views": 9977,
+   "median": 1605,
+   "multiple": 6.21,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/X2YEqbDYJJ0"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Money Books 📚",
+   "views": 197392,
+   "median": 32109,
+   "multiple": 6.15,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/uYAktQIxutY"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "Jeff Bezos' Amazon shuts down Mark Zuckberg's 'Meta Muse'",
+   "views": 97756,
+   "median": 18734,
+   "multiple": 5.22,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/oRP3YINZviU"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Aap Konsi Car choose karoge? #car",
+   "views": 131190,
+   "median": 28419,
+   "multiple": 4.62,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Vr2j7OolrYA"
+  },
+  {
+   "channel": "Yahoo Finance",
+   "title": "SpaceX launches Starship Flight 14",
+   "views": 12654,
+   "median": 2886,
+   "multiple": 4.38,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/AsTqkjGcA6A"
+  },
+  {
+   "channel": "The Compound",
+   "title": "The Tech Bull Market Is Just Getting Started",
+   "views": 25528,
+   "median": 5947,
+   "multiple": 4.29,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/hkG6Qizd5oM"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Nvidia CEO: OpenAI is one of the most consequential companies in history",
+   "views": 6704,
+   "median": 1605,
+   "multiple": 4.18,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/6-1lSB9GESk"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking Money Habits 💰",
+   "views": 130459,
+   "median": 32109,
+   "multiple": 4.06,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/oCGxx4FHgCk"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Tom Lee explains why Nvidia still isn't expensive right now.",
+   "views": 166753,
+   "median": 41810,
+   "multiple": 3.99,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/26qXd_8mYHs"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "Scott Galloway reacts to Meta's new AI assistant Muse",
+   "views": 73812,
+   "median": 18734,
+   "multiple": 3.94,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/5wH7wrTM2z8"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "NSE IPO 2026 Explained #nse #ipo",
+   "views": 109548,
+   "median": 28419,
+   "multiple": 3.85,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/ckkg2QL1Fis"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "NVIDIA’s CEO Just Revealed the Next AI Opportunity (3 Stocks to Watch)",
+   "views": 71102,
+   "median": 19484,
+   "multiple": 3.65,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/K-0J9nBAYO0"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "The Federal Reserve Just Raised Interest Rates For The First Time Since 2023",
+   "views": 302851,
+   "median": 85871,
+   "multiple": 3.53,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/2gOubOLfU8E"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Former Disney CEO says Bob Iger tried 'reasserting' himself as the company's head",
+   "views": 5646,
+   "median": 1605,
+   "multiple": 3.52,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/W_ttYN_4zIc"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The AI bubble is about to pop",
+   "views": 64703,
+   "median": 18734,
+   "multiple": 3.45,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/f5QwNGfppco"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "6 Buy-the-Dip Stocks With Triple-Digit Upside",
+   "views": 66874,
+   "median": 19484,
+   "multiple": 3.43,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/o7I2fCL_Opc"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why Did Everything Else Fall After Nvidia's Beat?",
+   "views": 141514,
+   "median": 41810,
+   "multiple": 3.38,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/dVQErP3KYkE"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why September Will Be Strong for Stocks",
+   "views": 132454,
+   "median": 41810,
+   "multiple": 3.17,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/1tsqjnXhlgQ"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "This AI data center company is BS?",
+   "views": 59448,
+   "median": 18734,
+   "multiple": 3.17,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/MfnQMIv3oo4"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "The U.S. Is Getting Betrayed (And It Plans To Fight Back)",
+   "views": 134635,
+   "median": 42584,
+   "multiple": 3.16,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/800SfOPy--k"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "The AI Bubble Is Getting Bigger",
+   "views": 134332,
+   "median": 42584,
+   "multiple": 3.15,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/90f8hvkKoUI"
+  }
+ ],
+ "skipped_thin_channels": []
+}
