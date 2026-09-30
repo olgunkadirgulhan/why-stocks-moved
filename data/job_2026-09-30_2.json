@@ -1,0 +1,166 @@
+{
+ "idea": {
+  "idea": "Break down why the S&P 500 slipped 0.17% with investor confidence sinking to 42% before you risk your money.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO and aspiration",
+  "formula": "The Question",
+  "ticker": "^GSPC",
+  "structure_from": "https://www.youtube.com/shorts/IHUnfqjMFcc",
+  "payoff_withheld_until_end": "Reveal how Investopedia data shows retail traders facing a crisis of confidence as Treasury yields push above S&P 500 earnings yields.",
+  "data_points": [
+   "S&P 500 price: 7670.84",
+   "Change pct: -0.17%",
+   "Change 5d pct: -1.21%",
+   "Investor confidence slipped to 42%"
+  ]
+ },
+ "hook": {
+  "hook": "Why did the S&P 500 slip 0.17 percent with confidence sinking to 42 percent before you risk your money?",
+  "properties": {
+   "SPECIFICITY": 100,
+   "ADDRESS": 66,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 78,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "S&P 500 CONFIDENCE CRASH"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did the S&P 500 slip 0.17 percent with confidence sinking to 42 percent before you risk your money?",
+    "osd": "S&P 500 CONFIDENCE CRASH",
+    "emphasis": "CONFIDENCE",
+    "visual": "chart",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "Most people blame everyday market noise, but retail traders are facing a real crisis of confidence right now.",
+    "osd": "RETAIL TRADER CRISIS",
+    "emphasis": "CRISIS",
+    "visual": "text",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "The numbers prove it. The S&P 500 sits at 7670.84, down 1.21 percent over five days.",
+    "osd": "INDEX DOWN 1.21%",
+    "emphasis": "DOWN",
+    "visual": "compare",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "Investopedia data shows investor confidence has slipped all the way down to 42 percent as yields climb.",
+    "osd": "CONFIDENCE SLIPS TO 42%",
+    "emphasis": "42%",
+    "visual": "counter",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "When Treasury yields push above stock earnings yields for the first time in 25 years, safety beats risk.",
+    "osd": "YIELDS BEAT STOCKS",
+    "emphasis": "YIELDS",
+    "visual": "text",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "Follow for the real reason why stocks move. Not financial advice.",
+    "osd": "FOLLOW FOR MORE",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": "^GSPC"
+   }
+  ],
+  "word_count": 99,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "S&P 500 slipped 0.17%",
+  "chars": 21,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "21 characters, inside the 60-character desktop cut",
+   "1 all-caps word for emphasis",
+   "carries a concrete figure (500, 0.17%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "CONFIDENCE 42%",
+  "visual_brief": "A red downward market line graph with a bold white text callout 'CONFIDENCE 42%' in the center. Clean contrast against a dark charcoal background, keeping text away from top 12% and bottom 20% safe zones."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "S and P 500 slipped",
+    "S and P 500 down today",
+    "investor confidence sinking 42 percent"
+   ],
+   "description": "Why the S and P 500 slipped 0.17% with investor confidence sinking to 42% before you risk your money.\n\nNot financial advice. #shorts\n\nWhat this video covers:\n- S and P 500 daily price move and 5-day trend\n- Investopedia investor confidence index dropping to 42%\n- How rising Treasury yields impact everyday stock portfolios\n\nAssumes basic interest in US stocks and market trends. Built for everyday investors tracking the big market indicators in 5 minutes a day.",
+   "tags": [
+    "SP500",
+    "SP 500 today",
+    "stock market news",
+    "investor confidence",
+    "Treasury yields",
+    "stock market drop",
+    "S&P 500 index",
+    "why stocks moved",
+    "market crash 2026",
+    "portfolio advice",
+    "investing for beginners",
+    "US stocks",
+    "finance shorts"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How a $1.50 hot dog became a $400 billion secret for Costco investors.",
+  "hook_why": "It creates an immediate 'Curiosity Gap' by contrasting an ultra-familiar, low-cost consumer item with a massive corporate valuation, forcing the viewer to stay to find the non-obvious connection.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How a $1.50 hot dog became a $400 billion secret for Costco investors.",
+    "shown": "Extreme macro close-up of a hot dog, quickly cutting to the COST stock ticker and a $400B label in bold red."
+   },
+   {
+    "t": "3-8s",
+    "said": "Most people think Costco makes money selling food, but they actually lose money on every single rotisserie chicken and hot dog.",
+    "shown": "Split screen: Consumer eating vs. a 'Loss Leader' graphic with downward red arrows."
+   },
+   {
+    "t": "8-15s",
+    "said": "The real engine is right here in their SEC filings. Membership fees account for nearly all of their net income.",
+    "shown": "Official SEC 10-K document on screen; a yellow highlighter tool streaks across the 'Membership Fees' line item."
+   },
+   {
+    "t": "15-25s",
+    "said": "By keeping prices low, they lock in 90% renewal rates. That predictable cash flow is why the stock trades at a premium to every other retailer.",
+    "shown": "Line chart comparing COST stock growth against a generic 'Retail Index,' with a 90% label popping up."
+   },
+   {
+    "t": "25-35s",
+    "said": "So when gas or food prices drop, Costco wins because you're more likely to renew. Not financial advice.",
+    "shown": "Talking head or screen recording of a gas station pump transitioning back to the COST chart."
+   },
+   {
+    "t": "35-40s",
+    "said": "Follow for the real reason why stocks move.",
+    "shown": "CTA text 'Follow for more' over a blurred background of the Costco logo."
+   }
+  ],
+  "pacing": "Rapid-fire visual cuts every 1.5 to 2 seconds. The audio never pauses, using 'breathless' editing to maintain high energy and prevent scroll-away.",
+  "visual_technique": "The 'Documentary Teardown' format: Uses a mix of high-quality macro B-roll of everyday objects and 'The Evidence' (SEC filings, highlighted spreadsheets, and labeled stock charts) to build authority.",
+  "reusable_moves": [
+   "The Micro-to-Macro Pivot: Start with a trivial $1 item and scale it up to a $1B+ corporate problem or solution.",
+   "The Data Highlighter: Use a digital yellow highlighter on boring PDF documents to make the viewer feel like they are seeing a 'secret' in the public record.",
+   "The Pattern Interrupt: Tell the viewer the company's main product is actually a distraction from their real profit engine."
+  ],
+  "remake_plan": "Model the 'Micro-Economics Teardown' by explaining Apple's $3,000 Vision Pro not as a headset, but as a 'developer subsidy' to protect their $80B Services moat."
+ },
+ "video_id": "mdbekE3oCzU",
+ "publish_at": "2026-09-30T22:30:00Z"
+}

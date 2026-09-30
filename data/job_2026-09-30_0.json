@@ -1,0 +1,164 @@
+{
+ "idea": {
+  "idea": "Explain why Meta shares rose 3.24% today, driven by the White House AI safety meeting and market updates on AI spend, before you rebalance your portfolio.",
+  "goal": "SHARE",
+  "emotion": "awe and status",
+  "formula": "The Question",
+  "ticker": "META",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "Reveal how Goldman Sachs warns AI spenders need about $300 billion a year in revenue to break even, anchoring Zuckerberg's net worth shift.",
+  "data_points": [
+   "Meta price: 738.79",
+   "Change: +3.24%",
+   "Zuckerberg net worth fell from $266.4 billion to $257.5 billion"
+  ]
+ },
+ "hook": {
+  "hook": "What does this 3.24 percent Meta move mean for your portfolio before you trade?",
+  "properties": {
+   "SPECIFICITY": 62,
+   "ADDRESS": 66,
+   "STAKES": 62,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 69,
+  "band": "WORKABLE",
+  "formula": "The Question",
+  "on_screen": "Meta Moves Up"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What does this 3.24 percent Meta move mean for your portfolio before you trade?",
+    "osd": "Meta Moves Up 3.24%",
+    "emphasis": "Meta",
+    "visual": "chart",
+    "ticker": "META"
+   },
+   {
+    "say": "Meta shares jumped to 738.79 today as markets tracked the White House AI safety meeting with tech leaders.",
+    "osd": "White House AI Meeting",
+    "emphasis": "White House",
+    "visual": "text",
+    "ticker": "META"
+   },
+   {
+    "say": "Executives discussed safety standards while investors weighed the massive costs of AI expansion.",
+    "osd": "Massive AI Costs",
+    "emphasis": "Costs",
+    "visual": "compare",
+    "ticker": "META"
+   },
+   {
+    "say": "Goldman Sachs warns AI spenders need about 300 billion a year in revenue just to break even.",
+    "osd": "300B Annual Revenue Needed",
+    "emphasis": "300B",
+    "visual": "counter",
+    "ticker": "META"
+   },
+   {
+    "say": "That spending pressure directly anchors Zuckerberg net worth shifts as markets rebalance.",
+    "osd": "Zuckerberg Net Worth Shift",
+    "emphasis": "Zuckerberg",
+    "visual": "chart",
+    "ticker": "META"
+   },
+   {
+    "say": "Not financial advice. Follow for the real reason why stocks move.",
+    "osd": "Not financial advice",
+    "emphasis": "Follow",
+    "visual": "text",
+    "ticker": "META"
+   }
+  ],
+  "word_count": 85,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Meta stock rose 3.24% on AI meeting",
+  "chars": 35,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "35 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (3.24%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "WHITE HOUSE",
+  "visual_brief": "Washington press briefing room backdrop with glowing Meta logo, centered framing, high contrast warm yellow text."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "meta stock rose 3.24",
+    "meta stock ai meeting",
+    "why did meta stock go up today"
+   ],
+   "description": "Why Meta shares rose 3.24% today following the White House AI safety meeting and investor updates on AI infrastructure spending.\n\nNot financial advice.\n\n#shorts #meta #stockmarket #investing #bigtech",
+   "tags": [
+    "meta stock",
+    "META",
+    "meta stock today",
+    "meta stock news",
+    "meta ai",
+    "white house ai meeting",
+    "stock market today",
+    "why stocks moved",
+    "tech stocks",
+    "zuckerberg net worth",
+    "goldman sachs ai",
+    "stock market update",
+    "investing for beginners"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How a $1.50 hot dog became a $400 billion secret for Costco investors.",
+  "hook_why": "It creates an immediate 'Curiosity Gap' by contrasting an ultra-familiar, low-cost consumer item with a massive corporate valuation, forcing the viewer to stay to find the non-obvious connection.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How a $1.50 hot dog became a $400 billion secret for Costco investors.",
+    "shown": "Extreme macro close-up of a hot dog, quickly cutting to the COST stock ticker and a $400B label in bold red."
+   },
+   {
+    "t": "3-8s",
+    "said": "Most people think Costco makes money selling food, but they actually lose money on every single rotisserie chicken and hot dog.",
+    "shown": "Split screen: Consumer eating vs. a 'Loss Leader' graphic with downward red arrows."
+   },
+   {
+    "t": "8-15s",
+    "said": "The real engine is right here in their SEC filings. Membership fees account for nearly all of their net income.",
+    "shown": "Official SEC 10-K document on screen; a yellow highlighter tool streaks across the 'Membership Fees' line item."
+   },
+   {
+    "t": "15-25s",
+    "said": "By keeping prices low, they lock in 90% renewal rates. That predictable cash flow is why the stock trades at a premium to every other retailer.",
+    "shown": "Line chart comparing COST stock growth against a generic 'Retail Index,' with a 90% label popping up."
+   },
+   {
+    "t": "25-35s",
+    "said": "So when gas or food prices drop, Costco wins because you're more likely to renew. Not financial advice.",
+    "shown": "Talking head or screen recording of a gas station pump transitioning back to the COST chart."
+   },
+   {
+    "t": "35-40s",
+    "said": "Follow for the real reason why stocks move.",
+    "shown": "CTA text 'Follow for more' over a blurred background of the Costco logo."
+   }
+  ],
+  "pacing": "Rapid-fire visual cuts every 1.5 to 2 seconds. The audio never pauses, using 'breathless' editing to maintain high energy and prevent scroll-away.",
+  "visual_technique": "The 'Documentary Teardown' format: Uses a mix of high-quality macro B-roll of everyday objects and 'The Evidence' (SEC filings, highlighted spreadsheets, and labeled stock charts) to build authority.",
+  "reusable_moves": [
+   "The Micro-to-Macro Pivot: Start with a trivial $1 item and scale it up to a $1B+ corporate problem or solution.",
+   "The Data Highlighter: Use a digital yellow highlighter on boring PDF documents to make the viewer feel like they are seeing a 'secret' in the public record.",
+   "The Pattern Interrupt: Tell the viewer the company's main product is actually a distraction from their real profit engine."
+  ],
+  "remake_plan": "Model the 'Micro-Economics Teardown' by explaining Apple's $3,000 Vision Pro not as a headset, but as a 'developer subsidy' to protect their $80B Services moat."
+ },
+ "video_id": "TgWU4rpJamQ",
+ "publish_at": "2026-09-30T13:30:00Z"
+}

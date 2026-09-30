@@ -1,0 +1,154 @@
+{
+ "idea": {
+  "idea": "Break down why Oil dropped 3.17% over five days to 89.24 before you change your index funds or energy exposure.",
+  "goal": "SAVE",
+  "emotion": "relief and fear-of-forgetting",
+  "formula": "The Question",
+  "ticker": "CL=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "Show how plunging oil prices ease inflation concerns ahead of US PCE inflation data.",
+  "data_points": [
+   "Oil (WTI) price: 89.24",
+   "Change 5d pct: -3.17%",
+   "Softer oil prices easing inflation concerns"
+  ]
+ },
+ "hook": {
+  "hook": "What happens to your index funds after oil drops 3.17 percent before Friday?",
+  "properties": {
+   "SPECIFICITY": 62,
+   "ADDRESS": 76,
+   "STAKES": 62,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 70,
+  "band": "WORKABLE",
+  "formula": "The Question",
+  "on_screen": "INDEX FUNDS"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What happens to your index funds after oil drops 3.17 percent before Friday?",
+    "osd": "INDEX FUNDS",
+    "emphasis": "FUNDS",
+    "visual": "chart",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Oil fell to 89.24 as softer energy prices eased inflation concerns across markets.",
+    "osd": "OIL AT 89",
+    "emphasis": "89",
+    "visual": "counter",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "According to market reports, lower energy costs help stabilize broader index performance.",
+    "osd": "LOWER ENERGY COSTS",
+    "emphasis": "COSTS",
+    "visual": "text",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "This pullback directly eases upcoming U.S. PCE inflation data pressures for your portfolio.",
+    "osd": "EASING INFLATION",
+    "emphasis": "INFLATION",
+    "visual": "text",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Not financial advice. Follow for the real reason why stocks move.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "CL=F"
+   }
+  ],
+  "word_count": 62,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Oil drops 3.17% over 5 days to 89.24",
+  "chars": 36,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "36 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (3.17%, 5, 89.24)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "ENERGY CRASH",
+  "visual_brief": "Red barrel chart sliding left, clean dark background, white bold text centered in the upper safe area."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why did oil drop",
+    "oil price drop 3.17 percent",
+    "how oil affects index funds"
+   ],
+   "description": "Oil dropped 3.17% over five days to 89.24. Find out how softer energy prices ease inflation pressures for your index funds and portfolio.\n\nNot financial advice.\n\n#shorts #oil #investing #stocks",
+   "tags": [
+    "oil price",
+    "oil price drop",
+    "crude oil",
+    "index funds",
+    "inflation data",
+    "stock market news",
+    "energy sector",
+    "investing for beginners",
+    "portfolio management",
+    "why stocks moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How a $1.50 hot dog became a $400 billion secret for Costco investors.",
+  "hook_why": "It creates an immediate 'Curiosity Gap' by contrasting an ultra-familiar, low-cost consumer item with a massive corporate valuation, forcing the viewer to stay to find the non-obvious connection.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How a $1.50 hot dog became a $400 billion secret for Costco investors.",
+    "shown": "Extreme macro close-up of a hot dog, quickly cutting to the COST stock ticker and a $400B label in bold red."
+   },
+   {
+    "t": "3-8s",
+    "said": "Most people think Costco makes money selling food, but they actually lose money on every single rotisserie chicken and hot dog.",
+    "shown": "Split screen: Consumer eating vs. a 'Loss Leader' graphic with downward red arrows."
+   },
+   {
+    "t": "8-15s",
+    "said": "The real engine is right here in their SEC filings. Membership fees account for nearly all of their net income.",
+    "shown": "Official SEC 10-K document on screen; a yellow highlighter tool streaks across the 'Membership Fees' line item."
+   },
+   {
+    "t": "15-25s",
+    "said": "By keeping prices low, they lock in 90% renewal rates. That predictable cash flow is why the stock trades at a premium to every other retailer.",
+    "shown": "Line chart comparing COST stock growth against a generic 'Retail Index,' with a 90% label popping up."
+   },
+   {
+    "t": "25-35s",
+    "said": "So when gas or food prices drop, Costco wins because you're more likely to renew. Not financial advice.",
+    "shown": "Talking head or screen recording of a gas station pump transitioning back to the COST chart."
+   },
+   {
+    "t": "35-40s",
+    "said": "Follow for the real reason why stocks move.",
+    "shown": "CTA text 'Follow for more' over a blurred background of the Costco logo."
+   }
+  ],
+  "pacing": "Rapid-fire visual cuts every 1.5 to 2 seconds. The audio never pauses, using 'breathless' editing to maintain high energy and prevent scroll-away.",
+  "visual_technique": "The 'Documentary Teardown' format: Uses a mix of high-quality macro B-roll of everyday objects and 'The Evidence' (SEC filings, highlighted spreadsheets, and labeled stock charts) to build authority.",
+  "reusable_moves": [
+   "The Micro-to-Macro Pivot: Start with a trivial $1 item and scale it up to a $1B+ corporate problem or solution.",
+   "The Data Highlighter: Use a digital yellow highlighter on boring PDF documents to make the viewer feel like they are seeing a 'secret' in the public record.",
+   "The Pattern Interrupt: Tell the viewer the company's main product is actually a distraction from their real profit engine."
+  ],
+  "remake_plan": "Model the 'Micro-Economics Teardown' by explaining Apple's $3,000 Vision Pro not as a headset, but as a 'developer subsidy' to protect their $80B Services moat."
+ },
+ "video_id": "2tNg4L4MuLk",
+ "publish_at": "2026-09-30T17:00:00Z"
+}

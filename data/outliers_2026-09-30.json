@@ -1,0 +1,365 @@
+{
+ "outliers": [
+  {
+   "channel": "The Wall Street Journal",
+   "title": "How Twinkies Became a $5 Billion Problem",
+   "views": 1878574,
+   "median": 25789,
+   "multiple": 72.84,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/QOiWrD5ZIW4"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Oracle Stock Slides After Company Issued ‘Force Majeure’ Notice For Major Data Center Project",
+   "views": 220745,
+   "median": 5507,
+   "multiple": 40.08,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/R7ZO1cUNR_8"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Credit Cards 💳",
+   "views": 739096,
+   "median": 31053,
+   "multiple": 23.8,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/K7UvJQsjMOM"
+  },
+  {
+   "channel": "CNBC Make It",
+   "title": "How Costco keeps gas so cheap",
+   "views": 94297,
+   "median": 5167,
+   "multiple": 18.25,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/6f5rmIYBERY"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Oracle Stock Slides After Company Issued ‘Force Majeure’ Notice For Major Data Center Project",
+   "views": 91470,
+   "median": 5507,
+   "multiple": 16.61,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/IHUnfqjMFcc"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Josh Brown on Apple's Foldable iPhone",
+   "views": 65807,
+   "median": 4614,
+   "multiple": 14.26,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Uou5HxG1msM"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Buying A House In Cash?!",
+   "views": 299542,
+   "median": 31053,
+   "multiple": 9.65,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/OiSZT6xESdA"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Money Books 📚",
+   "views": 227132,
+   "median": 31053,
+   "multiple": 7.31,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/uYAktQIxutY"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "You Have 5 Years Left To Get Rich",
+   "views": 279228,
+   "median": 41449,
+   "multiple": 6.74,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/cFugga5J1t0"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Aap Konsi Car choose karoge? #car",
+   "views": 142764,
+   "median": 21971,
+   "multiple": 6.5,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Vr2j7OolrYA"
+  },
+  {
+   "channel": "The Compound",
+   "title": "The Tech Bull Market Is Just Getting Started",
+   "views": 26683,
+   "median": 4614,
+   "multiple": 5.78,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/hkG6Qizd5oM"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "Jeff Bezos' Amazon shuts down Mark Zuckberg's 'Meta Muse'",
+   "views": 101238,
+   "median": 18662,
+   "multiple": 5.42,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/oRP3YINZviU"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "NSE IPO 2026 Explained #nse #ipo",
+   "views": 109666,
+   "median": 21971,
+   "multiple": 4.99,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/ckkg2QL1Fis"
+  },
+  {
+   "channel": "Yahoo Finance",
+   "title": "Sam Altman introduces dots by OpenAI",
+   "views": 11118,
+   "median": 2311,
+   "multiple": 4.81,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/lKuxDRWvmoc"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking Money Habits 💰",
+   "views": 146404,
+   "median": 31053,
+   "multiple": 4.71,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/oCGxx4FHgCk"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Sam Altman on what he thinks of Meta's Muse AI agent",
+   "views": 10182,
+   "median": 2302,
+   "multiple": 4.42,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/uavyE2wQhFA"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "What’s at Stake for China Amid Trump-Xi Summit in Washington",
+   "views": 112391,
+   "median": 25789,
+   "multiple": 4.36,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/3_8RWHzjn3Q"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The AI bubble is about to pop",
+   "views": 80345,
+   "median": 18662,
+   "multiple": 4.31,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/f5QwNGfppco"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Alex Karp: AI has to work for 'the warfighter' and 'enterprises'",
+   "views": 9403,
+   "median": 2302,
+   "multiple": 4.08,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/dEVTF23z_5A"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "Scott Galloway reacts to Meta's new AI assistant Muse",
+   "views": 75700,
+   "median": 18662,
+   "multiple": 4.06,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/5wH7wrTM2z8"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Trump says 'data centers are going to be very popular' as he meets with AI executives",
+   "views": 9296,
+   "median": 2302,
+   "multiple": 4.04,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/yicfWMiqGFs"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "The Federal Reserve Just Raised Interest Rates For The First Time Since 2023",
+   "views": 304786,
+   "median": 76080,
+   "multiple": 4.01,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/2gOubOLfU8E"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Tom Lee explains why Nvidia still isn't expensive right now.",
+   "views": 167324,
+   "median": 43036,
+   "multiple": 3.89,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/26qXd_8mYHs"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "President Trump tells reporters he officially changed AI to SI",
+   "views": 8850,
+   "median": 2302,
+   "multiple": 3.84,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Y4fsNFm7BL8"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Lessons From Using And Investing In AI",
+   "views": 21013,
+   "median": 5507,
+   "multiple": 3.82,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/AFc-7ruvnd4"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "NVIDIA’s CEO Just Revealed the Next AI Opportunity (3 Stocks to Watch)",
+   "views": 73399,
+   "median": 21452,
+   "multiple": 3.42,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/K-0J9nBAYO0"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "iOS 27 Features: What Apple’s New Siri AI Can Actually Do | WSJ",
+   "views": 86417,
+   "median": 25789,
+   "multiple": 3.35,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/rq8NF0nktSc"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Does the Government Want Gold Prices to Fall? #gold",
+   "views": 73181,
+   "median": 21971,
+   "multiple": 3.33,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/f3cY_4V-dlM"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why Did Everything Else Fall After Nvidia's Beat?",
+   "views": 141532,
+   "median": 43036,
+   "multiple": 3.29,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/dVQErP3KYkE"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "This AI data center company is BS?",
+   "views": 61426,
+   "median": 18662,
+   "multiple": 3.29,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/MfnQMIv3oo4"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "The AI Bubble Is Getting Bigger",
+   "views": 134636,
+   "median": 41449,
+   "multiple": 3.25,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/90f8hvkKoUI"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "If you feel behind financially... here's some data on why.",
+   "views": 244632,
+   "median": 76080,
+   "multiple": 3.22,
+   "formula": "The Direct Address",
+   "url": "https://www.youtube.com/shorts/bFg4LzgiEgM"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "4 Signs You'll Hit 1 Million in 10 Years Instead Of 40",
+   "views": 243794,
+   "median": 76080,
+   "multiple": 3.2,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/YGnjSONx5Us"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "6 Buy-the-Dip Stocks With Triple-Digit Upside",
+   "views": 68561,
+   "median": 21452,
+   "multiple": 3.2,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/o7I2fCL_Opc"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Candlestick Patterns Explained in 60 Seconds #candlestickpatterns",
+   "views": 70127,
+   "median": 21971,
+   "multiple": 3.19,
+   "formula": "The Clock",
+   "url": "https://www.youtube.com/shorts/X4M8zV2bSlY"
+  },
+  {
+   "channel": "The Compound",
+   "title": "What Is It Going to Take to Kill This Bull Market?",
+   "views": 14350,
+   "median": 4614,
+   "multiple": 3.11,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/X7q7KEfGGuw"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "The Fed's Expected to Raise Rates: Here's What to Watch  | WSJ",
+   "views": 80130,
+   "median": 25789,
+   "multiple": 3.11,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/pknUiLW1RVk"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "Americans Don't Have Savings Anymore",
+   "views": 128551,
+   "median": 41449,
+   "multiple": 3.1,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/4Y1qrFjW9sU"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why September Will Be Strong for Stocks",
+   "views": 132630,
+   "median": 43036,
+   "multiple": 3.08,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/1tsqjnXhlgQ"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Why Today’s Market Is Nothing Like 1999",
+   "views": 14078,
+   "median": 4614,
+   "multiple": 3.05,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/SwK2cAjjrag"
+  }
+ ],
+ "skipped_thin_channels": []
+}
