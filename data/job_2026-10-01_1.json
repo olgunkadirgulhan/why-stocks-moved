@@ -1,0 +1,152 @@
+{
+ "idea": {
+  "idea": "Gold dropped 2.38% over five days to $4,195.90 — why bullion pulled back from multi-month highs before you adjust your portfolio.",
+  "goal": "SAVE",
+  "emotion": "relief and fear-of-forgetting",
+  "formula": "The Question",
+  "ticker": "GC=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The exact quarterly gain of 3.30% that preceded the pullback and how to track safe-haven shifts.",
+  "data_points": [
+   "GC=F price: 4195.9",
+   "change_pct: 0.22",
+   "change_5d_pct: -2.38",
+   "Comex Gold ends the quarter 3.30% higher at $4155.60"
+  ]
+ },
+ "hook": {
+  "hook": "Why did gold drop 2.38 percent to $4,195.90 before you lose money in your portfolio?",
+  "properties": {
+   "SPECIFICITY": 78,
+   "ADDRESS": 66,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 75,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Gold Drops to $4,195"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did gold drop 2.38 percent to $4,195.90 before you lose money in your portfolio?",
+    "osd": "Gold Drops to $4,195",
+    "emphasis": "$4,195",
+    "visual": "counter",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "You know gold as the ultimate safe haven, but Wall Street saw a sudden pullback from multi-month highs.",
+    "osd": "Multi-Month High Pullback",
+    "emphasis": "Pullback",
+    "visual": "chart",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Reports say safe-haven flows shifted as inflation data came in softer than expected.",
+    "osd": "Inflation Data Shifts Flows",
+    "emphasis": "Shifts",
+    "visual": "text",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Even with this dip, Comex Gold ends the quarter 3.30 percent higher at $4,155.60.",
+    "osd": "Quarter Ends Up 3.30%",
+    "emphasis": "3.30%",
+    "visual": "counter",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "The lesson for your portfolio: track quarterly trends before you adjust your safe-haven assets. Not financial advice.",
+    "osd": "Track Quarterly Trends",
+    "emphasis": "Trends",
+    "visual": "text",
+    "ticker": "GC=F"
+   }
+  ],
+  "word_count": 77,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Gold fell 2.38% to $4,195.90 this week",
+  "chars": 38,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "38 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (2.38%, 4,195.90)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "BULLION DROP",
+  "visual_brief": "Red moving line chart dropping over a dark gold bullion vault background. Text centered, keeping clear of top 12% and bottom 20% UI overlays."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "gold price drop today",
+    "why did gold fall",
+    "gold price analysis 2026"
+   ],
+   "description": "Why gold dropped 2.38% to $4,195.90 this week and what a pullback from multi-month highs means for your portfolio.\nNot financial advice.\n\n#shorts #gold #investing #stocks",
+   "tags": [
+    "gold price",
+    "gold drop",
+    "gold bullion",
+    "gold market",
+    "gold analysis",
+    "gold price today",
+    "inflation data",
+    "safe haven",
+    "portfolio management",
+    "investing",
+    "stocks",
+    "market update",
+    "comex gold"
+   ],
+   "query_test_pass": false
+  }
+ },
+ "teardown": {
+  "hook": "How did an 80-cent snack cake turn into a five-billion-dollar corporate disaster?",
+  "hook_why": "Note: Analyzed from title and 'The Question' formula (no transcript available). It forces instant curiosity through extreme cognitive dissonance: contrasting a cheap, mundane everyday grocery item (Twinkie) with an astronomical financial catastrophe ($5B problem), stopping the scroll within the first 1.5 seconds.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did an 80-cent snack cake turn into a five-billion-dollar corporate disaster?",
+    "shown": "Split-screen visual: tight macro close-up of a Twinkie on top, rapidly zooming in on a blood-red SEC filing and a -$5,000,000,000 graphic on the bottom."
+   },
+   {
+    "t": "3-9s",
+    "said": "You know Hostess for cheap snacks, but Wall Street saw a cash machine they could leverage.",
+    "shown": "Fast cut to historic grocery shelves, instantly transitioning into private equity acquisition headlines and massive debt leverage charts."
+   },
+   {
+    "t": "9-18s",
+    "said": "To juice returns, buyers piled billions in debt onto the company while cutting ingredient and labor costs to the bone.",
+    "shown": "Animated balance sheet graphic showing rising red debt bars swallowing profit margins, paired with strike footage and factory closing notices."
+   },
+   {
+    "t": "18-27s",
+    "said": "When consumer tastes shifted and interest rates bit, the business model broke, triggering bankruptcy and a massive buyout wipeout.",
+    "shown": "Downward stock trend chart plunging 80%, overlaying headline text: 'Hostess Brands Liquidation & $5B Buyout Realignment'."
+   },
+   {
+    "t": "27-35s",
+    "said": "The lesson for your portfolio: when private equity over-leverages simple consumer brands, investors end up holding the bag. Not financial advice.",
+    "shown": "Key takeaway bullet list on screen: '1. Cheap product != Safe business / 2. Watch corporate debt.' Channel watermark and single follow CTA."
+   }
+  ],
+  "pacing": "Rapid-fire 30-35s runtime. Cuts occur every 2 to 3 seconds. High-tempo information delivery that front-loads the core mystery in under 2 seconds, accelerates through the business mechanics, and lands on a punchy takeaway.",
+  "visual_technique": "Everyday Consumer Teardown format. Uses split screens, rapid text callouts, moving financial charts at frame zero, high-contrast red/yellow highlighter boxes on balance sheets, and large on-screen captions for complete comprehension on mute.",
+  "reusable_moves": [
+   "The Micro-to-Macro Juxtaposition: Anchor the hook on an ultra-familiar, cheap consumer product (e.g., snack cake, $1.50 hot dog) and pit it against an absurd balance-sheet figure ($5 billion disaster) to eliminate barriers to entry.",
+   "The 'Hidden Trap' Narrative Arc: Frame a well-known brand's struggle not as bad luck, but as an aggressive Wall Street financial maneuver (debt leverage, cost-cutting) that backfired, satisfying curiosity and outrage."
+  ],
+  "remake_plan": "Model this exact micro-economics teardown structure on Big Tech or consumer retail stocks—for example: 'How a $20 iPhone charger became a $40 billion headache for Apple'—explaining the antitrust and regulatory fallout using our live chart at frame zero."
+ },
+ "video_id": "w_Ott2kHiSU",
+ "publish_at": "2026-10-01T17:00:00Z"
+}

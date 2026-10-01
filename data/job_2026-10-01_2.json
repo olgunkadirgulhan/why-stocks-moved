@@ -1,0 +1,160 @@
+{
+ "idea": {
+  "idea": "Tesla shares dropped 6.66% over five days as its Roadster reveal event was postponed due to weather — what this means before you trade.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO and aspiration",
+  "formula": "The Superlative",
+  "ticker": "TSLA",
+  "structure_from": "https://www.youtube.com/shorts/IHUnfqjMFcc",
+  "payoff_withheld_until_end": "The rescheduled October 15 date and how retail voting rule changes affect future tech swings.",
+  "data_points": [
+   "TSLA price: 354.81",
+   "change_pct: 0.56",
+   "change_5d_pct: -6.66",
+   "Tesla postpones Roadster reveal event to October 15, cites severe weather conditions"
+  ]
+ },
+ "hook": {
+  "hook": "Why did Tesla shares drop 6.66 percent over five days before you risk your portfolio money?",
+  "properties": {
+   "SPECIFICITY": 62,
+   "ADDRESS": 66,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 72,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "TESLA DROPS 6.66%"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did Tesla shares drop 6.66 percent over five days before you risk your portfolio money?",
+    "osd": "TESLA DROPS 6.66%",
+    "emphasis": "6.66%",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Trading at 354.81 dollars, the stock fell as reports confirm the Roadster reveal event was postponed to October 15.",
+    "osd": "ROADSTER DELAYED",
+    "emphasis": "POSTPONED",
+    "visual": "counter",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Severe weather forced management to hit pause, pausing the hype that usually drives short term momentum.",
+    "osd": "WEATHER FORCES PAUSE",
+    "emphasis": "WEATHER",
+    "visual": "text",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "At the same time, new SEC disclosures show Tesla is changing retail voting rules to ease board recommendations.",
+    "osd": "VOTING RULES CHANGED",
+    "emphasis": "VOTING",
+    "visual": "text",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "The rescheduled October 15 date and these retail voting rule changes will dictate your next tech entry point.",
+    "osd": "OCTOBER 15 RESET",
+    "emphasis": "RESCHEDULED",
+    "visual": "text",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Watch the charts, manage your risk, and remember this is not financial advice.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "TSLA"
+   }
+  ],
+  "word_count": 100,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Tesla dropped 6.66% today",
+  "chars": 25,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "25 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (6.66%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "WEATHER HALT",
+  "visual_brief": "Stock line chart plunging down on the left, split screen with a stormy sky over a car silhouette in the background, high contrast red text in the top center safe zone."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Tesla dropped 6.66% today",
+    "Tesla Roadster reveal postponed",
+    "TSLA stock drop analysis"
+   ],
+   "description": "Why Tesla shares dropped 6.66% as its Roadster reveal event was postponed due to severe weather, and what it means for your portfolio before you trade.\n\nNot financial advice. \n\n#shorts #tesla #tsla #stocks #stockmarket",
+   "tags": [
+    "Tesla dropped 6.66% today",
+    "Tesla Roadster delayed",
+    "TSLA stock",
+    "Tesla stock analysis",
+    "Tesla news",
+    "Roadster reveal postponed",
+    "stock market today",
+    "trading",
+    "portfolio",
+    "tech stocks",
+    "SEC disclosures",
+    "investing",
+    "Wall Street",
+    "Why Stocks Moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How did an 80-cent snack cake turn into a five-billion-dollar corporate disaster?",
+  "hook_why": "Note: Analyzed from title and 'The Question' formula (no transcript available). It forces instant curiosity through extreme cognitive dissonance: contrasting a cheap, mundane everyday grocery item (Twinkie) with an astronomical financial catastrophe ($5B problem), stopping the scroll within the first 1.5 seconds.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did an 80-cent snack cake turn into a five-billion-dollar corporate disaster?",
+    "shown": "Split-screen visual: tight macro close-up of a Twinkie on top, rapidly zooming in on a blood-red SEC filing and a -$5,000,000,000 graphic on the bottom."
+   },
+   {
+    "t": "3-9s",
+    "said": "You know Hostess for cheap snacks, but Wall Street saw a cash machine they could leverage.",
+    "shown": "Fast cut to historic grocery shelves, instantly transitioning into private equity acquisition headlines and massive debt leverage charts."
+   },
+   {
+    "t": "9-18s",
+    "said": "To juice returns, buyers piled billions in debt onto the company while cutting ingredient and labor costs to the bone.",
+    "shown": "Animated balance sheet graphic showing rising red debt bars swallowing profit margins, paired with strike footage and factory closing notices."
+   },
+   {
+    "t": "18-27s",
+    "said": "When consumer tastes shifted and interest rates bit, the business model broke, triggering bankruptcy and a massive buyout wipeout.",
+    "shown": "Downward stock trend chart plunging 80%, overlaying headline text: 'Hostess Brands Liquidation & $5B Buyout Realignment'."
+   },
+   {
+    "t": "27-35s",
+    "said": "The lesson for your portfolio: when private equity over-leverages simple consumer brands, investors end up holding the bag. Not financial advice.",
+    "shown": "Key takeaway bullet list on screen: '1. Cheap product != Safe business / 2. Watch corporate debt.' Channel watermark and single follow CTA."
+   }
+  ],
+  "pacing": "Rapid-fire 30-35s runtime. Cuts occur every 2 to 3 seconds. High-tempo information delivery that front-loads the core mystery in under 2 seconds, accelerates through the business mechanics, and lands on a punchy takeaway.",
+  "visual_technique": "Everyday Consumer Teardown format. Uses split screens, rapid text callouts, moving financial charts at frame zero, high-contrast red/yellow highlighter boxes on balance sheets, and large on-screen captions for complete comprehension on mute.",
+  "reusable_moves": [
+   "The Micro-to-Macro Juxtaposition: Anchor the hook on an ultra-familiar, cheap consumer product (e.g., snack cake, $1.50 hot dog) and pit it against an absurd balance-sheet figure ($5 billion disaster) to eliminate barriers to entry.",
+   "The 'Hidden Trap' Narrative Arc: Frame a well-known brand's struggle not as bad luck, but as an aggressive Wall Street financial maneuver (debt leverage, cost-cutting) that backfired, satisfying curiosity and outrage."
+  ],
+  "remake_plan": "Model this exact micro-economics teardown structure on Big Tech or consumer retail stocks—for example: 'How a $20 iPhone charger became a $40 billion headache for Apple'—explaining the antitrust and regulatory fallout using our live chart at frame zero."
+ },
+ "video_id": "pIOeY2yqcyc",
+ "publish_at": "2026-10-01T22:30:00Z"
+}

@@ -15,3 +15,6 @@
 - [[2026-09-30-meta-stock-rose-3-24-on-ai-meeting]] — SHARE · hook 69
 - [[2026-09-30-oil-drops-3-17-over-5-days-to-89-24]] — SAVE · hook 70
 - [[2026-09-30-s-p-500-slipped-0-17]] — FOLLOW · hook 78
+- [[2026-10-01-amazon-locked-20-year-nuclear-deal]] — SHARE · hook 72
+- [[2026-10-01-gold-fell-2-38-to-4-195-90-this-week]] — SAVE · hook 75
+- [[2026-10-01-tesla-dropped-6-66-today]] — FOLLOW · hook 72

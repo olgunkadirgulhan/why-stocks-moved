@@ -1,0 +1,167 @@
+{
+ "idea": {
+  "idea": "Amazon stock climbed 1.01% after securing a 20-year nuclear power agreement with Constellation Energy — here is what powers the next phase of its data centers.",
+  "goal": "SHARE",
+  "emotion": "awe and status",
+  "formula": "The Question",
+  "ticker": "AMZN",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "The exact terms of the 20-year nuclear deal and why hyperscalers are securing dedicated energy grids.",
+  "data_points": [
+   "AMZN price: 249.15",
+   "change_pct: 1.01",
+   "change_5d_pct: -0.05",
+   "Constellation Energy stock rose as much as 5% after signing 20-year nuclear power agreement with Amazon"
+  ]
+ },
+ "hook": {
+  "hook": "How Amazon locked down a 20-year nuclear power grid before you risk your portfolio money?",
+  "properties": {
+   "SPECIFICITY": 62,
+   "ADDRESS": 66,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 72,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "AMAZON 20-YEAR NUCLEAR"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "How Amazon locked down a 20-year nuclear power grid before you risk your portfolio money?",
+    "osd": "AMZN 20-YEAR NUCLEAR",
+    "emphasis": "NUCLEAR",
+    "visual": "chart",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "Amazon stock climbed 1.01 percent today to $249.15, shaking off a flat five-day trend.",
+    "osd": "AMZN +1.01% TO $249.15",
+    "emphasis": "CLIMBED",
+    "visual": "counter",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "According to today's reports, the jump follows a 20-year nuclear power agreement with Constellation Energy.",
+    "osd": "20-YEAR NUCLEAR POWER DEAL",
+    "emphasis": "AGREEMENT",
+    "visual": "text",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "Constellation Energy shares rose as much as 5 percent after securing the massive data center energy deal.",
+    "osd": "ENERGY PARTNER GAINED 5%",
+    "emphasis": "SECURED",
+    "visual": "compare",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "Why are hyperscalers locking down dedicated power grids instead of buying off the open market?",
+    "osd": "WHY HYPERSCALERS SECURE GRIDS",
+    "emphasis": "DEDICATED",
+    "visual": "text",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "The exact terms of the 20-year nuclear deal reveal why tech giants need guaranteed power for future AI growth.",
+    "osd": "THE EXACT DEAL TERMS",
+    "emphasis": "TERMS",
+    "visual": "text",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "Before you rebalance your tech portfolio, check the energy risk. Not financial advice.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "AMZN"
+   }
+  ],
+  "word_count": 108,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Amazon Locked 20-Year Nuclear Deal",
+  "chars": 34,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "34 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (20)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "ENERGY LOCK",
+  "visual_brief": "A digital padlock graphic snapping shut over a nuclear facility blueprint. Bright yellow typography that stands out at 150px."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Amazon nuclear deal stock",
+    "Amazon Constellation Energy agreement",
+    "AMZN stock nuclear power data centers"
+   ],
+   "description": "Amazon stock climbed 1.01 percent after securing a 20-year nuclear power agreement with Constellation Energy to power its data centers. See what this energy deal means for your tech portfolio.\n\nNot financial advice. #shorts",
+   "tags": [
+    "Amazon stock",
+    "AMZN",
+    "Constellation Energy",
+    "nuclear power deal",
+    "data centers",
+    "tech stocks",
+    "AI energy",
+    "Amazon energy",
+    "stock market today",
+    "portfolio",
+    "investing",
+    "Wall Street",
+    "stocks",
+    "market news"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How did an 80-cent snack cake turn into a five-billion-dollar corporate disaster?",
+  "hook_why": "Note: Analyzed from title and 'The Question' formula (no transcript available). It forces instant curiosity through extreme cognitive dissonance: contrasting a cheap, mundane everyday grocery item (Twinkie) with an astronomical financial catastrophe ($5B problem), stopping the scroll within the first 1.5 seconds.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did an 80-cent snack cake turn into a five-billion-dollar corporate disaster?",
+    "shown": "Split-screen visual: tight macro close-up of a Twinkie on top, rapidly zooming in on a blood-red SEC filing and a -$5,000,000,000 graphic on the bottom."
+   },
+   {
+    "t": "3-9s",
+    "said": "You know Hostess for cheap snacks, but Wall Street saw a cash machine they could leverage.",
+    "shown": "Fast cut to historic grocery shelves, instantly transitioning into private equity acquisition headlines and massive debt leverage charts."
+   },
+   {
+    "t": "9-18s",
+    "said": "To juice returns, buyers piled billions in debt onto the company while cutting ingredient and labor costs to the bone.",
+    "shown": "Animated balance sheet graphic showing rising red debt bars swallowing profit margins, paired with strike footage and factory closing notices."
+   },
+   {
+    "t": "18-27s",
+    "said": "When consumer tastes shifted and interest rates bit, the business model broke, triggering bankruptcy and a massive buyout wipeout.",
+    "shown": "Downward stock trend chart plunging 80%, overlaying headline text: 'Hostess Brands Liquidation & $5B Buyout Realignment'."
+   },
+   {
+    "t": "27-35s",
+    "said": "The lesson for your portfolio: when private equity over-leverages simple consumer brands, investors end up holding the bag. Not financial advice.",
+    "shown": "Key takeaway bullet list on screen: '1. Cheap product != Safe business / 2. Watch corporate debt.' Channel watermark and single follow CTA."
+   }
+  ],
+  "pacing": "Rapid-fire 30-35s runtime. Cuts occur every 2 to 3 seconds. High-tempo information delivery that front-loads the core mystery in under 2 seconds, accelerates through the business mechanics, and lands on a punchy takeaway.",
+  "visual_technique": "Everyday Consumer Teardown format. Uses split screens, rapid text callouts, moving financial charts at frame zero, high-contrast red/yellow highlighter boxes on balance sheets, and large on-screen captions for complete comprehension on mute.",
+  "reusable_moves": [
+   "The Micro-to-Macro Juxtaposition: Anchor the hook on an ultra-familiar, cheap consumer product (e.g., snack cake, $1.50 hot dog) and pit it against an absurd balance-sheet figure ($5 billion disaster) to eliminate barriers to entry.",
+   "The 'Hidden Trap' Narrative Arc: Frame a well-known brand's struggle not as bad luck, but as an aggressive Wall Street financial maneuver (debt leverage, cost-cutting) that backfired, satisfying curiosity and outrage."
+  ],
+  "remake_plan": "Model this exact micro-economics teardown structure on Big Tech or consumer retail stocks—for example: 'How a $20 iPhone charger became a $40 billion headache for Apple'—explaining the antitrust and regulatory fallout using our live chart at frame zero."
+ },
+ "video_id": "uBTFaOrGvSI",
+ "publish_at": "2026-10-01T13:30:00Z"
+}
