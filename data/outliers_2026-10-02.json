@@ -1,0 +1,415 @@
+{
+ "outliers": [
+  {
+   "channel": "The Wall Street Journal",
+   "title": "How Twinkies Became a $5 Billion Problem",
+   "views": 2008516,
+   "median": 19777,
+   "multiple": 101.56,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/QOiWrD5ZIW4"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Credit Cards 💳",
+   "views": 1150232,
+   "median": 31827,
+   "multiple": 36.14,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/K7UvJQsjMOM"
+  },
+  {
+   "channel": "CNBC Make It",
+   "title": "How Costco keeps gas so cheap",
+   "views": 99046,
+   "median": 5179,
+   "multiple": 19.12,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/6f5rmIYBERY"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Meta's Muse AI Assistant Hits 5 Million Downloads",
+   "views": 26031,
+   "median": 1475,
+   "multiple": 17.65,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/qlkx__2-GNI"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Google unveils Gemini 4 Argon",
+   "views": 22619,
+   "median": 1460,
+   "multiple": 15.49,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/ltT6nx0Zcy0"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Buying A House In Cash?!",
+   "views": 310663,
+   "median": 31827,
+   "multiple": 9.76,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/OiSZT6xESdA"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Rapid Recap: Nike's stock has struggled as it faces stiff competition - here’s what experts say",
+   "views": 13973,
+   "median": 1460,
+   "multiple": 9.57,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/tjeur2Hdh8w"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "You Have 5 Years Left To Get Rich",
+   "views": 297418,
+   "median": 34457,
+   "multiple": 8.63,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/cFugga5J1t0"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Money Books 📚",
+   "views": 267417,
+   "median": 31827,
+   "multiple": 8.4,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/uYAktQIxutY"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Aap Konsi Car choose karoge? #car",
+   "views": 148433,
+   "median": 19638,
+   "multiple": 7.56,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Vr2j7OolrYA"
+  },
+  {
+   "channel": "The Compound",
+   "title": "What Is It Going to Take to Kill This Bull Market?",
+   "views": 16276,
+   "median": 2256,
+   "multiple": 7.21,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/X7q7KEfGGuw"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Why Today’s Market Is Nothing Like 1999",
+   "views": 15639,
+   "median": 2256,
+   "multiple": 6.93,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/SwK2cAjjrag"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The AI bubble is about to pop",
+   "views": 95788,
+   "median": 14592,
+   "multiple": 6.56,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/f5QwNGfppco"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Meta's Muse AI Assistant Hits 5 Million Downloads—Outpacing Growth Of ChatGPT, Grok And Claude",
+   "views": 9528,
+   "median": 1475,
+   "multiple": 6.46,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/VVkGoJTiWIM"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Nvidia’s Buyback Plan",
+   "views": 13927,
+   "median": 2256,
+   "multiple": 6.17,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/B9jOvXd3JAk"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Why Warren Buffett’s Record Is Almost Unbelievable",
+   "views": 13854,
+   "median": 2256,
+   "multiple": 6.14,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/t6sPxYeCTBI"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "What’s at Stake for China Amid Trump-Xi Summit in Washington",
+   "views": 113322,
+   "median": 19777,
+   "multiple": 5.73,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/3_8RWHzjn3Q"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "NSE IPO 2026 Explained #nse #ipo",
+   "views": 109809,
+   "median": 19638,
+   "multiple": 5.59,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/ckkg2QL1Fis"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking Money Habits 💰",
+   "views": 177047,
+   "median": 31827,
+   "multiple": 5.56,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/oCGxx4FHgCk"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Micron CEO: 'We cannot fulfill' demand for memory chips",
+   "views": 7865,
+   "median": 1460,
+   "multiple": 5.39,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/zn0dsniNM8Q"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "Saturday Night Live just made fun of Dario Amodei",
+   "views": 74197,
+   "median": 14592,
+   "multiple": 5.08,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/T2JBkttXb1I"
+  },
+  {
+   "channel": "Forbes",
+   "title": "White House Releases ‘Accord’ Between Billionaire AI Execs: Here’s What It Says",
+   "views": 7088,
+   "median": 1475,
+   "multiple": 4.81,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Znw7TFksN4g"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Don’t Pay Off Your 3% Mortgage",
+   "views": 10532,
+   "median": 2256,
+   "multiple": 4.67,
+   "formula": "The Statistic",
+   "url": "https://www.youtube.com/shorts/4SQtwg98zVI"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "\"It feels very '99 to me\" - Scott Galloway",
+   "views": 65586,
+   "median": 14592,
+   "multiple": 4.49,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/jJz5XaUy_H0"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Robot Baristas",
+   "views": 10032,
+   "median": 2256,
+   "multiple": 4.45,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/OxKJGAXBXIU"
+  },
+  {
+   "channel": "Forbes",
+   "title": "White House Releases ‘Accord’ Between Billionaire AI Execs: Here’s What It Says",
+   "views": 6545,
+   "median": 1475,
+   "multiple": 4.44,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/me0TQDRck3I"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "This AI data center company is BS?",
+   "views": 63973,
+   "median": 14592,
+   "multiple": 4.38,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/MfnQMIv3oo4"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "The Fed's Expected to Raise Rates: Here's What to Watch  | WSJ",
+   "views": 80217,
+   "median": 19777,
+   "multiple": 4.06,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/pknUiLW1RVk"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "The Federal Reserve Just Raised Interest Rates For The First Time Since 2023",
+   "views": 307833,
+   "median": 76574,
+   "multiple": 4.02,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/2gOubOLfU8E"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "How To Prepare For WW3",
+   "views": 137438,
+   "median": 34457,
+   "multiple": 3.99,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/qfznSqH05ug"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Tom Lee explains why Nvidia still isn't expensive right now.",
+   "views": 167994,
+   "median": 44346,
+   "multiple": 3.79,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/26qXd_8mYHs"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Mark Cuban Doubles Down On Criticism Of Humanoid Robots, Says Personal Robots Will Be ‘Optimized’",
+   "views": 5503,
+   "median": 1475,
+   "multiple": 3.73,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/-Q77yYxzlf0"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The U.S. housing market is the most frozen it has been in decades",
+   "views": 54319,
+   "median": 14592,
+   "multiple": 3.72,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/rQel6j1sbQE"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Candlestick Patterns Explained in 60 Seconds #candlestickpatterns",
+   "views": 71936,
+   "median": 19638,
+   "multiple": 3.66,
+   "formula": "The Clock",
+   "url": "https://www.youtube.com/shorts/X4M8zV2bSlY"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "The Israel-Bound FlyDubai Flight Crisis, Explained",
+   "views": 71745,
+   "median": 19777,
+   "multiple": 3.63,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/VLYXcoSEyLk"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "Jensen Huang Says These 3 Stocks Are The Future of AI",
+   "views": 82693,
+   "median": 23035,
+   "multiple": 3.59,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/MQK2MPv584M"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "A Rare Look at the Pentagon’s Drone 'Gauntlet' Competition",
+   "views": 66420,
+   "median": 19777,
+   "multiple": 3.36,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/cDTdYv4Jd8o"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "If you feel behind financially... here's some data on why.",
+   "views": 251698,
+   "median": 76574,
+   "multiple": 3.29,
+   "formula": "The Direct Address",
+   "url": "https://www.youtube.com/shorts/bFg4LzgiEgM"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "4 Signs You'll Hit 1 Million in 10 Years Instead Of 40",
+   "views": 247777,
+   "median": 76574,
+   "multiple": 3.24,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/YGnjSONx5Us"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "5 Best Stocks to Buy in October 2026",
+   "views": 74172,
+   "median": 23035,
+   "multiple": 3.22,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/m0EiTK6ZF5U"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why Did Everything Else Fall After Nvidia's Beat?",
+   "views": 141591,
+   "median": 44346,
+   "multiple": 3.19,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/dVQErP3KYkE"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Google's Gemini 4 Argon launch renews pressure to build a mass-market agent",
+   "views": 4652,
+   "median": 1460,
+   "multiple": 3.19,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/i42ccZDexn8"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "6 Buy-the-Dip Stocks With Triple-Digit Upside",
+   "views": 71248,
+   "median": 23035,
+   "multiple": 3.09,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/o7I2fCL_Opc"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "There are going to be millions of people who are going to have no food at all",
+   "views": 45111,
+   "median": 14592,
+   "multiple": 3.09,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/0Nqp9WHJ3xI"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why September Will Be Strong for Stocks",
+   "views": 132901,
+   "median": 44346,
+   "multiple": 3.0,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/1tsqjnXhlgQ"
+  }
+ ],
+ "skipped_thin_channels": [
+  [
+   "Meet Kevin",
+   3
+  ]
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "idea": {
+  "idea": "How Nvidia gained 2.80% this week while the rest of the market drifted—and what it means for your portfolio.",
+  "goal": "SHARE",
+  "emotion": "awe and status",
+  "formula": "The Question",
+  "ticker": "NVDA",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "The specific catalyst driving Nvidia's outperformance relative to the broader tech sector.",
+  "data_points": [
+   "Nvidia price: 230.86",
+   "Nvidia 5d change: 2.80%",
+   "S&P 500 5d change: -0.49%"
+  ]
+ },
+ "hook": {
+  "hook": "Why did Nvidia climb 2.80 percent this week before you risk your portfolio money?",
+  "properties": {
+   "SPECIFICITY": 62,
+   "ADDRESS": 66,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 72,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "NVDA WINS WEEK"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did Nvidia climb 2.80 percent this week before you risk your portfolio money?",
+    "osd": "NVDA WINS WEEK",
+    "emphasis": "WINS",
+    "visual": "chart",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "While the S&P 500 slipped 0.49 percent, Nvidia shares reached 230.86 dollars.",
+    "osd": "230.86 DOLLARS",
+    "emphasis": "230.86",
+    "visual": "counter",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "The broader technology sector drifted downward as major index benchmarks pulled back.",
+    "osd": "TECH SECTOR DRIFTS",
+    "emphasis": "DRIFTS",
+    "visual": "compare",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "Public filings and daily market data show no single headline explains this relative strength yet.",
+    "osd": "NO NEWS CAUSE",
+    "emphasis": "NO",
+    "visual": "text",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "This strength against a falling market defines why tracking sector leaders matters for your portfolio. Not financial advice.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "NVDA"
+   }
+  ],
+  "word_count": 71,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nvidia gained 2.80% this week",
+  "chars": 29,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "29 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (2.80%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "CHIP SURGE",
+  "visual_brief": "Green Nvidia stock line shooting upward on a dark slate background. Subject centered, text in bold white block capitals, clear of top 12% and bottom 20% UI overlays."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Nvidia stock weekly gain",
+    "Nvidia price action review",
+    "Nvidia 2.80 percent gain"
+   ],
+   "description": "See why Nvidia gained 2.80% this week while the rest of the market drifted and what it means for your portfolio. Not financial advice. #shorts",
+   "tags": [
+    "Nvidia",
+    "NVDA",
+    "stock market",
+    "stocks",
+    "big tech",
+    "portfolio",
+    "investing",
+    "market analysis",
+    "tech stocks"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How Twinkies Became a $5 Billion Problem",
+  "hook_why": "It uses 'The Question' formula to pair a trivial, low-cost commodity (snack cake) with a massive, high-stakes financial figure ($5 billion), creating immediate curiosity through contrast.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did this 80-cent snack cake become a $5 billion problem for Wall Street?",
+    "shown": "Close-up macro shot of a Twinkie with bold red text: 80¢ vs $5,000,000,000."
+   },
+   {
+    "t": "3-10s",
+    "said": "It started when private equity firms loaded the company with $2 billion in debt they couldn't pay back.",
+    "shown": "Rapid scroll through a boring SEC filing with a yellow highlighter hitting the 'Total Debt' line."
+   },
+   {
+    "t": "10-20s",
+    "said": "The business went bankrupt twice, proving that even a product that never expires can still have a sell-by date on its stock.",
+    "shown": "Archive footage of a factory closing split-screen with a downward-trending stock chart."
+   },
+   {
+    "t": "20-30s",
+    "said": "But a new owner streamlined the logistics and sold the brand for $5.6 billion in one of the biggest exits in food history.",
+    "shown": "Clean, modern bar chart showing the valuation jump from 2013 to 2023."
+   },
+   {
+    "t": "30-40s",
+    "said": "This is why everyday brands are often the most complex trades in your portfolio. Follow for why stocks moved today.",
+    "shown": "Talking head or stock app mockup showing the 'Why Stocks Moved' logo and a 'Follow' button."
+   }
+  ],
+  "pacing": "High-velocity 'Micro-Economics' style; cuts occur every 1.5 to 2.2 seconds to maintain high retention during data-heavy segments.",
+  "visual_technique": "The 'Contrast Format'—alternating between low-fidelity physical products and high-fidelity financial charts to make complex macro data feel accessible.",
+  "reusable_moves": [
+   "The Absurd Contrast: Pairing a familiar household object with a non-obvious, massive valuation.",
+   "The Hidden Mechanism: Explaining the 'How' behind a corporate failure or success using public data.",
+   "PDF Anchoring: Zooming into specific numbers on official documents to provide 'proof' and authority."
+  ],
+  "remake_plan": "How Costco’s $1.50 hot dog helped build a $400 billion retail empire—and what it means for your portfolio before you trade today."
+ },
+ "video_id": "bxLkKSpXB_0",
+ "publish_at": "2026-10-02T13:30:00Z"
+}

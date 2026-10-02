@@ -1,0 +1,158 @@
+{
+ "idea": {
+  "idea": "Why Gold fell 2.42% over five days down to $4,216.80 before you rebalance your holdings.",
+  "goal": "SAVE",
+  "emotion": "relief and fear-of-forgetting",
+  "formula": "The Question",
+  "ticker": "GC=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The exact threshold where bullion support breaks and what future-you must watch.",
+  "data_points": [
+   "Gold price: 4216.80",
+   "Gold change: 0.35%",
+   "Gold 5d change: -2.42%"
+  ]
+ },
+ "hook": {
+  "hook": "How did gold drop 2.42 percent down to $4,216 before you change your asset mix?",
+  "properties": {
+   "SPECIFICITY": 78,
+   "ADDRESS": 66,
+   "STAKES": 62,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 71,
+  "band": "WORKABLE",
+  "formula": "The Question",
+  "on_screen": "PRICE CRASH"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "How did gold drop 2.42 percent down to $4,216 before you change your asset mix?",
+    "osd": "PRICE CRASH",
+    "emphasis": "CRASH",
+    "visual": "chart",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Bullion fell across five straight days to $4,216.80 while the dollar strengthened.",
+    "osd": "FIVE DAY DROP",
+    "emphasis": "DROP",
+    "visual": "counter",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Reports point to shifting currency pressures pushing safe-haven assets lower this week.",
+    "osd": "DOLLAR RISES",
+    "emphasis": "RISES",
+    "visual": "compare",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "If you hold precious metals in your portfolio, this pullback changes your risk balance.",
+    "osd": "PORTFOLIO RISK",
+    "emphasis": "RISK",
+    "visual": "text",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Watch the $4,200 support level next because that exact threshold decides the next trend.",
+    "osd": "SUPPORT LEVEL",
+    "emphasis": "LEVEL",
+    "visual": "chart",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Save this video before you rebalance your holdings. Not financial advice.",
+    "osd": "SAVE VIDEO",
+    "emphasis": "SAVE",
+    "visual": "text",
+    "ticker": "GC=F"
+   }
+  ],
+  "word_count": 78,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Gold fell 2.42% down to $4,216.80",
+  "chars": 33,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "33 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (2.42%, 4,216.80)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "BULLION DROP",
+  "visual_brief": "Red moving line chart dropping off screen against a dark metallic grey background, subject centered, clear of top 12% and bottom 20% UI overlays."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "gold price drop 2.42 percent",
+    "why did gold fall today",
+    "gold price analysis portfolio"
+   ],
+   "description": "See why gold fell 2.42% down to $4,216.80 over five days and what it means for your portfolio asset mix.\nNot financial advice.\n\n#shorts #goldprice #investing #stocks",
+   "tags": [
+    "gold price",
+    "gold drop",
+    "gold bullion",
+    "gold down",
+    "precious metals",
+    "portfolio rebalancing",
+    "market analysis",
+    "gold 4216",
+    "gold support level",
+    "safe haven assets",
+    "dollar strength",
+    "why stocks moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How Twinkies Became a $5 Billion Problem",
+  "hook_why": "It uses 'The Question' formula to pair a trivial, low-cost commodity (snack cake) with a massive, high-stakes financial figure ($5 billion), creating immediate curiosity through contrast.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did this 80-cent snack cake become a $5 billion problem for Wall Street?",
+    "shown": "Close-up macro shot of a Twinkie with bold red text: 80¢ vs $5,000,000,000."
+   },
+   {
+    "t": "3-10s",
+    "said": "It started when private equity firms loaded the company with $2 billion in debt they couldn't pay back.",
+    "shown": "Rapid scroll through a boring SEC filing with a yellow highlighter hitting the 'Total Debt' line."
+   },
+   {
+    "t": "10-20s",
+    "said": "The business went bankrupt twice, proving that even a product that never expires can still have a sell-by date on its stock.",
+    "shown": "Archive footage of a factory closing split-screen with a downward-trending stock chart."
+   },
+   {
+    "t": "20-30s",
+    "said": "But a new owner streamlined the logistics and sold the brand for $5.6 billion in one of the biggest exits in food history.",
+    "shown": "Clean, modern bar chart showing the valuation jump from 2013 to 2023."
+   },
+   {
+    "t": "30-40s",
+    "said": "This is why everyday brands are often the most complex trades in your portfolio. Follow for why stocks moved today.",
+    "shown": "Talking head or stock app mockup showing the 'Why Stocks Moved' logo and a 'Follow' button."
+   }
+  ],
+  "pacing": "High-velocity 'Micro-Economics' style; cuts occur every 1.5 to 2.2 seconds to maintain high retention during data-heavy segments.",
+  "visual_technique": "The 'Contrast Format'—alternating between low-fidelity physical products and high-fidelity financial charts to make complex macro data feel accessible.",
+  "reusable_moves": [
+   "The Absurd Contrast: Pairing a familiar household object with a non-obvious, massive valuation.",
+   "The Hidden Mechanism: Explaining the 'How' behind a corporate failure or success using public data.",
+   "PDF Anchoring: Zooming into specific numbers on official documents to provide 'proof' and authority."
+  ],
+  "remake_plan": "How Costco’s $1.50 hot dog helped build a $400 billion retail empire—and what it means for your portfolio before you trade today."
+ },
+ "video_id": "OMa-bZCEo8w",
+ "publish_at": "2026-10-02T17:00:00Z"
+}

@@ -18,3 +18,6 @@
 - [[2026-10-01-amazon-locked-20-year-nuclear-deal]] — SHARE · hook 72
 - [[2026-10-01-gold-fell-2-38-to-4-195-90-this-week]] — SAVE · hook 75
 - [[2026-10-01-tesla-dropped-6-66-today]] — FOLLOW · hook 72
+- [[2026-10-02-nvidia-gained-2-80-this-week]] — SHARE · hook 72
+- [[2026-10-02-gold-fell-2-42-down-to-4-216-80]] — SAVE · hook 71
+- [[2026-10-02-dollar-up-0-86-as-commodities-slide]] — FOLLOW · hook 77
