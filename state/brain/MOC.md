@@ -21,3 +21,6 @@
 - [[2026-10-02-nvidia-gained-2-80-this-week]] — SHARE · hook 72
 - [[2026-10-02-gold-fell-2-42-down-to-4-216-80]] — SAVE · hook 71
 - [[2026-10-02-dollar-up-0-86-as-commodities-slide]] — FOLLOW · hook 77
+- [[2026-10-03-tesla-up-4-65-to-370]] — SHARE · hook 84
+- [[2026-10-03-wti-crude-oil-drops-1-90-to-91-11]] — SAVE · hook 84
+- [[2026-10-03-nasdaq-up-1-19-while-dow-lags-behind]] — FOLLOW · hook 86

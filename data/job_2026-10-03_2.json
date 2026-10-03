@@ -1,0 +1,152 @@
+{
+ "idea": {
+  "idea": "Why is the Nasdaq outperforming with a 1.19% gain to 27,190.86 while the Dow only climbed 0.49%? Don't fall behind on the massive divergence happening in tech.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO",
+  "formula": "The Question",
+  "ticker": "^IXIC",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "The single tech giant driving over half of the Nasdaq's 1.19% performance gap is withheld until the end of the video.",
+  "data_points": [
+   "Nasdaq price: 27190.86",
+   "Nasdaq 1-day change: +1.19%",
+   "Dow price: 51176.96",
+   "Dow 1-day change: +0.49%"
+  ]
+ },
+ "hook": {
+  "hook": "Why are your tech stocks surging 1.19% to 27,190 while the Dow climbs a mere 0.49% before you lose money?",
+  "properties": {
+   "SPECIFICITY": 100,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 86,
+  "band": "STRONG",
+  "formula": "The Statistic",
+  "on_screen": "TECH INDEX GAP"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why are your tech stocks surging 1.19% to 27,190 while the Dow climbs a mere 0.49% before you lose money?",
+    "osd": "TECH INDEX GAP",
+    "emphasis": "GAP",
+    "visual": "compare",
+    "ticker": "^IXIC",
+    "compare_with": "^DJI"
+   },
+   {
+    "say": "Nasdaq hit 27,190.86 today, leaving traditional index funds behind as tech leaders push ahead.",
+    "osd": "NASDAQ LEADS",
+    "emphasis": "LEADS",
+    "visual": "chart",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "The Dow managed only a 0.49% climb to 51,176.96, showing a wide performance split across the board.",
+    "osd": "DOW LAGS",
+    "emphasis": "LAGS",
+    "visual": "compare",
+    "ticker": "^DJI",
+    "compare_with": "^IXIC"
+   },
+   {
+    "say": "This massive gap means your index weighting dictates whether your portfolio wins or stalls this week.",
+    "osd": "PORTFOLIO STAKES",
+    "emphasis": "STAKES",
+    "visual": "text",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Not financial advice. Subscribe to Why Stocks Moved for daily market breakdowns.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "^IXIC"
+   }
+  ],
+  "word_count": 79,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nasdaq up 1.19% while Dow lags behind",
+  "chars": 37,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "37 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (1.19%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "TECH SPLIT",
+  "visual_brief": "Split screen showing Nasdaq surging in green versus the Dow flatlining in red, keeping text in the center clear of the top 12% and bottom 20% UI layers."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Nasdaq up 1.19%",
+    "Nasdaq vs Dow performance",
+    "Why is Nasdaq outperforming Dow"
+   ],
+   "description": "Why is the Nasdaq outperforming with a 1.19% gain to 27,190.86 while the Dow only climbed 0.49%? See why this market divergence impacts your portfolio.\n\nNot financial advice.\n\n#shorts #nasdaq #dowjones #stocks",
+   "tags": [
+    "Nasdaq",
+    "Dow Jones",
+    "stock market divergence",
+    "Nasdaq up 1.19",
+    "tech stocks",
+    "index funds",
+    "market split",
+    "Why Stocks Moved",
+    "stock market today",
+    "US stocks"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How does Costco make almost zero profit on gasoline, but its stock still surged to a four hundred billion dollar valuation before you buy shares?",
+  "hook_why": "It uses a familiar consumer product (cheap gas) to present a non-obvious corporate mechanism (membership model driving a $400B valuation gap), instantly triggering curiosity and FOMO.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How does Costco make almost zero profit on gasoline, but its stock still surged to a four hundred billion dollar valuation before you buy shares?",
+    "shown": "Moving stock chart of COST rising, with a giant overlay of a gas pump icon and '$0.00 Profit' text."
+   },
+   {
+    "t": "3-10s",
+    "said": "Most stations live and die by gas margins. But Costco uses cheap fuel as a loss leader to get you past the pump and inside the warehouse.",
+    "shown": "A split screen showing a gas pump cutting rapidly to a Costco warehouse floor chart showing foot traffic correlation."
+   },
+   {
+    "t": "10-18s",
+    "said": "Once you are inside, the real magic happens. Ninety percent of Costco’s actual operating income doesn't come from selling goods—it comes from membership fees.",
+    "shown": "A clean bar chart breaking down Costco's revenue vs. net profit from membership fees, highlighting 90% in bright yellow."
+   },
+   {
+    "t": "18-26s",
+    "said": "That recurring fee revenue is highly predictable, which is why Wall Street values this stock at a premium compared to traditional retail giants.",
+    "shown": "Chart comparing COST valuation multiples against Walmart and Target, highlighting Costco's massive premium."
+   },
+   {
+    "t": "26-33s",
+    "said": "This is not financial advice, but when you look at retail stocks, look at what drives the foot traffic, not just the sticker price.",
+    "shown": "Zooming out of the COST stock chart to show the final CTA: 'Subscribe to Why Stocks Moved'."
+   }
+  ],
+  "pacing": "High-velocity cuts every 3-4 seconds. Pacing is fast and structured to hold attention, slowing down slightly at the 18s mark to explain the valuation multiple before the quick wrap-up.",
+  "visual_technique": "Split-screen comparison, clean line charts, bright highlighter overlays on SEC filing data, and a moving stock chart from frame zero.",
+  "reusable_moves": [
+   "The Everyday Contrast: Open with an incredibly cheap consumer item to explain a massive, high-valuation stock movement.",
+   "The Margin Trap: Pivot from low product margins to high-margin recurring revenue models that Wall Street actually prices in.",
+   "The Chart First Rule: Start with a moving ticker chart at frame zero to signal immediate financial relevance."
+  ],
+  "remake_plan": "Remake the $5B Twinkies problem into a Costco gas-to-membership stock teardown, using a moving COST chart at frame zero to explain why low-margin fuel drives a $400B market cap."
+ },
+ "video_id": "jxJcqoU2NJo",
+ "publish_at": "2026-10-03T22:30:00Z"
+}

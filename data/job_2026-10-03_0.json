@@ -1,0 +1,157 @@
+{
+ "idea": {
+  "idea": "Why did Tesla stock surge 4.65% today to $370.59 despite sliding over the last five days? Let's break down the hidden expectation game Wall Street is playing.",
+  "goal": "SHARE",
+  "emotion": "Status",
+  "formula": "The Statistic",
+  "ticker": "TSLA",
+  "structure_from": "https://www.youtube.com/shorts/xT_4wGCKl_8",
+  "payoff_withheld_until_end": "The exact delivery numbers and the street's whisper expectations that drove the 4.65% reversal are withheld until the final 5 seconds.",
+  "data_points": [
+   "Tesla price: 370.59",
+   "Tesla 1-day change: +4.65%",
+   "Tesla 5-day change: -0.41%"
+  ]
+ },
+ "hook": {
+  "hook": "How did your Tesla stock jump 4.65% today to $370.59 before you lose your portfolio?",
+  "properties": {
+   "SPECIFICITY": 79,
+   "ADDRESS": 100,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 84,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Tesla Stock Jumps 4.65%"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "How did your Tesla stock jump 4.65% today to $370.59 before you lose your portfolio?",
+    "osd": "Tesla Stock Jumps 4.65%",
+    "emphasis": "Tesla",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Traders panicked as shares slid zero point four one percent this week, but today's jump caught everyone off guard.",
+    "osd": "Down 0.41% over five days",
+    "emphasis": "five",
+    "visual": "compare",
+    "ticker": "TSLA",
+    "compare_with": "^IXIC"
+   },
+   {
+    "say": "Why did this pivot happen? No official headlines explain it, but the market's momentum is clearly shifting.",
+    "osd": "Why did this pivot happen",
+    "emphasis": "pivot",
+    "visual": "text",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "The Nasdaq climbed one point one nine percent today, lifting big tech stocks with it.",
+    "osd": "Nasdaq climbed 1.19% today",
+    "emphasis": "Nasdaq",
+    "visual": "counter",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Tesla reversed its five day drop, surging right back to three hundred seventy dollars and fifty nine cents.",
+    "osd": "Reversal back to 370.59",
+    "emphasis": "370.59",
+    "visual": "counter",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Not financial advice, share this with a trader before asking...",
+    "osd": "Not financial advice",
+    "emphasis": "advice",
+    "visual": "text",
+    "ticker": "TSLA"
+   }
+  ],
+  "word_count": 94,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Tesla up 4.65% to $370",
+  "chars": 22,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "22 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (4.65%, 370)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "WALL STREET GAME",
+  "visual_brief": "A clean line chart showing 5 days of a red downward slope, ending in a sharp neon-green vertical breakout. Large yellow text 'WALL STREET GAME' centered horizontally, positioned to avoid the top 12% and bottom 20% UI overlays."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why did tesla stock go up today",
+    "tesla stock surge 370",
+    "tsla stock reversal"
+   ],
+   "description": "Why did Tesla stock surge 4.65% to $370 today after dropping all week? We look at the Nasdaq momentum and why TSLA shares suddenly reversed. Not financial advice. #shorts",
+   "tags": [
+    "tesla stock",
+    "tsla",
+    "why did tesla stock go up",
+    "tesla news today",
+    "tsla stock analysis",
+    "tesla 370",
+    "why stocks moved",
+    "nasdaq",
+    "big tech stocks",
+    "stock market today"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How does Costco make almost zero profit on gasoline, but its stock still surged to a four hundred billion dollar valuation before you buy shares?",
+  "hook_why": "It uses a familiar consumer product (cheap gas) to present a non-obvious corporate mechanism (membership model driving a $400B valuation gap), instantly triggering curiosity and FOMO.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How does Costco make almost zero profit on gasoline, but its stock still surged to a four hundred billion dollar valuation before you buy shares?",
+    "shown": "Moving stock chart of COST rising, with a giant overlay of a gas pump icon and '$0.00 Profit' text."
+   },
+   {
+    "t": "3-10s",
+    "said": "Most stations live and die by gas margins. But Costco uses cheap fuel as a loss leader to get you past the pump and inside the warehouse.",
+    "shown": "A split screen showing a gas pump cutting rapidly to a Costco warehouse floor chart showing foot traffic correlation."
+   },
+   {
+    "t": "10-18s",
+    "said": "Once you are inside, the real magic happens. Ninety percent of Costco’s actual operating income doesn't come from selling goods—it comes from membership fees.",
+    "shown": "A clean bar chart breaking down Costco's revenue vs. net profit from membership fees, highlighting 90% in bright yellow."
+   },
+   {
+    "t": "18-26s",
+    "said": "That recurring fee revenue is highly predictable, which is why Wall Street values this stock at a premium compared to traditional retail giants.",
+    "shown": "Chart comparing COST valuation multiples against Walmart and Target, highlighting Costco's massive premium."
+   },
+   {
+    "t": "26-33s",
+    "said": "This is not financial advice, but when you look at retail stocks, look at what drives the foot traffic, not just the sticker price.",
+    "shown": "Zooming out of the COST stock chart to show the final CTA: 'Subscribe to Why Stocks Moved'."
+   }
+  ],
+  "pacing": "High-velocity cuts every 3-4 seconds. Pacing is fast and structured to hold attention, slowing down slightly at the 18s mark to explain the valuation multiple before the quick wrap-up.",
+  "visual_technique": "Split-screen comparison, clean line charts, bright highlighter overlays on SEC filing data, and a moving stock chart from frame zero.",
+  "reusable_moves": [
+   "The Everyday Contrast: Open with an incredibly cheap consumer item to explain a massive, high-valuation stock movement.",
+   "The Margin Trap: Pivot from low product margins to high-margin recurring revenue models that Wall Street actually prices in.",
+   "The Chart First Rule: Start with a moving ticker chart at frame zero to signal immediate financial relevance."
+  ],
+  "remake_plan": "Remake the $5B Twinkies problem into a Costco gas-to-membership stock teardown, using a moving COST chart at frame zero to explain why low-margin fuel drives a $400B market cap."
+ },
+ "video_id": "HGF2Gd8kW1M",
+ "publish_at": "2026-10-03T13:30:00Z"
+}

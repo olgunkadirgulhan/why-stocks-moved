@@ -1,0 +1,153 @@
+{
+ "idea": {
+  "idea": "What happens to your index funds when WTI crude oil drops 1.90% to $91.11? Here is the 3-step checklist to save for your next portfolio review.",
+  "goal": "SAVE",
+  "emotion": "Relief",
+  "formula": "The Question",
+  "ticker": "CL=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The exact historical correlation percentage between a falling oil price and retail sector margin relief is withheld until the final step.",
+  "data_points": [
+   "Oil price: 91.11",
+   "Oil 1-day change: -1.90%",
+   "Oil 5-day change: -1.41%"
+  ]
+ },
+ "hook": {
+  "hook": "What happens to your index funds when WTI crude oil drops 1.90% to $91.11 before you lose money?",
+  "properties": {
+   "SPECIFICITY": 84,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 84,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "OIL DROPS 1.90%"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What happens to your index funds when WTI crude oil drops 1.90% to $91.11 before you lose money?",
+    "osd": "OIL DROPS 1.90%",
+    "emphasis": "DROPS",
+    "visual": "chart",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Most investors panic when energy prices slide, missing the hidden margin relief flowing straight into retail index holdings.",
+    "osd": "MARGIN RELIEF",
+    "emphasis": "RELIEF",
+    "visual": "compare",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "When WTI crude falls 1.41% over five days down to $91.11, transportation costs shrink for every major consumer basket.",
+    "osd": "DOWN TO $91.11",
+    "emphasis": "$91.11",
+    "visual": "counter",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "That means lower operating overhead for your S&P 500 index funds, protecting your portfolio from sudden shocks.",
+    "osd": "PROTECT YOUR PORTFOLIO",
+    "emphasis": "PROTECT",
+    "visual": "chart",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "This is not financial advice, but when you review your assets, remember lower oil costs drive margin relief. Subscribe to Why Stocks Moved.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "CL=F"
+   }
+  ],
+  "word_count": 95,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "WTI crude oil drops 1.90% to $91.11",
+  "chars": 35,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "35 characters, inside the 60-character desktop cut",
+   "1 all-caps word for emphasis",
+   "carries a concrete figure (1.90%, 91.11)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "INDEX RISK",
+  "visual_brief": "Split screen showing WTI crude price chart sliding downward in red, with a clean index fund balance overlay. Background uses dark contrast with high-visibility white and red font."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "WTI crude oil drops 1.90% to $91.11",
+    "crude oil price drop index funds portfolio impact",
+    "WTI crude price today analysis"
+   ],
+   "description": "See why WTI crude oil drops 1.90% to $91.11 and what energy price shifts mean for your index funds.\nNot financial advice. \n\n#shorts #oilprice #stockmarket #investing",
+   "tags": [
+    "WTI crude",
+    "oil price drop",
+    "crude oil analysis",
+    "index funds",
+    "S&P 500",
+    "energy prices",
+    "portfolio protection",
+    "market news",
+    "investing basics",
+    "commodity prices",
+    "macro economics",
+    "stock market news",
+    "why stocks moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How does Costco make almost zero profit on gasoline, but its stock still surged to a four hundred billion dollar valuation before you buy shares?",
+  "hook_why": "It uses a familiar consumer product (cheap gas) to present a non-obvious corporate mechanism (membership model driving a $400B valuation gap), instantly triggering curiosity and FOMO.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How does Costco make almost zero profit on gasoline, but its stock still surged to a four hundred billion dollar valuation before you buy shares?",
+    "shown": "Moving stock chart of COST rising, with a giant overlay of a gas pump icon and '$0.00 Profit' text."
+   },
+   {
+    "t": "3-10s",
+    "said": "Most stations live and die by gas margins. But Costco uses cheap fuel as a loss leader to get you past the pump and inside the warehouse.",
+    "shown": "A split screen showing a gas pump cutting rapidly to a Costco warehouse floor chart showing foot traffic correlation."
+   },
+   {
+    "t": "10-18s",
+    "said": "Once you are inside, the real magic happens. Ninety percent of Costco’s actual operating income doesn't come from selling goods—it comes from membership fees.",
+    "shown": "A clean bar chart breaking down Costco's revenue vs. net profit from membership fees, highlighting 90% in bright yellow."
+   },
+   {
+    "t": "18-26s",
+    "said": "That recurring fee revenue is highly predictable, which is why Wall Street values this stock at a premium compared to traditional retail giants.",
+    "shown": "Chart comparing COST valuation multiples against Walmart and Target, highlighting Costco's massive premium."
+   },
+   {
+    "t": "26-33s",
+    "said": "This is not financial advice, but when you look at retail stocks, look at what drives the foot traffic, not just the sticker price.",
+    "shown": "Zooming out of the COST stock chart to show the final CTA: 'Subscribe to Why Stocks Moved'."
+   }
+  ],
+  "pacing": "High-velocity cuts every 3-4 seconds. Pacing is fast and structured to hold attention, slowing down slightly at the 18s mark to explain the valuation multiple before the quick wrap-up.",
+  "visual_technique": "Split-screen comparison, clean line charts, bright highlighter overlays on SEC filing data, and a moving stock chart from frame zero.",
+  "reusable_moves": [
+   "The Everyday Contrast: Open with an incredibly cheap consumer item to explain a massive, high-valuation stock movement.",
+   "The Margin Trap: Pivot from low product margins to high-margin recurring revenue models that Wall Street actually prices in.",
+   "The Chart First Rule: Start with a moving ticker chart at frame zero to signal immediate financial relevance."
+  ],
+  "remake_plan": "Remake the $5B Twinkies problem into a Costco gas-to-membership stock teardown, using a moving COST chart at frame zero to explain why low-margin fuel drives a $400B market cap."
+ },
+ "video_id": "BBgp9erUo-E",
+ "publish_at": "2026-10-03T17:00:00Z"
+}
