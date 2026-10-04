@@ -1,0 +1,164 @@
+{
+ "idea": {
+  "idea": "Breakdown of Tesla's 4.65% surge using the delivery beat statistic to explain the price movement.",
+  "goal": "SHARE",
+  "emotion": "Awe",
+  "formula": "The Statistic",
+  "ticker": "TSLA",
+  "structure_from": "https://www.youtube.com/shorts/xT_4wGCKl_8",
+  "payoff_withheld_until_end": "The exact 'beat' number (486,532 deliveries) that triggered the 4.65% rally is withheld until the final 5 seconds.",
+  "data_points": [
+   "Tesla price: $370.59",
+   "Change: +4.65%",
+   "News: 486,532 vehicle deliveries topped expectations"
+  ]
+ },
+ "hook": {
+  "hook": "Why is your Tesla stock up 4.65% to $370.59 today before you risk your portfolio on bad data?",
+  "properties": {
+   "SPECIFICITY": 79,
+   "ADDRESS": 100,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 84,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Tesla Up to $370.59"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why is your Tesla stock up 4.65% to $370.59 today before you risk your portfolio on bad data?",
+    "osd": "Tesla Up to $370.59",
+    "emphasis": "UP",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "The Nasdaq is gaining 1.19 percent but Tesla is moving four times faster.",
+    "osd": "Tesla Outpacing the Nasdaq",
+    "emphasis": "OUTPACING",
+    "visual": "compare",
+    "ticker": "TSLA",
+    "compare_with": "^IXIC"
+   },
+   {
+    "say": "You need to see this delivery count because it just crushed expectations.",
+    "osd": "One Number Changed Everything",
+    "emphasis": "EVERYTHING",
+    "visual": "text"
+   },
+   {
+    "say": "Analysts were bracing for a miss but today's reports say actual volume was massive.",
+    "osd": "Crushing Wall Street Expectations",
+    "emphasis": "CRUSHING",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Tesla just confirmed 486,532 vehicle deliveries to top every major forecast.",
+    "osd": "486,532 Deliveries Topped Forecasts",
+    "emphasis": "486,532",
+    "visual": "counter"
+   },
+   {
+    "say": "This one statistic explains why the stock is surging while others lag.",
+    "osd": "Why Tesla Is Surging Today",
+    "emphasis": "SURGING",
+    "visual": "list"
+   },
+   {
+    "say": "Share this with a trader and follow for the real moves. Not financial advice.",
+    "osd": "Not financial advice",
+    "emphasis": "ADVICE",
+    "visual": "text"
+   }
+  ],
+  "word_count": 94,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Tesla up 4.65% to $370",
+  "chars": 22,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "22 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (4.65%, 370)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "DELIVERY BEAT",
+  "visual_brief": "A Tesla logo in white on a dark background with a neon green line chart breaking through a horizontal resistance level."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why is tesla stock up today",
+    "tesla q3 delivery beat results",
+    "TSLA stock price 370 news"
+   ],
+   "description": "See why Tesla (TSLA) jumped 4.65% to $370.59 and how the 486,532 delivery beat crushed Wall Street forecasts. We break down the exact volume data that outpaced the Nasdaq and why this move happened today.\n\nNot financial advice. #shorts",
+   "tags": [
+    "Tesla",
+    "TSLA",
+    "Tesla stock news",
+    "Tesla stock price",
+    "Why is Tesla up",
+    "Tesla deliveries",
+    "Tesla delivery beat",
+    "TSLA stock analysis",
+    "Nasdaq",
+    "stock market news",
+    "Why Stocks Moved",
+    "Elon Musk",
+    "EV stocks",
+    "finance",
+    "investing"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How Costco makes zero profit on their $1.50 hot dog and why that made them a $400 billion company.",
+  "hook_why": "It uses an 'Absurd Contrast' between a trivial everyday item ($1.50 snack) and a massive corporate valuation ($400B). This creates an immediate open loop in the viewer's brain that requires the video to solve the mystery.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How Costco makes zero profit on their $1.50 hot dog and why that made them a $400 billion company.",
+    "shown": "Split screen: Close-up macro shot of a hot dog vs. a surging COST stock chart."
+   },
+   {
+    "t": "3-10s",
+    "said": "Last year, Costco lost money on food, but they cleared over $4.6 billion in pure profit from one thing: membership fees.",
+    "shown": "Chart showing 'Net Income' vs 'Membership Fee Revenue' with the membership bar towering over the other."
+   },
+   {
+    "t": "10-20s",
+    "said": "The hot dog is a loss-leader. It gets you in the door so you'll pay the annual fee, which has a 90% renewal rate.",
+    "shown": "Text on screen: '90% RENEWAL RATE' in bold green over a busy warehouse background."
+   },
+   {
+    "t": "20-30s",
+    "said": "Wall Street doesn't value them as a grocer; they value them as a subscription business like Netflix, which is why the stock trades at a massive premium.",
+    "shown": "Comparison chart: COST P/E Ratio vs. Target and Walmart P/E Ratios."
+   },
+   {
+    "t": "30-35s",
+    "said": "That’s why the stock moved today. Not financial advice. Follow for the real moves.",
+    "shown": "Final stock ticker screen with 'FOLLOW' button overlay."
+   }
+  ],
+  "pacing": "Rapid-fire 1.5s cuts for the first 5 seconds to hook, then transitioning to 3-4s beats once the 'data proof' starts to keep retention high.",
+  "visual_technique": "The 'Micro-Macro' switch: starting with a familiar consumer object and immediately cutting to a complex financial chart to establish authority.",
+  "reusable_moves": [
+   "The Value Contrast: Anchor the video on a cheap, relatable product to explain a multi-billion dollar market cap.",
+   "The Hidden Engine: Reveal the non-obvious way a famous company actually makes its money (e.g., memberships vs. sales)."
+  ],
+  "remake_plan": "Execute a 35-second breakdown of Costco’s membership-driven valuation model using the 'Everyday Micro-Economics' technique to explain why the stock outperforms traditional retail."
+ },
+ "video_id": "7AyJ4fS-8B4",
+ "publish_at": "2026-10-04T13:30:00Z"
+}

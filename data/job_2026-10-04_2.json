@@ -1,0 +1,154 @@
+{
+ "idea": {
+  "idea": "Explaining the divergence between the Nasdaq and the Dow to show where the 'smart money' moved today.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO",
+  "formula": "The Question",
+  "ticker": "^IXIC",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "The explanation that Tech outperformed Value by 2x (1.19% vs 0.49%) is withheld until the index comparison chart appears at the end.",
+  "data_points": [
+   "Nasdaq change: +1.19%",
+   "Dow Jones change: +0.49%",
+   "Nasdaq price: 27190.86"
+  ]
+ },
+ "hook": {
+  "hook": "Why is your Nasdaq up 1.19 percent to 27,190 while the Dow lags before you lose money?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 84,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Nasdaq vs Dow Divergence"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why is your Nasdaq up 1.19 percent to 27,190 while the Dow lags before you lose money?",
+    "osd": "Nasdaq 27,190 vs Dow Lag",
+    "emphasis": "LAG",
+    "visual": "chart",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "While traditional industrial stocks are barely moving, tech leaders like Tesla and Nvidia are pulling the entire market higher.",
+    "osd": "Big Tech Leads the Market",
+    "emphasis": "LEADS",
+    "visual": "list",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "You have to watch this divergence closely because it shows exactly where the capital is flowing today.",
+    "osd": "Watch the Capital Flow",
+    "emphasis": "CAPITAL",
+    "visual": "text",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "The data shows the Nasdaq jumped 1.19 percent, which is more than double the Dow Jones climb of 0.49 percent.",
+    "osd": "Nasdaq 1.19% vs Dow 0.49%",
+    "emphasis": "VS",
+    "visual": "compare",
+    "ticker": "^IXIC",
+    "compare_with": "^DJI"
+   },
+   {
+    "say": "That is why the market moved today. Not financial advice. Follow for the real moves.",
+    "osd": "Not financial advice",
+    "emphasis": "ADVICE",
+    "visual": "text",
+    "ticker": "^IXIC"
+   }
+  ],
+  "word_count": 88,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nasdaq up 1.19% vs Dow lagging",
+  "chars": 30,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "30 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (1.19%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "SMART MONEY SHIFT",
+  "visual_brief": "Neutral expression, medium shot. Text in neon yellow on a dark blue line chart background to hold contrast."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why is nasdaq up and dow down today",
+    "nasdaq vs dow jones divergence",
+    "why tech stocks are rising today"
+   ],
+   "description": "See exactly why the Nasdaq surged 1.19% while the Dow Jones lagged behind today. We break down the capital flow into big tech leaders like Tesla and Nvidia to show you where the market is moving. Not financial advice. #shorts",
+   "tags": [
+    "Nasdaq",
+    "Dow Jones",
+    "DJI",
+    "IXIC",
+    "stock market today",
+    "why stocks moved",
+    "tech stocks",
+    "Nvidia",
+    "Tesla",
+    "market divergence",
+    "investing",
+    "stock news",
+    "market analysis",
+    "capital flow",
+    "finance"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How Costco makes zero profit on their $1.50 hot dog and why that made them a $400 billion company.",
+  "hook_why": "It uses an 'Absurd Contrast' between a trivial everyday item ($1.50 snack) and a massive corporate valuation ($400B). This creates an immediate open loop in the viewer's brain that requires the video to solve the mystery.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How Costco makes zero profit on their $1.50 hot dog and why that made them a $400 billion company.",
+    "shown": "Split screen: Close-up macro shot of a hot dog vs. a surging COST stock chart."
+   },
+   {
+    "t": "3-10s",
+    "said": "Last year, Costco lost money on food, but they cleared over $4.6 billion in pure profit from one thing: membership fees.",
+    "shown": "Chart showing 'Net Income' vs 'Membership Fee Revenue' with the membership bar towering over the other."
+   },
+   {
+    "t": "10-20s",
+    "said": "The hot dog is a loss-leader. It gets you in the door so you'll pay the annual fee, which has a 90% renewal rate.",
+    "shown": "Text on screen: '90% RENEWAL RATE' in bold green over a busy warehouse background."
+   },
+   {
+    "t": "20-30s",
+    "said": "Wall Street doesn't value them as a grocer; they value them as a subscription business like Netflix, which is why the stock trades at a massive premium.",
+    "shown": "Comparison chart: COST P/E Ratio vs. Target and Walmart P/E Ratios."
+   },
+   {
+    "t": "30-35s",
+    "said": "That’s why the stock moved today. Not financial advice. Follow for the real moves.",
+    "shown": "Final stock ticker screen with 'FOLLOW' button overlay."
+   }
+  ],
+  "pacing": "Rapid-fire 1.5s cuts for the first 5 seconds to hook, then transitioning to 3-4s beats once the 'data proof' starts to keep retention high.",
+  "visual_technique": "The 'Micro-Macro' switch: starting with a familiar consumer object and immediately cutting to a complex financial chart to establish authority.",
+  "reusable_moves": [
+   "The Value Contrast: Anchor the video on a cheap, relatable product to explain a multi-billion dollar market cap.",
+   "The Hidden Engine: Reveal the non-obvious way a famous company actually makes its money (e.g., memberships vs. sales)."
+  ],
+  "remake_plan": "Execute a 35-second breakdown of Costco’s membership-driven valuation model using the 'Everyday Micro-Economics' technique to explain why the stock outperforms traditional retail."
+ },
+ "video_id": "736DmP060Z8",
+ "publish_at": "2026-10-04T22:30:00Z"
+}
