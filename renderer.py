@@ -4,6 +4,7 @@ md'deki Remotion `FinanceShort` / `DailyRecap` composition'larının yerini tuta
 script.beats[].say / osd / emphasis / visual (+ opsiyonel ticker). Node/Chrome gerektirmez.
 Frame 0 her zaman hareketli grafik; "Yatırım Tavsiyesi Değildir" her karede sabit.
 """
+import datetime
 import asyncio, os, re, shutil, subprocess
 
 from PIL import Image, ImageDraw, ImageFont
@@ -377,10 +378,12 @@ def recap_beats(market_snapshot):
     else:
         yon = lambda v: "up" if v >= 0 else "down"
         pct = lambda v: fmt_num(abs(v), 2) + " percent"
-        beats = [{"say": f"Your market recap. The biggest mover today is {s['name']}, {yon(v0)} {pct(v0)}.",
-                  "osd": f"{s['name']} leads today", "emphasis": first, "visual": "chart", "ticker": star}]
-        line = lambda v: f"{v['name']} is {yon(v['change_pct'])} {pct(v['change_pct'])} today, and {yon(v['change_5d_pct'])} {pct(v['change_5d_pct'])} on the week."
-        outro = {"say": "That's the whole board. Follow so you catch tomorrow's recap.", "osd": "Today's board", "emphasis": "board"}
+        # veri bir önceki işlem gününün kapanışı (hafta sonu = Cuma): "today" denmez, gün adı söylenir
+        day = datetime.date.fromisoformat(s["as_of"]).strftime("%A") if s.get("as_of") else "the last session"
+        beats = [{"say": f"Your market recap. The biggest mover on {day} was {s['name']}, {yon(v0)} {pct(v0)}.",
+                  "osd": f"{s['name']} led {day}", "emphasis": first, "visual": "chart", "ticker": star}]
+        line = lambda v: f"{v['name']} was {yon(v['change_pct'])} {pct(v['change_pct'])} on {day}, and {yon(v['change_5d_pct'])} {pct(v['change_5d_pct'])} on the week."
+        outro = {"say": "That's the whole board. Follow so you catch the next recap.", "osd": f"{day}'s board", "emphasis": "board"}
     for k in keys[1:5]:
         v = m[k]
         beats.append({"say": line(v), "osd": f"{v['name']} {pct_str(v['change_pct'], 2)}",

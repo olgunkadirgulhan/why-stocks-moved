@@ -50,8 +50,12 @@ def market_snapshot():
 
 def market_brief(snap):
     """LLM'e giden hali: seri yok, sadece rakamlar (token tasarrufu)."""
-    return {k: {x: v.get(x) for x in ("name", "price", "change_pct", "change_5d_pct", "as_of", "news")}
-            for k, v in snap["tickers"].items()}
+    out = {k: {x: v.get(x) for x in ("name", "price", "change_pct", "change_5d_pct", "as_of", "news")}
+           for k, v in snap["tickers"].items()}
+    for v in out.values():                          # "on Friday" diyebilmek için kapanış günü adı
+        if v.get("as_of"):
+            v["as_of_day"] = datetime.date.fromisoformat(v["as_of"]).strftime("%A")
+    return out
 
 
 FACT_RULES = """FACT RULES (a finance channel lives or dies on this):
@@ -61,6 +65,33 @@ FACT_RULES = """FACT RULES (a finance channel lives or dies on this):
   invent one: say the cause isn't clear yet and focus on what the move means for the viewer.
 - Never claim fund flows, trading volume, institutional buying, insider activity, analyst actions or
   predictions unless a headline in the data says exactly that. No price targets, no buy/sell advice."""
+
+
+STALE_RE = re.compile(r"\b(today|tonight|this morning|right now)\b|\bbugün\b", re.I)
+
+
+def covered_moves(days=10):
+    """Son günlerde video yapılmış (varlık, kapanış günü) çiftleri: aynı hareket ikinci kez anlatılmaz.
+    Hafta sonu ve Pazartesi sabahı veri hâlâ Cuma kapanışı; eskiden Cuma'nın hareketi 3 gün üst üste yükleniyordu."""
+    out = set()
+    since = datetime.date.today() - datetime.timedelta(days=days)
+    for f in glob.glob(str(DATA / "job_*.json")):
+        try:
+            day = datetime.date.fromisoformat(os.path.basename(f)[4:14])
+            if day < since:
+                continue
+            job = json.loads(open(f, encoding="utf-8").read())
+            t = job.get("idea", {}).get("ticker")
+            as_of = job.get("as_of")
+            if not as_of:                              # eski kayıtlar: o günün piyasa dosyasından
+                mf = DATA / f"market_{day.isoformat()}.json"
+                if mf.exists():
+                    as_of = json.loads(mf.read_text(encoding="utf-8"))["tickers"].get(t, {}).get("as_of")
+            if t and as_of:
+                out.add((t, as_of))
+        except (ValueError, KeyError, json.JSONDecodeError):
+            continue
+    return out
 
 
 # ---------------- 1. TALEP (agent-reach → Reddit) ----------------
@@ -459,7 +490,12 @@ def produce(idea, mined, td, market):
     pkg = package(idea, script)
     if not pkg:
         return None, f"başlık kapısı (<{TITLE_MIN})"
+    spoken = " ".join([hook["hook"], pkg["title"], pkg.get("thumb", "")] + [b["say"] + " " + (b.get("osd") or "")
+                                                                         for b in script["beats"]])
+    if STALE_RE.search(spoken):                     # veri önceki kapanış: "today" yanıltıcı olur
+        return None, "eski veri için 'today' dendi"
     return {"idea": idea, "hook": hook, "script": script, "package": pkg,
+            "as_of": (market.get(idea.get("ticker")) or {}).get("as_of"),
             "platforms": {"youtube": seo(idea, pkg, script)["youtube"]}, "teardown": td}, ""
 
 
@@ -474,13 +510,14 @@ def fallback_recap(snap, i, publish_at):
         yt = {"description": f"Günün piyasa özeti: {names}.\n{DISCLAIMER}. Veriler gecikmelidir.\n#shorts",
               "tags": ["borsa", "piyasa", "kripto", "bitcoin", "altın", "dolar", "bist100", "piyasa özeti"]}
     else:
-        title = f"{m['name']} {renderer.pct_str(m['change_pct'], 2)} · Market Recap {datetime.date.today():%b %d}"
-        yt = {"description": f"Today's market recap: {names}.\n{DISCLAIMER}. Data may be delayed.\n#shorts",
+        title = f"{m['name']} {renderer.pct_str(m['change_pct'], 2)} · Market Recap {datetime.date.fromisoformat(m['as_of']):%b %d}"
+        yt = {"description": f"Market recap for the {m['as_of']} close: {names}.\n{DISCLAIMER}. Data may be delayed.\n#shorts",
               "tags": ["stock market", "market recap", "bitcoin", "crypto", "stocks", "investing", "nasdaq", "gold"]}
     vid = upload_youtube(mp4, {"title": title}, yt, publish_at)
     add_to_playlist(vid, key="recap")
     if not DRY:                                      # aynı gün başka bir çalışma ikinci özet yüklemesin
-        (DATA / f"recap_{TODAY}.json").write_text(json.dumps({"video_id": vid, "publish_at": publish_at}),
+        (DATA / f"recap_{TODAY}.json").write_text(json.dumps({"video_id": vid, "publish_at": publish_at,
+                                                              "as_of": snap["tickers"][star].get("as_of")}),
                                                    encoding="utf-8")
     return vid
 
@@ -492,6 +529,18 @@ def main():
     snap = retry(market_snapshot)
     market = market_brief(snap)
     report = []
+    global FACT_RULES
+    FACT_RULES += ('\n- DATES: each asset\'s numbers are from its last close ("as_of", weekday in "as_of_day"); '
+                   'the video is published later and markets are closed on weekends. Never write "today", '
+                   '"tonight", "this morning" or "right now". Name the day instead, e.g. "on Friday", '
+                   'or "this week" for 5-day moves.')
+    covered = covered_moves()
+    fresh = {k: v for k, v in market.items() if (k, v.get("as_of")) not in covered}
+    log(f"taze hareket: {len(fresh)}/{len(market)} (daha önce anlatılanlar: "
+        f"{sorted(k for k in market if k not in fresh)})")
+    if len(fresh) < n:
+        report.append(f"ℹ️ son kapanışlardan anlatılmamış {len(fresh)} varlık kaldı → {len(fresh)} video")
+        slots = slots[:len(fresh)]
     pool, mined, td = [], {"buckets": {}, "power_word_frequency": []}, {}
     if "--fallback-only" not in sys.argv:
         try:
@@ -502,7 +551,8 @@ def main():
                 mined = mine(outliers)
                 goals = [g for _, g in slots]
                 # slot başına 3 aday fikir (1 asıl + 2 yedek)
-                pool = retry(pick_ideas, outliers, td, dem, market, goals * 3)
+                pool = retry(pick_ideas, outliers, td, dem, fresh, goals * 3) if goals else []
+                pool = [x for x in pool if x.get("ticker") in fresh]   # anlatılmış hareket tekrar edilmez
                 log(f"fikir havuzu: {len(pool)}")
             else:
                 report.append("⚠️ Hiç outlier yok (channels.txt boş ya da erişilemedi) → güvenli format")
@@ -510,7 +560,11 @@ def main():
             log(traceback.format_exc())
             report.append(f"⚠️ keşif/seçim hatası: {str(e)[:200]} → güvenli format")
     used, tickers_today, quota_hit = set(), set(), False
-    recap_done = (DATA / f"recap_{TODAY}.json").exists()
+    # aynı kapanışın özeti ikinci kez yüklenmez (hafta sonu da Cuma verisi gelir)
+    star_as_of = (snap["tickers"].get(renderer.recap_beats(snap)[1]) or {}).get("as_of")
+    recap_done = (DATA / f"recap_{TODAY}.json").exists() or any(
+        json.loads(open(f, encoding="utf-8").read()).get("as_of") == star_as_of
+        for f in glob.glob(str(DATA / "recap_*.json")))
     for i, (hhmm, goal) in enumerate(slots):
         if quota_hit:
             report.append(f"⏸ [{goal}] {hhmm} atlandı — günlük YouTube kotası doldu, yarın devam")
