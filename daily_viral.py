@@ -288,8 +288,11 @@ Power words earning their keep: {mined.get('power_word_frequency', [])[:15]}
 {retry_note}
 Write 10 hooks (spoken). At least 5 are REMIXES: keep a proven skeleton, swap ONLY power words, never
 verbatim. Use real numbers from the idea only. Each has a 3-5 word on-screen version.
+The numbers are from the last market close, not from today: never write "today", "tonight", "this morning"
+or "right now"; name the day (e.g. "on Friday") or say "this week".
 JSON: {{"hooks":[{{"line":"...","on_screen":"...","pattern":"..."}}]}}""", creative=True).get("hooks", [])
-        hooks = [h for h in hooks if isinstance(h, dict) and h.get("line")]
+        hooks = [h for h in hooks if isinstance(h, dict) and h.get("line")
+                 and not STALE_RE.search(h["line"] + " " + (h.get("on_screen") or ""))]   # eski veri: "today" yok
         if not hooks:
             continue
         by_line = {h["line"].replace("\n", " ").strip(): h for h in hooks}
