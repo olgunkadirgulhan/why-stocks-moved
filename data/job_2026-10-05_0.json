@@ -1,0 +1,151 @@
+{
+ "idea": {
+  "idea": "Why Tesla stock surged 4.65% today to $370.59, while its 5-day performance is still in the red at -0.41%. We analyze the micro-mechanic of this sharp recovery and what it means for your portfolio.",
+  "goal": "SHARE",
+  "emotion": "Status",
+  "formula": "The Question",
+  "ticker": "TSLA",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "The critical divergence point showing why the daily surge has not yet cleared the 5-day loss is withheld until the final 5 seconds.",
+  "data_points": [
+   "Tesla price: $370.59",
+   "Tesla daily change: +4.65%",
+   "Tesla 5-day change: -0.41%"
+  ]
+ },
+ "hook": {
+  "hook": "Why did your Tesla stock jump 4.65 percent to $370 while your 5-day returns stay negative before you lose money?",
+  "properties": {
+   "SPECIFICITY": 100,
+   "ADDRESS": 100,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 86,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "TSLA SURGE VS 5-DAY DROP"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did your Tesla stock jump 4.65 percent to $370 while your 5-day returns stay negative before you lose money?",
+    "osd": "TSLA SURGE VS 5-DAY DROP",
+    "emphasis": "TSLA",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Tesla shares spiked 4.65 percent today to hit $370.59. But look closer at the chart before you celebrate.",
+    "osd": "$370.59 TODAY",
+    "emphasis": "370.59",
+    "visual": "counter",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Zoom out to the 5-day view and Tesla is actually down 0.41 percent. The weekly trend is still pointing red.",
+    "osd": "5-DAY DOWN 0.41 PERCENT",
+    "emphasis": "NEGATIVE",
+    "visual": "compare",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "That daily surge did not erase the weekly drop. The momentum is fighting against a bigger downward pull.",
+    "osd": "MOMENTUM FIGHT",
+    "emphasis": "FIGHTING",
+    "visual": "text",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "That divergence is the exact reason why chasing single-day green candles can trap your portfolio. Not financial advice. Follow for daily stock breakdowns so you never trade blind.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": "TSLA"
+   }
+  ],
+  "word_count": 104,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Tesla up 4.65% to $370",
+  "chars": 22,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "22 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (4.65%, 370)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "DEAD ZONE",
+  "visual_brief": "Split screen showing a downward 5-day red candle chart on the left and a sharp green intraday spike on the right, bold red contrast frame."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Tesla stock up 4.65 today",
+    "TSLA stock price analysis",
+    "Tesla 5 day stock trend"
+   ],
+   "description": "Why Tesla stock surged 4.65% today to $370.59 while its 5-day performance remains down 0.41%. We break down the charts.\n\nNot financial advice.\n\n#shorts #tesla #tsla #stocks #stockmarket",
+   "tags": [
+    "Tesla",
+    "TSLA",
+    "Tesla stock",
+    "TSLA stock price",
+    "Tesla today",
+    "stocks",
+    "stock market",
+    "stock breakdown",
+    "market analysis",
+    "Wall Street",
+    "investing",
+    "portfolio"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How does a $1.50 hot dog protect a $400 billion stock from crashing before you risk your portfolio?",
+  "hook_why": "Note: No transcript was available for the original Twinkies video, so this model is built from its viral title and 'The Question' formula. It hooks the viewer by contrasting an ultra-familiar, dirt-cheap consumer product ($1.50 hot dog) with an absurdly large stock valuation ($400 billion) while showing a moving stock chart at frame 0.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How does a $1.50 hot dog protect a $400 billion stock from crashing before you risk your portfolio?",
+    "shown": "Close-up of a Costco hot dog cutting instantly to a moving 1-year upward chart of Costco stock (COST) with a red highlight box."
+   },
+   {
+    "t": "3-10s",
+    "said": "Costco loses money on every single hot dog they sell. But if they raise the price by even ten cents, their membership renewal rate drops.",
+    "shown": "Text on screen: 'LOSING MONEY ON PURPOSE'. Split-screen showing a Costco food court receipt vs. a membership card graphic highlighting the 90% renewal rate."
+   },
+   {
+    "t": "10-18s",
+    "said": "That membership fee is where Costco makes 70 percent of its actual profit. The cheap food is just a psychological trap to get you inside.",
+    "shown": "Pie chart breaking down Costco's profit: Membership Fees (72%) vs. Product Margins. Highlight on the Membership slice."
+   },
+   {
+    "t": "18-26s",
+    "said": "And once you're inside, you spend an average of 140 dollars on high-margin groceries. That's why Costco stock climbed over 40 percent this year.",
+    "shown": "Costco stock chart zooming in on the recent 40% run-up, with on-screen text: '+42% THIS YEAR'."
+   },
+   {
+    "t": "26-30s",
+    "said": "Not financial advice. Follow for daily stock breakdowns so you never trade blind.",
+    "shown": "Disclaimer text: 'Not financial advice' at the bottom. Bold CTA text: 'FOLLOW FOR DAILY STOCKS'."
+   }
+  ],
+  "pacing": "Ultra-fast cuts every 3-4 seconds to maintain high visual stimulation. The narrative speeds up during the core 'membership trap' explanation to build tension, then slows down slightly to deliver the stock performance data.",
+  "visual_technique": "Everyday Brand 'Micro-Economics' Teardown. Uses split-screen contrast: consumer food products on one side, and corporate financial data/charts on the other. Fully captioned with bold high-contrast text for silent viewers.",
+  "reusable_moves": [
+   "The Low-to-High Contrast: Pair an incredibly cheap consumer item ($1.50) with a massive stock valuation ($400B) to spark instant curiosity.",
+   "The Loss-Leader Pivot: Expose the hidden negative margins of a popular product, then connect it directly to the parent company's stock performance.",
+   "Psychology over Finance: Explain the human behavior behind corporate earnings instead of using dry, technical market jargon."
+  ],
+  "remake_plan": "Recreate the Twinkies micro-economics teardown style by analyzing Costco's $1.50 hot dog model, showing how the loss-leader drives membership retention and fuels the COST stock chart."
+ },
+ "video_id": "-olFX-u1sPs",
+ "publish_at": "2026-10-05T13:30:00Z"
+}

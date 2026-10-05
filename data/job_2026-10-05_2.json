@@ -1,0 +1,161 @@
+{
+ "idea": {
+  "idea": "Ranking the index performance today: Nasdaq leads at +1.19% while the Dow Jones drags at +0.49% (and is down -1.26% over 5 days). Here is the exact reason why tech is splitting away from the rest of the market.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO",
+  "formula": "The Superlative",
+  "ticker": "^IXIC",
+  "structure_from": "https://www.youtube.com/shorts/K7UvJQsjMOM",
+  "payoff_withheld_until_end": "The #1 underlying asset class driving this massive divergence between Nasdaq and the Dow is revealed only in the final ranking spot.",
+  "data_points": [
+   "Nasdaq daily change: +1.19%",
+   "Dow Jones daily change: +0.49%",
+   "Dow Jones 5-day change: -1.26%"
+  ]
+ },
+ "hook": {
+  "hook": "What makes your Nasdaq lead at 1.19% while your Dow index lags at 0.49% before you lose your edge?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 100,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 85,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "WHY TECH IS SPLITTING"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What makes your Nasdaq lead at 1.19% while your Dow index lags at 0.49% before you lose your edge?",
+    "osd": "WHY TECH IS SPLITTING",
+    "emphasis": "SPLITTING",
+    "visual": "compare",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Your Nasdaq climbed to 27,190 with a 0.45% five day gain. But the Dow dropped 1.26% over five days.",
+    "osd": "DOW DROPS 1.26%",
+    "emphasis": "DROPS",
+    "visual": "compare",
+    "ticker": "^DJI"
+   },
+   {
+    "say": "Why is this divergence happening right now in your portfolio before you make a costly mistake?",
+    "osd": "MARKET DIVERGENCE",
+    "emphasis": "DIVERGENCE",
+    "visual": "chart",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Tech giants are pulling capital away from traditional industrial stocks as index leaders shift direction.",
+    "osd": "CAPITAL SHIFT",
+    "emphasis": "SHIFT",
+    "visual": "list",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "The exact asset class driving this massive Nasdaq split is revealed in today's closing index totals.",
+    "osd": "THE REAL CAUSE",
+    "emphasis": "CAUSE",
+    "visual": "counter",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Not financial advice. Follow for daily stock breakdowns so you never trade blind.",
+    "osd": "FOLLOW FOR DAILY STOCKS",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": "^IXIC"
+   }
+  ],
+  "word_count": 98,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nasdaq leads at 1.19% while Dow lags",
+  "chars": 36,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "36 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (1.19%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "TECH SPLIT",
+  "visual_brief": "Green line soaring for Nasdaq at top, red lagging Dow at bottom, dark background with high contrast bold white and yellow text, clear of top 12% and bottom 20% safe zones."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Nasdaq vs Dow performance today",
+    "Why is Nasdaq outperforming Dow",
+    "stock market index divergence today"
+   ],
+   "description": "Why the Nasdaq is leading at 1.19% while the Dow Jones lags behind and drops 1.26% over five days. Find out why tech stocks are splitting away from traditional industrials.\n\nNot financial advice.\n\n#shorts #nasdaq #dowjones #stocks #investing",
+   "tags": [
+    "Nasdaq",
+    "Dow Jones",
+    "stock market divergence",
+    "tech stocks",
+    "market split",
+    "index performance",
+    "wall street",
+    "stock market today",
+    "trading",
+    "investing",
+    "finance",
+    "stocks to watch",
+    "market update",
+    "US stocks",
+    "Why Stocks Moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How does a $1.50 hot dog protect a $400 billion stock from crashing before you risk your portfolio?",
+  "hook_why": "Note: No transcript was available for the original Twinkies video, so this model is built from its viral title and 'The Question' formula. It hooks the viewer by contrasting an ultra-familiar, dirt-cheap consumer product ($1.50 hot dog) with an absurdly large stock valuation ($400 billion) while showing a moving stock chart at frame 0.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How does a $1.50 hot dog protect a $400 billion stock from crashing before you risk your portfolio?",
+    "shown": "Close-up of a Costco hot dog cutting instantly to a moving 1-year upward chart of Costco stock (COST) with a red highlight box."
+   },
+   {
+    "t": "3-10s",
+    "said": "Costco loses money on every single hot dog they sell. But if they raise the price by even ten cents, their membership renewal rate drops.",
+    "shown": "Text on screen: 'LOSING MONEY ON PURPOSE'. Split-screen showing a Costco food court receipt vs. a membership card graphic highlighting the 90% renewal rate."
+   },
+   {
+    "t": "10-18s",
+    "said": "That membership fee is where Costco makes 70 percent of its actual profit. The cheap food is just a psychological trap to get you inside.",
+    "shown": "Pie chart breaking down Costco's profit: Membership Fees (72%) vs. Product Margins. Highlight on the Membership slice."
+   },
+   {
+    "t": "18-26s",
+    "said": "And once you're inside, you spend an average of 140 dollars on high-margin groceries. That's why Costco stock climbed over 40 percent this year.",
+    "shown": "Costco stock chart zooming in on the recent 40% run-up, with on-screen text: '+42% THIS YEAR'."
+   },
+   {
+    "t": "26-30s",
+    "said": "Not financial advice. Follow for daily stock breakdowns so you never trade blind.",
+    "shown": "Disclaimer text: 'Not financial advice' at the bottom. Bold CTA text: 'FOLLOW FOR DAILY STOCKS'."
+   }
+  ],
+  "pacing": "Ultra-fast cuts every 3-4 seconds to maintain high visual stimulation. The narrative speeds up during the core 'membership trap' explanation to build tension, then slows down slightly to deliver the stock performance data.",
+  "visual_technique": "Everyday Brand 'Micro-Economics' Teardown. Uses split-screen contrast: consumer food products on one side, and corporate financial data/charts on the other. Fully captioned with bold high-contrast text for silent viewers.",
+  "reusable_moves": [
+   "The Low-to-High Contrast: Pair an incredibly cheap consumer item ($1.50) with a massive stock valuation ($400B) to spark instant curiosity.",
+   "The Loss-Leader Pivot: Expose the hidden negative margins of a popular product, then connect it directly to the parent company's stock performance.",
+   "Psychology over Finance: Explain the human behavior behind corporate earnings instead of using dry, technical market jargon."
+  ],
+  "remake_plan": "Recreate the Twinkies micro-economics teardown style by analyzing Costco's $1.50 hot dog model, showing how the loss-leader drives membership retention and fuels the COST stock chart."
+ },
+ "video_id": "Ettwe-TTb9w",
+ "publish_at": "2026-10-05T22:30:00Z"
+}

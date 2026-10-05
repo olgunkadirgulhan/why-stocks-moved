@@ -1,0 +1,162 @@
+{
+ "idea": {
+  "idea": "How WTI crude oil dropping -1.64% to $89.62 today (and down -3.22% over 5 days) changes three major sectors in your stock portfolio. This is the 3-part survival guide for stock investors.",
+  "goal": "SAVE",
+  "emotion": "Relief",
+  "formula": "The Question",
+  "ticker": "CL=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The single most vulnerable sector that gets hit hardest by crashing oil prices is kept hidden until Step 3 at the very end.",
+  "data_points": [
+   "WTI Crude Oil price: $89.62",
+   "Oil daily change: -1.64%",
+   "Oil 5-day change: -3.22%"
+  ]
+ },
+ "hook": {
+  "hook": "What happens to your stock portfolio when WTI crude oil drops 1.64% to $89.62 before you lose money?",
+  "properties": {
+   "SPECIFICITY": 84,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 84,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "PORTFOLIO RISK"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What happens to your stock portfolio when WTI crude oil drops 1.64% to $89.62 before you lose money?",
+    "osd": "PORTFOLIO RISK",
+    "emphasis": "RISK",
+    "visual": "chart",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Oil is now down 3.22% over the last five days. Here is how that slide hits three major sectors in your stock portfolio.",
+    "osd": "THREE SECTORS",
+    "emphasis": "THREE",
+    "visual": "compare",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "First, energy producers take an immediate hit on revenue as crude margins shrink across the board.",
+    "osd": "ENERGY HIT",
+    "emphasis": "ENERGY",
+    "visual": "list",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Second, transportation and airline stocks get a temporary boost from cheaper fuel costs on their balance sheets.",
+    "osd": "AIRLINE BOOST",
+    "emphasis": "BOOST",
+    "visual": "list",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Third, the single most vulnerable sector that gets hit hardest by crashing oil prices is industrial manufacturing.",
+    "osd": "INDUSTRIAL DANGER",
+    "emphasis": "HARDEST",
+    "visual": "text",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "Not financial advice. Follow for daily stock breakdowns so you never trade blind.",
+    "osd": "NOT FINANCIAL ADVICE",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": ""
+   }
+  ],
+  "word_count": 104,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "WTI oil down 1.64% hits 3 sectors",
+  "chars": 33,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "33 characters, inside the 60-character desktop cut",
+   "1 all-caps word for emphasis",
+   "carries a concrete figure (1.64%, 3)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "ENERGY CRASH",
+  "visual_brief": "Split screen showing a red oil barrel chart on the left and a stock portfolio index falling on the right, high contrast neon red text centered safely in the middle."
+ },
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "WTI crude oil down",
+    "oil price drop stock sectors",
+    "how oil prices affect stocks"
+   ],
+   "description": "See how WTI crude oil dropping 1.64% to $89.62 impacts energy, transportation, and industrial stocks in your portfolio.\n\nNot financial advice. #shorts",
+   "tags": [
+    "WTI oil",
+    "crude oil price",
+    "oil down",
+    "stock portfolio",
+    "energy stocks",
+    "airline stocks",
+    "industrial stocks",
+    "stock market sectors",
+    "oil drop",
+    "market analysis",
+    "stocks to watch",
+    "commodity prices",
+    "macro economics",
+    "investing basics",
+    "Why Stocks Moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How does a $1.50 hot dog protect a $400 billion stock from crashing before you risk your portfolio?",
+  "hook_why": "Note: No transcript was available for the original Twinkies video, so this model is built from its viral title and 'The Question' formula. It hooks the viewer by contrasting an ultra-familiar, dirt-cheap consumer product ($1.50 hot dog) with an absurdly large stock valuation ($400 billion) while showing a moving stock chart at frame 0.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How does a $1.50 hot dog protect a $400 billion stock from crashing before you risk your portfolio?",
+    "shown": "Close-up of a Costco hot dog cutting instantly to a moving 1-year upward chart of Costco stock (COST) with a red highlight box."
+   },
+   {
+    "t": "3-10s",
+    "said": "Costco loses money on every single hot dog they sell. But if they raise the price by even ten cents, their membership renewal rate drops.",
+    "shown": "Text on screen: 'LOSING MONEY ON PURPOSE'. Split-screen showing a Costco food court receipt vs. a membership card graphic highlighting the 90% renewal rate."
+   },
+   {
+    "t": "10-18s",
+    "said": "That membership fee is where Costco makes 70 percent of its actual profit. The cheap food is just a psychological trap to get you inside.",
+    "shown": "Pie chart breaking down Costco's profit: Membership Fees (72%) vs. Product Margins. Highlight on the Membership slice."
+   },
+   {
+    "t": "18-26s",
+    "said": "And once you're inside, you spend an average of 140 dollars on high-margin groceries. That's why Costco stock climbed over 40 percent this year.",
+    "shown": "Costco stock chart zooming in on the recent 40% run-up, with on-screen text: '+42% THIS YEAR'."
+   },
+   {
+    "t": "26-30s",
+    "said": "Not financial advice. Follow for daily stock breakdowns so you never trade blind.",
+    "shown": "Disclaimer text: 'Not financial advice' at the bottom. Bold CTA text: 'FOLLOW FOR DAILY STOCKS'."
+   }
+  ],
+  "pacing": "Ultra-fast cuts every 3-4 seconds to maintain high visual stimulation. The narrative speeds up during the core 'membership trap' explanation to build tension, then slows down slightly to deliver the stock performance data.",
+  "visual_technique": "Everyday Brand 'Micro-Economics' Teardown. Uses split-screen contrast: consumer food products on one side, and corporate financial data/charts on the other. Fully captioned with bold high-contrast text for silent viewers.",
+  "reusable_moves": [
+   "The Low-to-High Contrast: Pair an incredibly cheap consumer item ($1.50) with a massive stock valuation ($400B) to spark instant curiosity.",
+   "The Loss-Leader Pivot: Expose the hidden negative margins of a popular product, then connect it directly to the parent company's stock performance.",
+   "Psychology over Finance: Explain the human behavior behind corporate earnings instead of using dry, technical market jargon."
+  ],
+  "remake_plan": "Recreate the Twinkies micro-economics teardown style by analyzing Costco's $1.50 hot dog model, showing how the loss-leader drives membership retention and fuels the COST stock chart."
+ },
+ "video_id": "p_sXAuT6rNE",
+ "publish_at": "2026-10-05T17:00:00Z"
+}

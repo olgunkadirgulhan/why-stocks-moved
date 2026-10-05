@@ -27,3 +27,6 @@
 - [[2026-10-04-tesla-up-4-65-to-370]] — SHARE · hook 84
 - [[2026-10-04-3-commodities-crashing-this-week]] — SAVE · hook 70
 - [[2026-10-04-nasdaq-up-1-19-vs-dow-lagging]] — FOLLOW · hook 84
+- [[2026-10-05-tesla-up-4-65-to-370]] — SHARE · hook 86
+- [[2026-10-05-wti-oil-down-1-64-hits-3-sectors]] — SAVE · hook 84
+- [[2026-10-05-nasdaq-leads-at-1-19-while-dow-lags]] — FOLLOW · hook 85
