@@ -137,23 +137,18 @@ def collect_api(url, api):
     return rows
 
 
-def collect_ytdlp(url):
-    j = json.loads(sh([PY, "-m", "yt_dlp", "--flat-playlist", "-J", "--playlist-end", "30", url], timeout=180))
-    ch = j.get("channel") or j.get("uploader") or url
-    return [{"channel": ch, "title": e.get("title", ""), "views": e["view_count"], "duration": e.get("duration"),
-             "url": e.get("url") or f"https://www.youtube.com/shorts/{e.get('id')}"}
-            for e in j.get("entries") or [] if e.get("view_count")]
-
-
 def discover():
     rows = []
     api = None
     if have_yt_creds():
         from googleapiclient.discovery import build
         api = build("youtube", "v3", credentials=yt_creds(), cache_discovery=False)
+    if api is None:                                                 # yt-dlp ile kazıma yok (YouTube şartları)
+        log("YouTube API yok, keşif atlandı")
+        return []
     for url in lines(STATE / "channels.txt"):
         try:
-            rows += collect_api(url, api) if api else collect_ytdlp(url)
+            rows += collect_api(url, api)
         except Exception as e:
             log(f"kanal atlandı {url}: {str(e)[:200]}")
     p = DATA / f"collected_{TODAY}.json"
@@ -174,36 +169,14 @@ def discover():
 
 
 # ---------------- 3. İNCELEME (reel-analyzer + agent-reach video) ----------------
-def transcript(url):
-    stem = DATA / f"sub_{TODAY}"
-    try:
-        sh([PY, "-m", "yt_dlp", "--write-auto-sub", "--write-sub", "--sub-lang", "en.*,tr", "--sub-format", "vtt",
-            "--skip-download", "-o", stem, url], timeout=180)
-    except Exception:
-        return ""
-    files = glob.glob(f"{stem}*.vtt")
-    if not files:
-        return ""
-    out, seen = [], set()
-    for ln in open(files[0], encoding="utf-8", errors="ignore"):
-        ln = re.sub(r"<[^>]+>", "", ln).strip()
-        if not ln or "-->" in ln or ln.startswith(("WEBVTT", "Kind:", "Language:")) or ln in seen:
-            continue
-        seen.add(ln)
-        out.append(ln)                                              # auto-sub tekrarlarını ayıkla
-    for f in files:
-        os.remove(f)
-    return " ".join(out)[:4000]
-
-
 def teardown(outlier):
-    t = transcript(outlier["url"])
     return llm(skill("oot", "reel-analyzer") + "\n\n" + context(),
                f"""Reel to model: "{outlier['title']}" ({outlier['multiple']}x its channel median, formula: {outlier['formula']}).
-Transcript: {t or "(no transcript available — work from title + formula only, say so)"}
+No transcript is used (we never download other creators' videos or captions): work from title + formula only.
 Return JSON: {{"hook":"...","hook_why":"...","beats":[{{"t":"0-3s","said":"...","shown":"..."}}],
 "pacing":"...","visual_technique":"...","reusable_moves":["...","..."],"remake_plan":"..."}}
-Model the TECHNIQUE, never reproduce the creator's words.""")
+Model the general TECHNIQUE only (pacing, hook type). Never reproduce the creator's words, title wording,
+story, or visual style: our video must not feel interchangeable with theirs.""")
 
 
 # ---------------- 4. HOOK MADENCİLİĞİ (hook-mining) ----------------

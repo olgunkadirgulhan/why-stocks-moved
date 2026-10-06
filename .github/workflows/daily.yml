@@ -96,7 +96,7 @@ jobs:
           path: ~/.cache/piper-voices
           key: piper-voices-v1
 
-      - name: Skill repos + Python deps (always latest yt-dlp / skills)
+      - name: Skill repos + Python deps
         if: steps.guard.outputs.skip != '1'
         run: |
           git clone --depth 1 https://github.com/Jakeschincariol/youtube-agent-skill.git vendor/youtube-agent-skill
