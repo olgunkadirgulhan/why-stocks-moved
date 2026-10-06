@@ -1,0 +1,433 @@
+{
+ "outliers": [
+  {
+   "channel": "The Wall Street Journal",
+   "title": "How Twinkies Became a $5 Billion Problem",
+   "views": 2196319,
+   "median": 23134,
+   "multiple": 94.94,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/QOiWrD5ZIW4"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "Russia plague: What we know about the suspected case reportedly linked to a lab worker's death",
+   "views": 156807,
+   "median": 3010,
+   "multiple": 52.09,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/f9e1wXSUwC0"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Credit Cards 💳",
+   "views": 1309116,
+   "median": 32478,
+   "multiple": 40.31,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/K7UvJQsjMOM"
+  },
+  {
+   "channel": "CNBC Make It",
+   "title": "How Costco keeps gas so cheap",
+   "views": 147030,
+   "median": 5512,
+   "multiple": 26.67,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/6f5rmIYBERY"
+  },
+  {
+   "channel": "CNBC Television",
+   "title": "All U.S. bombers leave UK air base over security concerns",
+   "views": 71391,
+   "median": 3010,
+   "multiple": 23.71,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/7HUq1ODk3nE"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Aap Konsi Car choose karoge? #car",
+   "views": 163292,
+   "median": 9505,
+   "multiple": 17.18,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Vr2j7OolrYA"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "NSE IPO 2026 Explained #nse #ipo",
+   "views": 109974,
+   "median": 9505,
+   "multiple": 11.57,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/ckkg2QL1Fis"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "What to Know About the New AI-Powered Government Website: America.gov",
+   "views": 239398,
+   "median": 23134,
+   "multiple": 10.35,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/Wb0Dlyco4Zw"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Argentine Citizenship Will Be New ‘Status Symbol’ For Wealthy Americans, Say Experts",
+   "views": 30799,
+   "median": 3055,
+   "multiple": 10.08,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/Yo_KCQe4FTI"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Buying A House In Cash?!",
+   "views": 325668,
+   "median": 32478,
+   "multiple": 10.03,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/OiSZT6xESdA"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking The BEST Money Books 📚",
+   "views": 296940,
+   "median": 32478,
+   "multiple": 9.14,
+   "formula": "The Superlative",
+   "url": "https://www.youtube.com/shorts/uYAktQIxutY"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "Jensen Huang Says These 3 Stocks Are The Future of AI",
+   "views": 196014,
+   "median": 23602,
+   "multiple": 8.3,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/MQK2MPv584M"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Candlestick Patterns Explained in 60 Seconds #candlestickpatterns",
+   "views": 74762,
+   "median": 9505,
+   "multiple": 7.87,
+   "formula": "The Clock",
+   "url": "https://www.youtube.com/shorts/X4M8zV2bSlY"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Tom Lee explains why Nvidia still isn't expensive right now.",
+   "views": 170216,
+   "median": 25238,
+   "multiple": 6.74,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/26qXd_8mYHs"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The AI bubble is about to pop",
+   "views": 104863,
+   "median": 16047,
+   "multiple": 6.53,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/f5QwNGfppco"
+  },
+  {
+   "channel": "Graham Stephan",
+   "title": "Ranking Money Habits 💰",
+   "views": 203144,
+   "median": 32478,
+   "multiple": 6.25,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/oCGxx4FHgCk"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Top Stocks Across Every Sector #stocks",
+   "views": 54724,
+   "median": 9505,
+   "multiple": 5.76,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/CyqRHkpDvKc"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "5 Best Stocks to Buy in October 2026",
+   "views": 132496,
+   "median": 23602,
+   "multiple": 5.61,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/m0EiTK6ZF5U"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why Did Everything Else Fall After Nvidia's Beat?",
+   "views": 141706,
+   "median": 25238,
+   "multiple": 5.61,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/dVQErP3KYkE"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Elon Musk Becomes A Trillionaire—Again—After SpaceX Stock Jumps",
+   "views": 16369,
+   "median": 3055,
+   "multiple": 5.36,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/x05Curic4A8"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Why September Will Be Strong for Stocks",
+   "views": 133175,
+   "median": 25238,
+   "multiple": 5.28,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/1tsqjnXhlgQ"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Mark Cuban Doubles Down On Criticism Of Humanoid Robots, Says Personal Robots Will Be ‘Optimized’",
+   "views": 15685,
+   "median": 3055,
+   "multiple": 5.13,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/-Q77yYxzlf0"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "Saturday Night Live just made fun of Dario Amodei",
+   "views": 82088,
+   "median": 16047,
+   "multiple": 5.12,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/T2JBkttXb1I"
+  },
+  {
+   "channel": "Forbes",
+   "title": "gabbygolfgirl: the trick to juggling a golf ball",
+   "views": 15455,
+   "median": 3055,
+   "multiple": 5.06,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/mh4PlTxIjKw"
+  },
+  {
+   "channel": "The Compound",
+   "title": "What Is It Going to Take to Kill This Bull Market?",
+   "views": 16929,
+   "median": 3422,
+   "multiple": 4.95,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/X7q7KEfGGuw"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "What’s at Stake for China Amid Trump-Xi Summit in Washington",
+   "views": 113733,
+   "median": 23134,
+   "multiple": 4.92,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/3_8RWHzjn3Q"
+  },
+  {
+   "channel": "MarketBeat",
+   "title": "3 AI Stocks To Buy On The Dip",
+   "views": 115175,
+   "median": 23602,
+   "multiple": 4.88,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/Hog_Rmpvgs8"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "SIP vs FD: Which One Helps Build Wealth? #sip #fd",
+   "views": 45496,
+   "median": 9505,
+   "multiple": 4.79,
+   "formula": "The Comparison",
+   "url": "https://www.youtube.com/shorts/r1HrjmkKWyU"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "How To Prepare For WW3",
+   "views": 170365,
+   "median": 36564,
+   "multiple": 4.66,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/qfznSqH05ug"
+  },
+  {
+   "channel": "Forbes",
+   "title": "Elon Musk Becomes A Trillionaire—Again—After SpaceX Stock Jumps",
+   "views": 14233,
+   "median": 3055,
+   "multiple": 4.66,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/CAtdEDEqmw8"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "\"It feels very '99 to me\" - Scott Galloway",
+   "views": 74631,
+   "median": 16047,
+   "multiple": 4.65,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/jJz5XaUy_H0"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Nvidia’s Buyback Plan",
+   "views": 15776,
+   "median": 3422,
+   "multiple": 4.61,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/B9jOvXd3JAk"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Why Adding to Losing Stocks Is a Terrible Strategy",
+   "views": 15648,
+   "median": 3422,
+   "multiple": 4.57,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/Tb9M7GGM81U"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Why Warren Buffett’s Record Is Almost Unbelievable",
+   "views": 15107,
+   "median": 3422,
+   "multiple": 4.41,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/t6sPxYeCTBI"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "The Federal Reserve Just Raised Interest Rates For The First Time Since 2023",
+   "views": 309234,
+   "median": 77065,
+   "multiple": 4.01,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/2gOubOLfU8E"
+  },
+  {
+   "channel": "Yahoo Finance",
+   "title": "Nvidia stock hits intraday high",
+   "views": 9587,
+   "median": 2527,
+   "multiple": 3.79,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/rerszg9Ke9s"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The REAL reason Anthropic must IPO now...?",
+   "views": 59742,
+   "median": 16047,
+   "multiple": 3.72,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/E80oYhrGa8c"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "The Israel-Bound FlyDubai Flight Crisis, Explained",
+   "views": 85543,
+   "median": 23134,
+   "multiple": 3.7,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/VLYXcoSEyLk"
+  },
+  {
+   "channel": "Andrei Jikh",
+   "title": "8 Predicitons For 2030",
+   "views": 129405,
+   "median": 36564,
+   "multiple": 3.54,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/L7bgDt6woY0"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Why Rising Rates Aren’t Crashing the Stock Market",
+   "views": 11916,
+   "median": 3422,
+   "multiple": 3.48,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/4gN5eurxD54"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "If you feel behind financially... here's some data on why.",
+   "views": 258813,
+   "median": 77065,
+   "multiple": 3.36,
+   "formula": "The Direct Address",
+   "url": "https://www.youtube.com/shorts/bFg4LzgiEgM"
+  },
+  {
+   "channel": "Humphrey Yang",
+   "title": "4 Signs You'll Hit 1 Million in 10 Years Instead Of 40",
+   "views": 253762,
+   "median": 77065,
+   "multiple": 3.29,
+   "formula": "The List",
+   "url": "https://www.youtube.com/shorts/YGnjSONx5Us"
+  },
+  {
+   "channel": "the bald trader",
+   "title": "Every EMA Explained in Simple Terms #ema",
+   "views": 31197,
+   "median": 9505,
+   "multiple": 3.28,
+   "formula": "Unclassified",
+   "url": "https://www.youtube.com/shorts/IMpi0rNkSNE"
+  },
+  {
+   "channel": "The Compound",
+   "title": "Don’t Pay Off Your 3% Mortgage",
+   "views": 10877,
+   "median": 3422,
+   "multiple": 3.18,
+   "formula": "The Statistic",
+   "url": "https://www.youtube.com/shorts/4SQtwg98zVI"
+  },
+  {
+   "channel": "The Wall Street Journal",
+   "title": "What’s at Stake in Brazil’s Bitter Presidential Runoff? | WSJ",
+   "views": 72219,
+   "median": 23134,
+   "multiple": 3.12,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/CSfwOJImbmc"
+  },
+  {
+   "channel": "Fundstrat",
+   "title": "Is a massive market 'face-ripper' rally coming?",
+   "views": 78162,
+   "median": 25238,
+   "multiple": 3.1,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/Y284Ys196mM"
+  },
+  {
+   "channel": "Prof G Markets",
+   "title": "The secret reason AI companies want regulation?",
+   "views": 48292,
+   "median": 16047,
+   "multiple": 3.01,
+   "formula": "The Question",
+   "url": "https://www.youtube.com/shorts/E7gtOf-4d8w"
+  }
+ ],
+ "skipped_thin_channels": [
+  [
+   "Meet Kevin",
+   3
+  ]
+ ]
+}

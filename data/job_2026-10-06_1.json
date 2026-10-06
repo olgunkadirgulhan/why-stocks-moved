@@ -1,0 +1,160 @@
+{
+ "idea": {
+  "idea": "Ranking the three biggest market indexes by their performance on Monday so you know exactly where your portfolio is losing to inflation.",
+  "goal": "SAVE",
+  "emotion": "Relief",
+  "formula": "The Superlative",
+  "ticker": "^GSPC",
+  "structure_from": "https://www.youtube.com/shorts/K7UvJQsjMOM",
+  "payoff_withheld_until_end": "The lowest-performing index tier and the exact percentage drag (Dow Jones at +0.18%) eating your retirement fund gains.",
+  "data_points": [
+   "S&P 500 closing price of 7773.95 and Monday gain of 0.66%",
+   "Nasdaq closing price of 27477.31 and Monday gain of 1.05%",
+   "Dow Jones closing price of 51267.9 and Monday gain of 0.18%"
+  ]
+ },
+ "hook": {
+  "hook": "How did your S&P 500 at 7,773 and Nasdaq at 27,477 perform on Monday before inflation destroys your gains?",
+  "properties": {
+   "SPECIFICITY": 100,
+   "ADDRESS": 96,
+   "STAKES": 62,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 77,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "S&P vs Nasdaq Gains"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "How did your S&P 500 at 7,773 and Nasdaq at 27,477 perform on Monday before inflation destroys your gains?",
+    "osd": "S&P vs Nasdaq Gains",
+    "emphasis": "Gains",
+    "visual": "chart",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "Markets closed with the S&P 500 climbing zero point sixty-six percent on Monday to 7773.95.",
+    "osd": "S&P 500 Up 0.66%",
+    "emphasis": "0.66%",
+    "visual": "counter",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "At the same time, the Nasdaq index pushed higher by one point zero five percent to reach 27477.31.",
+    "osd": "Nasdaq Gains 1.05%",
+    "emphasis": "1.05%",
+    "visual": "counter",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Meanwhile, the Dow Jones lagged behind the other major indexes, posting just a zero point eighteen percent gain to 51267.90.",
+    "osd": "Dow Lags Behind",
+    "emphasis": "Lags",
+    "visual": "compare",
+    "ticker": "^DJI"
+   },
+   {
+    "say": "That exact lag is the percentage drag eating your retirement fund gains while inflation stays sticky.",
+    "osd": "Retirement Fund Drag",
+    "emphasis": "Drag",
+    "visual": "text",
+    "ticker": "^DJI"
+   },
+   {
+    "say": "Are you tracking how your index funds stack up? Follow for daily breakdowns of why stocks actually move. Not financial advice.",
+    "osd": "Not financial advice",
+    "emphasis": "Follow",
+    "visual": "text",
+    "ticker": "^GSPC"
+   }
+  ],
+  "word_count": 109,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "S&P 500 at 7,773 vs Nasdaq at 27,477",
+  "chars": 36,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "36 characters, inside the 60-character desktop cut",
+   "1 all-caps word for emphasis",
+   "carries a concrete figure (500, 7,773, 27,477)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "INDEX RANK",
+  "visual_brief": "Medium close-up showing a vertical bar chart comparing the two indexes, with a stark red inflation overlay in the background and clean lighting."
+ },
+ "as_of": "2026-10-05",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "S and P 500 performance Monday",
+    "Nasdaq index vs Dow Jones",
+    "why stocks moved today"
+   ],
+   "description": "See how the S&P 500, Nasdaq, and Dow Jones performed on Monday, and what the index lag means for your portfolio against inflation. \n\nNot financial advice.\n\n#shorts #sp500 #nasdaq #dowjones #stockmarket #investing",
+   "tags": [
+    "S&P 500",
+    "Nasdaq",
+    "Dow Jones",
+    "stock market Monday",
+    "index funds",
+    "inflation",
+    "stock market today",
+    "portfolio protection",
+    "market analysis",
+    "US stocks",
+    "investing",
+    "finance",
+    "why stocks moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How did Microsoft's thirteen billion dollar AI bet become a hundred billion dollar headache for your portfolio?",
+  "hook_why": "It pairs an everyday, high-familiarity brand (Microsoft) with an unexpected financial paradox (a massive investment becoming a massive portfolio headache) to trigger intense curiosity without requiring complex financial knowledge.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did Microsoft's thirteen billion dollar AI bet become a hundred billion dollar headache for your portfolio?",
+    "shown": "Moving chart of Microsoft stock (MSFT) dropping sharply at frame 0, with bold on-screen text: 'THE $100B HEADACHE'."
+   },
+   {
+    "t": "3-10s",
+    "said": "You see Microsoft pumping billions into OpenAI, expecting massive earnings growth. But rising data center infrastructure costs just squeezed their capital expenditure margins by four percent.",
+    "shown": "Chart transitions to a clean bar graph comparing rising capital expenditures to operating margins. Key text: 'CAPEX SQUEEZE'."
+   },
+   {
+    "t": "10-18s",
+    "said": "When margins drop, institutional funds rebalance. Wall Street algorithms immediately sold off tech shares, dragging down the S&P 500 index by zero point eight percent today.",
+    "shown": "Split screen comparing Microsoft's drop to the broader S&P 500 index chart. Highlighted text: 'ALGO SELLOFF'."
+   },
+   {
+    "t": "18-25s",
+    "said": "This is why your index funds are slipping even when tech headlines sound bullish. The massive infrastructure spend is temporarily eating the profits.",
+    "shown": "A clean line chart showing index fund performance slipping against rising tech spend. Bold text: 'EATING PROFITS'."
+   },
+   {
+    "t": "25-30s",
+    "said": "Are you holding tech stocks through this infrastructure cycle? Follow for daily breakdowns of why stocks actually move. Not financial advice.",
+    "shown": "Clean, minimalist CTA graphic: 'FOLLOW FOR DAILY DATA'. Tiny 'Not financial advice' text visible at the bottom."
+   }
+  ],
+  "pacing": "Rapid cuts every 3-5 seconds, starting with high-energy visual movement on frame 0. Pacing remains steady to allow the viewer to digest the macro data on screen while on mute.",
+  "visual_technique": "Everyday Brand Paradox format. Starts with a clean, moving stock chart at frame 0 instead of a talking head. Uses dynamic charts, split screens, and minimalist bold text overlays on every beat to ensure high retention and full mute-comprehension.",
+  "reusable_moves": [
+   "The Paradox Hook: Pair a massive, universally trusted brand name with a shocking negative financial metric to disrupt the viewer's expectations instantly.",
+   "The Squeeze Explanation: Demystify complex corporate spending by explaining exactly how it directly hits the viewer's daily portfolio or index funds in two simple steps."
+  ],
+  "remake_plan": "Because there is no transcript available for this viral reel, I modeled the Everyday Brand Paradox technique: I paired Microsoft's famous AI bet with a massive, unexpected expense that directly impacts S&P 500 index fund holders, starting with a moving stock chart at frame 0."
+ },
+ "video_id": "JN9RDDcFWxY",
+ "publish_at": "2026-10-06T17:00:00Z"
+}

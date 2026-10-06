@@ -1,0 +1,154 @@
+{
+ "idea": {
+  "idea": "Nvidia jumped 2.12% on Monday, but the real shock is what its 4.39% climb this week is doing to passive index investors.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO",
+  "formula": "The Statistic",
+  "ticker": "NVDA",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The exact closing price of $238.9 and the specific cap-weighted risk it introduces to your standard S&P 500 index fund.",
+  "data_points": [
+   "Nvidia closing price of $238.9 on Monday",
+   "Nvidia single-day gain of 2.12% on Monday",
+   "Nvidia 5-day cumulative climb of 4.39%"
+  ]
+ },
+ "hook": {
+  "hook": "What makes your S&P index vulnerable when Nvidia jumps 2.12 percent to $238.90 before you lose money?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 84,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Index fund risk"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What makes your S&P index vulnerable when Nvidia jumps 2.12 percent to $238.90 before you lose money?",
+    "osd": "Index fund risk",
+    "emphasis": "vulnerable",
+    "visual": "chart",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "You see Nvidia climbing 4.39 percent this week, pushing passive index funds higher alongside tech giants.",
+    "osd": "Weekly climb",
+    "emphasis": "climbing",
+    "visual": "counter",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "When mega-cap stocks concentrate index weight, institutional algorithms rebalance your portfolio risks.",
+    "osd": "Algorithm rebalance",
+    "emphasis": "rebalance",
+    "visual": "compare",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "This is why your index funds fluctuate even when individual tech earnings sound bullish on Monday.",
+    "osd": "Index fluctuation",
+    "emphasis": "fluctuate",
+    "visual": "chart",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "Are you holding index funds through this tech cycle? Follow for daily breakdowns of why stocks actually move. Not financial advice.",
+    "osd": "Follow for daily data",
+    "emphasis": "Follow",
+    "visual": "text",
+    "ticker": "NVDA"
+   }
+  ],
+  "word_count": 82,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nvidia up 2.12% to $238.90 hits indexes",
+  "chars": 39,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "39 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (2.12%, 238.90)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "INDEX RISK",
+  "visual_brief": "Medium close-up showing Nvidia stock chart at $238.90 with a red warning overlay. High contrast white text on solid black bar. Safe area respected."
+ },
+ "as_of": "2026-10-05",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Nvidia stock up 2.12",
+    "Nvidia 4.39 climb index funds",
+    "Why stocks moved Nvidia S&P"
+   ],
+   "description": "Find out why Nvidia stock jumping 2.12% to $238.90 and its 4.39% weekly climb impacts your S&P 500 index funds.\n\nNot financial advice. #shorts #stocks #nvda #investing",
+   "tags": [
+    "Nvidia stock",
+    "NVDA",
+    "S&P 500",
+    "index funds",
+    "stock market",
+    "tech stocks",
+    "wall street",
+    "stock analysis",
+    "macro economics",
+    "portfolio management",
+    "market trends",
+    "earnings",
+    "trading",
+    "finance",
+    "why stocks moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How did Microsoft's thirteen billion dollar AI bet become a hundred billion dollar headache for your portfolio?",
+  "hook_why": "It pairs an everyday, high-familiarity brand (Microsoft) with an unexpected financial paradox (a massive investment becoming a massive portfolio headache) to trigger intense curiosity without requiring complex financial knowledge.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did Microsoft's thirteen billion dollar AI bet become a hundred billion dollar headache for your portfolio?",
+    "shown": "Moving chart of Microsoft stock (MSFT) dropping sharply at frame 0, with bold on-screen text: 'THE $100B HEADACHE'."
+   },
+   {
+    "t": "3-10s",
+    "said": "You see Microsoft pumping billions into OpenAI, expecting massive earnings growth. But rising data center infrastructure costs just squeezed their capital expenditure margins by four percent.",
+    "shown": "Chart transitions to a clean bar graph comparing rising capital expenditures to operating margins. Key text: 'CAPEX SQUEEZE'."
+   },
+   {
+    "t": "10-18s",
+    "said": "When margins drop, institutional funds rebalance. Wall Street algorithms immediately sold off tech shares, dragging down the S&P 500 index by zero point eight percent today.",
+    "shown": "Split screen comparing Microsoft's drop to the broader S&P 500 index chart. Highlighted text: 'ALGO SELLOFF'."
+   },
+   {
+    "t": "18-25s",
+    "said": "This is why your index funds are slipping even when tech headlines sound bullish. The massive infrastructure spend is temporarily eating the profits.",
+    "shown": "A clean line chart showing index fund performance slipping against rising tech spend. Bold text: 'EATING PROFITS'."
+   },
+   {
+    "t": "25-30s",
+    "said": "Are you holding tech stocks through this infrastructure cycle? Follow for daily breakdowns of why stocks actually move. Not financial advice.",
+    "shown": "Clean, minimalist CTA graphic: 'FOLLOW FOR DAILY DATA'. Tiny 'Not financial advice' text visible at the bottom."
+   }
+  ],
+  "pacing": "Rapid cuts every 3-5 seconds, starting with high-energy visual movement on frame 0. Pacing remains steady to allow the viewer to digest the macro data on screen while on mute.",
+  "visual_technique": "Everyday Brand Paradox format. Starts with a clean, moving stock chart at frame 0 instead of a talking head. Uses dynamic charts, split screens, and minimalist bold text overlays on every beat to ensure high retention and full mute-comprehension.",
+  "reusable_moves": [
+   "The Paradox Hook: Pair a massive, universally trusted brand name with a shocking negative financial metric to disrupt the viewer's expectations instantly.",
+   "The Squeeze Explanation: Demystify complex corporate spending by explaining exactly how it directly hits the viewer's daily portfolio or index funds in two simple steps."
+  ],
+  "remake_plan": "Because there is no transcript available for this viral reel, I modeled the Everyday Brand Paradox technique: I paired Microsoft's famous AI bet with a massive, unexpected expense that directly impacts S&P 500 index fund holders, starting with a moving stock chart at frame 0."
+ },
+ "video_id": "yK95HSz2IrU",
+ "publish_at": "2026-10-06T22:30:00Z"
+}

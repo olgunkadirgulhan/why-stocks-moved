@@ -30,3 +30,6 @@
 - [[2026-10-05-tesla-up-4-65-to-370]] — SHARE · hook 86
 - [[2026-10-05-wti-oil-down-1-64-hits-3-sectors]] — SAVE · hook 84
 - [[2026-10-05-nasdaq-leads-at-1-19-while-dow-lags]] — FOLLOW · hook 85
+- [[2026-10-06-apple-drops-1-63-while-tech-surges]] — SHARE · hook 84
+- [[2026-10-06-s-p-500-at-7-773-vs-nasdaq-at-27-477]] — SAVE · hook 77
+- [[2026-10-06-nvidia-up-2-12-to-238-90-hits-indexes]] — FOLLOW · hook 84
