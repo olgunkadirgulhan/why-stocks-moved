@@ -44,3 +44,11 @@ jobs:
             out/hf_pilot/project/index.html
           retention-days: 14
           if-no-files-found: ignore
+      - name: Telegram relay için
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-pilot-${{ github.run_id }}
+          path: social/
+          retention-days: 3
+          if-no-files-found: ignore

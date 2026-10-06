@@ -216,6 +216,16 @@ def main():
             tg_send("sendVideo", "caption", f"🧪 Why Stocks Moved deneme — {label}\nAynı veri, aynı ses. Yüklenmedi.",
                     files={"video": (path.name, f, "video/mp4")}, supports_streaming="true")
     tg("🧪 Hangisi daha iyi? 1 mi 2 mi? Beğenirsen kanal yeni görünüme geçirilir.")
+    # fenek-shorts telegram-relay için (bu repoda Telegram secret'ı olmasa da Fenek botuyla gelir)
+    soc = BASE / "social"
+    soc.mkdir(exist_ok=True)
+    vids = []
+    for path, label in ((old, "1️⃣ ŞİMDİKİ (Python)"), (new, "2️⃣ YENİ (HyperFrames)")):
+        shutil.copy(path, soc / path.name)
+        vids.append({"file": path.name, "caption": f"🧪 Why Stocks Moved deneme — {label}\nAynı veri, aynı ses. Yüklenmedi."})
+    (soc / "post.json").write_text(json.dumps({"videos": vids, "note": "🧪 Hangisi daha iyi? 1 mi 2 mi? "
+                                               "Beğenirsen kanal yeni görünüme geçirilir."}, ensure_ascii=False),
+                                   encoding="utf-8")
 
 
 if __name__ == "__main__":
