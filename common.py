@@ -277,12 +277,8 @@ def tg_send(method, text_field, text, files=None, **extra):
 
 
 def tg_social(mp4, title, url, ticker=None):
-    """Günün tek videosu: orijinal dosya (TikTok/Instagram'a kaliteli yükleme) + dokununca kopyalanan açıklamalar."""
-    if not (TG_TOKEN and TG_CHAT) or os.path.getsize(mp4) > 49 * 1024 * 1024:
-        return tg(f"🎬 Why Stocks Moved — günün videosu\n{title}\n{url}")
-    with open(mp4, "rb") as f:
-        tg_send("sendDocument", "caption", f"🎬 Why Stocks Moved — günün videosu (TikTok/Instagram için)\n{title}\n{url}",
-                files={"document": (os.path.basename(str(mp4)), f, "video/mp4")})
+    """Günün tek videosu: orijinal dosya (TikTok/Instagram'a kaliteli yükleme) + dokununca kopyalanan açıklamalar.
+    Ayrıca social/ klasörüne yazılır: fenek-shorts'taki telegram-relay onu (artifact 'social-<run>') Fenek botuyla yollar."""
     tag = re.sub(r"[^A-Za-z0-9]", "", (ticker or "").upper())
     tag = f" #{tag}" if tag and not tag[0].isdigit() else ""
     note = "Not financial advice. Education only. Data may be delayed."
@@ -293,6 +289,19 @@ def tg_social(mp4, title, url, ticker=None):
             f"{title}\n\nFollow for one market move explained every day 📈\n{note}\n\n"
             f"#stocks #stockmarket{tag} #investing #finance #wallstreet #money #reels",
     }
+    import shutil
+    soc = BASE / "social"
+    soc.mkdir(exist_ok=True)
+    shutil.copy(mp4, soc / "video.mp4")
+    labels = list(captions.values())
+    (soc / "post.json").write_text(json.dumps({"channel": "Why Stocks Moved", "title": title, "url": url,
+                                               "tiktok": labels[0], "instagram": labels[1]},
+                                              ensure_ascii=False, indent=1), encoding="utf-8")
+    if not (TG_TOKEN and TG_CHAT) or os.path.getsize(mp4) > 49 * 1024 * 1024:
+        return
+    with open(mp4, "rb") as f:
+        tg_send("sendDocument", "caption", f"🎬 Why Stocks Moved — günün videosu (TikTok/Instagram için)\n{title}\n{url}",
+                files={"document": (os.path.basename(str(mp4)), f, "video/mp4")})
     for label, text in captions.items():
         esc = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
         tg_send("sendMessage", "text", f"{label}\n<pre>{esc}</pre>", parse_mode="HTML")
