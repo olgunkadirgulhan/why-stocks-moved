@@ -261,3 +261,38 @@ def tg(msg):
                       json={"chat_id": TG_CHAT, "text": msg[:4000]}, timeout=20)
     except Exception as e:
         log(f"telegram gönderilemedi: {e}")
+
+
+def tg_send(method, text_field, text, files=None, **extra):
+    if not (TG_TOKEN and TG_CHAT):
+        return False
+    try:
+        r = requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/{method}",
+                          data={"chat_id": TG_CHAT, text_field: text, **extra}, files=files, timeout=180)
+        r.raise_for_status()
+        return True
+    except Exception as e:
+        log(f"telegram gönderilemedi: {e}")
+        return False
+
+
+def tg_social(mp4, title, url, ticker=None):
+    """Günün tek videosu: orijinal dosya (TikTok/Instagram'a kaliteli yükleme) + dokununca kopyalanan açıklamalar."""
+    if not (TG_TOKEN and TG_CHAT) or os.path.getsize(mp4) > 49 * 1024 * 1024:
+        return tg(f"🎬 Why Stocks Moved — günün videosu\n{title}\n{url}")
+    with open(mp4, "rb") as f:
+        tg_send("sendDocument", "caption", f"🎬 Why Stocks Moved — günün videosu (TikTok/Instagram için)\n{title}\n{url}",
+                files={"document": (os.path.basename(str(mp4)), f, "video/mp4")})
+    tag = re.sub(r"[^A-Za-z0-9]", "", (ticker or "").upper())
+    tag = f" #{tag}" if tag and not tag[0].isdigit() else ""
+    note = "Not financial advice. Education only. Data may be delayed."
+    captions = {
+        "🎵 TikTok açıklaması (kutuya dokun → kopyalanır):":
+            f"{title}\n\n{note}\n\n#stocks #stockmarket{tag} #investing #finance #learnontiktok #fyp",
+        "📸 Instagram açıklaması (kutuya dokun → kopyalanır):":
+            f"{title}\n\nFollow for one market move explained every day 📈\n{note}\n\n"
+            f"#stocks #stockmarket{tag} #investing #finance #wallstreet #money #reels",
+    }
+    for label, text in captions.items():
+        esc = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        tg_send("sendMessage", "text", f"{label}\n<pre>{esc}</pre>", parse_mode="HTML")

@@ -12,7 +12,7 @@ import requests
 
 import renderer
 from common import (DATA, OUT, STATE, BRAIN, PY, BASE, YTS, OOT, TODAY, CONTENT_LANG, llm, lines, log, retry, sh,
-                    skill, context, tg, yt_creds, have_yt_creds, is_quota_error)
+                    skill, context, tg, tg_social, yt_creds, have_yt_creds, is_quota_error)
 from scoring import check_title, score_hooks
 
 HOOK_MIN = int(os.environ.get("HOOK_MIN", 60))
@@ -522,7 +522,7 @@ def fallback_recap(snap, i, publish_at):
         (DATA / f"recap_{TODAY}.json").write_text(json.dumps({"video_id": vid, "publish_at": publish_at,
                                                               "as_of": snap["tickers"][star].get("as_of")}),
                                                    encoding="utf-8")
-    return vid
+    return vid, mp4, title
 
 
 def main():
@@ -563,6 +563,7 @@ def main():
             log(traceback.format_exc())
             report.append(f"⚠️ keşif/seçim hatası: {str(e)[:200]} → güvenli format")
     used, tickers_today, quota_hit = set(), set(), False
+    social_sent = False
     # aynı kapanışın özeti ikinci kez yüklenmez (hafta sonu da Cuma verisi gelir)
     star_as_of = (snap["tickers"].get(renderer.recap_beats(snap)[1]) or {}).get("as_of")
     recap_done = (DATA / f"recap_{TODAY}.json").exists() or any(
@@ -594,6 +595,10 @@ def main():
                     (DATA / f"job_{TODAY}_{i}.json").write_text(json.dumps(job, ensure_ascii=False, indent=1),
                                                                 encoding="utf-8")
                     brain_save(job)
+                if not social_sent:                         # Telegram'a günde tek video (TikTok/Instagram için)
+                    social_sent = True
+                    tg_social(mp4, job["package"]["title"], f"https://youtu.be/{job['video_id']}",
+                              job["idea"].get("ticker"))
                 report.append(f"✅ [{goal}] {job['package']['title']}\n   hook {job['hook']['verdict']} · title "
                               f"{job['package']['score']} · {publish_at}\n   https://youtu.be/{job['video_id']}")
                 done = True
@@ -610,7 +615,10 @@ def main():
         elif not done and not quota_hit:                            # slot boş kalmasın: günde bir özet
             recap_done = True
             try:
-                vid = retry(fallback_recap, snap, i, publish_at)
+                vid, mp4, title = retry(fallback_recap, snap, i, publish_at)
+                if not social_sent:
+                    social_sent = True
+                    tg_social(mp4, title, f"https://youtu.be/{vid}")
                 report.append(f"🛟 [{goal}] güvenli format (piyasa özeti) → https://youtu.be/{vid}")
             except Exception as e:
                 log(traceback.format_exc())
