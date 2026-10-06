@@ -316,6 +316,16 @@ JSON: {{"beats":[{{"say":"...","osd":"...","emphasis":"...","visual":"chart|coun
 
 
 # ---------------- 9. PAKET (yt-package + cover-thumbnail-brief) → title.py kapısı ----------------
+def recent_titles(n=8):
+    """Kanaldaki son video başlıkları (state/brain notlarından), başlık kalıbı tekrarını önlemek için."""
+    out = []
+    for f in sorted(glob.glob(str(BRAIN / "20*.md")))[-n:]:
+        first = open(f, encoding="utf-8").readline()
+        if " — " in first:
+            out.append(first.rsplit(" — ", 1)[-1].strip())
+    return "; ".join(out) or "(none yet)"
+
+
 def package(idea, script):
     feedback = ""
     for attempt in range(MAX_TRIES):
@@ -326,6 +336,9 @@ def package(idea, script):
 {TITLE_RUBRIC.format(min=TITLE_MIN)}
 {retry_note}
 TEN title+cover pairs. The title carries a number/name/date from the idea, subject in the first three words.
+OUR LAST TITLES (do NOT reuse their sentence structure; a channel where every title reads "<Company> jumped X% today"
+looks templated to YouTube): {recent_titles()}
+Mix angles across the ten pairs: a question, a contrast, what it means for the viewer's money, a "why" angle.
 Cover text is legible at 150px and clear of the top 12% / bottom 20%.
 JSON: {{"pairs":[{{"title":"...","thumb":"...","visual_brief":"..."}}]}}""").get("pairs", [])
         results = []
