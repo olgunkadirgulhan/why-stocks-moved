@@ -316,6 +316,16 @@ JSON: {{"beats":[{{"say":"...","osd":"...","emphasis":"...","visual":"chart|coun
 
 
 # ---------------- 9. PAKET (yt-package + cover-thumbnail-brief) → title.py kapısı ----------------
+def published_titles():
+    """Kanalda daha önce kullanılan tüm başlıklar (küçük harf)."""
+    out = set()
+    for f in glob.glob(str(BRAIN / "20*.md")):
+        first = open(f, encoding="utf-8").readline()
+        if " — " in first:
+            out.add(first.rsplit(" — ", 1)[-1].strip().lower())
+    return out
+
+
 def recent_titles(n=8):
     """Kanaldaki son video başlıkları (state/brain notlarından), başlık kalıbı tekrarını önlemek için."""
     out = []
@@ -342,8 +352,11 @@ Mix angles across the ten pairs: a question, a contrast, what it means for the v
 Cover text is legible at 150px and clear of the top 12% / bottom 20%.
 JSON: {{"pairs":[{{"title":"...","thumb":"...","visual_brief":"..."}}]}}""").get("pairs", [])
         results = []
+        used = published_titles()
         for c in cand:
             if isinstance(c, dict) and c.get("title"):
+                if c["title"].strip().lower() in used:                  # aynı başlık = tekrar içerik (hafta sonu aynı veri)
+                    continue
                 r = check_title(c["title"], c.get("thumb"))
                 results.append({**r, "thumb": c.get("thumb", ""), "visual_brief": c.get("visual_brief", "")})
         if not results:
