@@ -1,0 +1,46 @@
+name: HyperFrames pilot
+
+# Deneme: aynı piyasa özeti eski (Python) ve yeni (HyperFrames) renderer ile; ikisi Telegram'a + artifact.
+# YouTube'a hiçbir şey yüklenmez.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      CONTENT_LANG: en
+      CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}
+      TTS_VOICE: ${{ vars.TTS_VOICE || 'en-US-AndrewMultilingualNeural' }}
+      MARKET_TICKERS: ${{ vars.MARKET_TICKERS || '^GSPC,^IXIC,^DJI,GC=F,CL=F,DX-Y.NYB,NVDA,AAPL,MSFT,TSLA,AMZN,META' }}
+      TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
+      HYPERFRAMES_NO_TELEMETRY: "1"
+      DO_NOT_TRACK: "1"
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: System packages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-liberation fonts-dejavu-core fonts-inter
+      - run: pip install --disable-pip-version-check -r requirements.txt
+      - run: python hf_pilot.py
+      - name: Videos as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hf-pilot-${{ github.run_id }}
+          path: |
+            out/hf_pilot/*.mp4
+            out/hf_pilot/project/index.html
+          retention-days: 14
+          if-no-files-found: ignore
