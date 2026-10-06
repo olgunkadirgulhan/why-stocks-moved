@@ -316,6 +316,33 @@ JSON: {{"beats":[{{"say":"...","osd":"...","emphasis":"...","visual":"chart|coun
 
 
 # ---------------- 9. PAKET (yt-package + cover-thumbnail-brief) → title.py kapısı ----------------
+NUM_RE = re.compile(r"\d[\d,]*(?:\.\d+)?")
+
+
+def invented_numbers(text, market):
+    """Başlıkta olup piyasa verisinde olmayan sayılar (ör. 'Nasdaq up 22%' gibi uydurma/yanlış oranlar)."""
+    def norm(x):
+        x = x.replace(",", "")
+        try:
+            v = float(x)
+        except ValueError:
+            return set()
+        return {f"{v:g}", f"{round(v):g}", f"{round(v, 1):g}", f"{round(v, 2):g}"}
+    allowed = set()
+    for m in NUM_RE.findall(json.dumps(market)):
+        allowed |= norm(m)
+        try: allowed |= norm(str(abs(float(m.replace(",", "")))))
+        except ValueError: pass
+    bad = []
+    for m in NUM_RE.findall(text):
+        v = float(m.replace(",", ""))
+        if v <= 12 or 2020 <= v <= 2035:          # "3 sectors", "5 days", yıllar
+            continue
+        if not (norm(m) & allowed):
+            bad.append(m)
+    return bad
+
+
 def published_titles():
     """Kanalda daha önce kullanılan tüm başlıklar (küçük harf)."""
     out = set()
@@ -336,7 +363,7 @@ def recent_titles(n=8):
     return "; ".join(out) or "(none yet)"
 
 
-def package(idea, script):
+def package(idea, script, market=None):
     feedback = ""
     for attempt in range(MAX_TRIES):
         retry_note = (f"\nYOUR PREVIOUS PAIRS FAILED THE CHECK:\n{feedback}\nFix exactly those issues.\n"
@@ -356,6 +383,9 @@ JSON: {{"pairs":[{{"title":"...","thumb":"...","visual_brief":"..."}}]}}""").get
         for c in cand:
             if isinstance(c, dict) and c.get("title"):
                 if c["title"].strip().lower() in used:                  # aynı başlık = tekrar içerik (hafta sonu aynı veri)
+                    continue
+                if market is not None and invented_numbers(c["title"], market):   # başlıktaki her sayı veride olmalı
+                    log(f"  başlık reddedildi (veride olmayan sayı {invented_numbers(c['title'], market)}): {c['title']}")
                     continue
                 r = check_title(c["title"], c.get("thumb"))
                 results.append({**r, "thumb": c.get("thumb", ""), "visual_brief": c.get("visual_brief", "")})
@@ -489,7 +519,7 @@ def produce(idea, mined, td, market):
         return None, "mute kapısı (ekran yazısı)"
     if not script["length_pass"]:
         return None, f"script uzunluğu ({script['word_count']} kelime)"
-    pkg = package(idea, script)
+    pkg = package(idea, script, market)
     if not pkg:
         return None, f"başlık kapısı (<{TITLE_MIN})"
     spoken = " ".join([hook["hook"], pkg["title"], pkg.get("thumb", "")] + [b["say"] + " " + (b.get("osd") or "")
