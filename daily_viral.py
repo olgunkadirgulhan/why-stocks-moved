@@ -288,7 +288,7 @@ def write_script(idea, hook, td, market):
 Market data (only numbers you may use): {json.dumps(market, ensure_ascii=False)}
 Winning hook (first spoken line, verbatim): {hook['hook']}   On-screen at frame 0: {hook['on_screen']}
 Structure to model (NOT words): {json.dumps(td.get('beats', []), ensure_ascii=False)} · pacing: {td.get('pacing', '')}
-Write a 25-40s vertical Short (75-100 words), 5-8 beats. Frame 0 = moving chart. Claim lands ~1.5s.
+Write a 25-32s vertical Short (60-85 words), 4-6 beats. No filler: every sentence carries a number from the market data or a concrete cause from the news; cut generic lines like 'investors are watching closely'. Frame 0 = moving chart. Claim lands ~1.5s.
 Re-hook at ~9s and ~15s. Tease the payoff in the hook, deliver it in the LAST beat.
 Every beat: spoken line + on-screen text (headline, <=7 words, one EMPHASIS word that appears in it) +
 visual for the renderer: chart (price line of "ticker"), counter (big animated number from the osd),
@@ -311,7 +311,7 @@ JSON: {{"beats":[{{"say":"...","osd":"...","emphasis":"...","visual":"chart|coun
     words = sum(len(b["say"].split()) for b in beats)
     s["word_count"] = words
     s["mute_pass"] = bool(beats) and all(b.get("osd") and len(b["osd"].split()) <= MAX_OSD_WORDS for b in beats)
-    s["length_pass"] = 45 <= words <= 130
+    s["length_pass"] = 45 <= words <= 95                 # ~32 sn üstü Shorts izlenme süresini düşürür
     return s
 
 
@@ -624,7 +624,7 @@ def main():
                     (DATA / f"job_{TODAY}_{i}.json").write_text(json.dumps(job, ensure_ascii=False, indent=1),
                                                                 encoding="utf-8")
                     brain_save(job)
-                if not social_sent:                         # Telegram'a günde tek video (TikTok/Instagram için)
+                if not social_sent and not DRY:             # Telegram'a günde tek video (TikTok/Instagram için)
                     social_sent = True
                     tg_social(mp4, job["package"]["title"], f"https://youtu.be/{job['video_id']}",
                               job["idea"].get("ticker"))
@@ -645,7 +645,7 @@ def main():
             recap_done = True
             try:
                 vid, mp4, title = retry(fallback_recap, snap, i, publish_at)
-                if not social_sent:
+                if not social_sent and not DRY:
                     social_sent = True
                     tg_social(mp4, title, f"https://youtu.be/{vid}")
                 report.append(f"🛟 [{goal}] güvenli format (piyasa özeti) → https://youtu.be/{vid}")
