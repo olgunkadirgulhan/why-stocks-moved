@@ -33,3 +33,5 @@
 - [[2026-10-06-apple-drops-1-63-while-tech-surges]] — SHARE · hook 84
 - [[2026-10-06-s-p-500-at-7-773-vs-nasdaq-at-27-477]] — SAVE · hook 77
 - [[2026-10-06-nvidia-up-2-12-to-238-90-hits-indexes]] — FOLLOW · hook 84
+- [[2026-10-07-gold-hits-4-160-70-as-usd-rises]] — SAVE · hook 91
+- [[2026-10-07-tesla-7-89-rally-hits-a-wall]] — FOLLOW · hook 86

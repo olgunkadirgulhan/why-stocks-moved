@@ -1,0 +1,163 @@
+{
+ "idea": {
+  "idea": "Ranking the 3 reasons Gold fell 0.63% on Wednesday to $4,160.70. If you are holding commodities to hedge inflation, you need to see why the US Dollar Index hitting 102.25 is changing the game.",
+  "goal": "SAVE",
+  "emotion": "relief",
+  "formula": "The Superlative",
+  "ticker": "GC=F",
+  "structure_from": "https://www.youtube.com/shorts/K7UvJQsjMOM",
+  "payoff_withheld_until_end": "Uses a '3-2-1' countdown ranking. The #1 reason—the US Dollar correlation—is withheld until the very end to provide the 'relief' payoff.",
+  "data_points": [
+   "Gold price: $4160.7",
+   "Wednesday change: -0.63%",
+   "Dollar Index: 102.25"
+  ]
+ },
+ "hook": {
+  "hook": "What is the worst reason your Gold fell 0.63% on Wednesday to $4,160.70 before you waste more money?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 93,
+   "BREVITY": 100
+  },
+  "verdict": 91,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Why Gold Hit $4,160"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What is the worst reason your Gold fell 0.63% on Wednesday to $4,160.70 before you waste more money?",
+    "osd": "Why Gold Hit $4,160",
+    "emphasis": "worst",
+    "visual": "chart",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Number 3: Gold slipped while the S&P 500 rose 0.58% on Tuesday, pulling cash into tech.",
+    "osd": "Stocks pulling cash AWAY",
+    "emphasis": "AWAY",
+    "visual": "compare",
+    "ticker": "GC=F",
+    "compare_with": "^GSPC"
+   },
+   {
+    "say": "Number 2: WTI oil is flat at $89.51, failing to spark the inflation hedge you need.",
+    "osd": "Oil hedge is FAILING",
+    "emphasis": "FAILING",
+    "visual": "counter",
+    "ticker": "CL=F"
+   },
+   {
+    "say": "The real reason Gold dropped 0.63% isn't about stocks—it's this currency move.",
+    "osd": "The REAL reason revealed",
+    "emphasis": "REAL",
+    "visual": "text",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Number 1: the US Dollar Index hit 102.25 on Wednesday, crushing commodity demand.",
+    "osd": "Dollar Index hit 102.25",
+    "emphasis": "Dollar",
+    "visual": "counter",
+    "ticker": "DX-Y.NYB"
+   },
+   {
+    "say": "Not financial advice. Save this for the next shift and follow to see...",
+    "osd": "Not financial advice",
+    "emphasis": "Save",
+    "visual": "list",
+    "ticker": "GC=F"
+   }
+  ],
+  "word_count": 88,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Gold hits $4,160.70 as USD rises",
+  "chars": 32,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "32 characters, inside the 60-character desktop cut",
+   "1 all-caps word for emphasis",
+   "carries a concrete figure (4,160.70)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "CURRENCY CRUSH",
+  "visual_brief": "A gold bar icon being physically crushed by a giant green Dollar symbol. High contrast yellow and green on a dark grey background. Text centered."
+ },
+ "as_of": "2026-10-07",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why is gold price dropping today",
+    "gold hits 4160.70 reason",
+    "us dollar index 102.25 impact on gold"
+   ],
+   "description": "See why Gold fell 0.63% to $4,160.70 on Wednesday as the US Dollar Index climbed to 102.25. We rank the 3 reasons your inflation hedge is slipping and what the S&P 500 move means for your commodities.\n\nNot financial advice. #shorts",
+   "tags": [
+    "gold price",
+    "gold drop",
+    "4160.70",
+    "us dollar index",
+    "dxy",
+    "102.25",
+    "commodities",
+    "inflation hedge",
+    "s&p 500",
+    "wti oil",
+    "stock market news",
+    "why stocks moved",
+    "investing",
+    "macro economy",
+    "finance"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "Why did Apple lose 115 billion dollars in value today while your iPhone is more popular than ever?",
+  "hook_why": "It uses 'The Question' formula to create a paradox between a high-familiarity retail product (iPhone) and a massive, unexpected financial loss ($115B), forcing the viewer to stay for the explanation.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "Why did Apple lose 115 billion dollars in market cap today while your iPhone is more popular than ever?",
+    "shown": "A red candlestick chart of AAPL stock dropping sharply with large text: '$115B GONE'."
+   },
+   {
+    "t": "3-10s",
+    "said": "The stock slipped 2.9% to $224.10, even though retail demand is holding steady.",
+    "shown": "A 1-day price line chart moving downward with the ticker AAPL and the percentage drop highlighted in red."
+   },
+   {
+    "t": "10-22s",
+    "said": "The move wasn't about phone sales. It was a reaction to a surprise regulatory shift in the EU and rising interest rate fears.",
+    "shown": "Split screen: A generic 'EU Commission' building photo on one side and a 'Fed Interest Rate' arrow pointing up on the other."
+   },
+   {
+    "t": "22-32s",
+    "said": "When big tech stalls, it drags your entire index fund down because Apple makes up nearly 7% of the S&P 500.",
+    "shown": "An S&P 500 heatmap showing Apple as a large red block compared to other tech giants."
+   },
+   {
+    "t": "32-40s",
+    "said": "Not financial advice. Follow for the real reason your stocks moved today.",
+    "shown": "Channel logo 'Why Stocks Moved' with a 'Follow' button animation."
+   }
+  ],
+  "pacing": "High-velocity cuts every 3-5 seconds. The hook lands in under 1.5 seconds with an immediate visual data point (the chart) to anchor the claim.",
+  "visual_technique": "Data-heavy overlay style. Every beat features a new chart or a specific financial metric on-screen so the video remains understandable on mute.",
+  "reusable_moves": [
+   "The Brand Paradox: Contrast a consumer's positive experience with a company (buying the product) against a negative market move (the stock price drop).",
+   "The Hidden Weight: Explain how one specific company's move affects the viewer's broader portfolio (e.g., its weight in the S&P 500)."
+  ],
+  "remake_plan": "Model 'The Question' structure by identifying a major tech stock move from today's data and framing it as a conflict between product popularity and investor sentiment."
+ },
+ "video_id": "BgWO_PQ-Eq8",
+ "publish_at": "2026-10-07T17:00:00Z"
+}

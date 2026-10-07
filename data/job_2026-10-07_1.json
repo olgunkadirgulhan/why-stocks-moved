@@ -1,0 +1,154 @@
+{
+ "idea": {
+  "idea": "Tesla stock is up 7.89% this week, but there is a 'Dead Zone' problem most investors are missing. We look at the $380.68 price point and why the 5-day rally might be masking a Tuesday slowdown.",
+  "goal": "FOLLOW",
+  "emotion": "fomo",
+  "formula": "The Paradox",
+  "ticker": "TSLA",
+  "structure_from": "https://www.youtube.com/shorts/QOiWrD5ZIW4",
+  "payoff_withheld_until_end": "Teases a 'hidden risk' in the 7.89% gain in the first 2 seconds, but doesn't reveal the 'Dead Zone' price level until the final beat to drive 100% watch time.",
+  "data_points": [
+   "Tesla 5-day change: +7.89%",
+   "Tesla price: $380.68",
+   "Tuesday change: +0.51%"
+  ]
+ },
+ "hook": {
+  "hook": "Which part of your Tesla 7.89% rally is actually a trap at $380.68 before you risk capital?",
+  "properties": {
+   "SPECIFICITY": 79,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 93,
+   "BREVITY": 100
+  },
+  "verdict": 86,
+  "band": "STRONG",
+  "formula": "The Statistic",
+  "on_screen": "TSLA RALLY TRAP"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Which part of your Tesla 7.89% rally is actually a trap at $380.68 before you risk capital?",
+    "osd": "TSLA RALLY TRAP",
+    "emphasis": "TRAP",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "On Tuesday, the stock only managed a 0.51% gain, even though the Nasdaq climbed 0.45%.",
+    "osd": "Tuesday gain slows to 0.51%",
+    "emphasis": "SLOWS",
+    "visual": "compare",
+    "ticker": "TSLA",
+    "compare_with": "^IXIC"
+   },
+   {
+    "say": "While the 5-day momentum looks strong, your portfolio is hitting a wall as the rally loses speed.",
+    "osd": "Momentum hits a wall",
+    "emphasis": "WALL",
+    "visual": "list",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "The Dead Zone is this $380.68 level. That 7.89% weekly gain is masking the Tuesday slowdown.",
+    "osd": "DEAD ZONE at $380.68",
+    "emphasis": "ZONE",
+    "visual": "counter",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Not financial advice. Follow for the real reason your stocks moved before you make your next trade.",
+    "osd": "Follow. Not financial advice.",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": "TSLA"
+   }
+  ],
+  "word_count": 82,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Tesla 7.89% rally hits a wall",
+  "chars": 29,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "29 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (7.89%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "DEAD ZONE",
+  "visual_brief": "A clean line chart showing a sudden flatline at the top; the text DEAD ZONE is in high-contrast yellow in the middle-third of the screen."
+ },
+ "as_of": "2026-10-06",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Why is Tesla stock up 7.89% this week",
+    "Tesla stock $380.68 dead zone",
+    "TSLA rally hits a wall"
+   ],
+   "description": "See why your Tesla 7.89% rally is hitting a wall at $380.68 and what the Tuesday slowdown means for your portfolio. We explain the 'Dead Zone' masking the 5-day momentum before you make your next move. Not financial advice. #shorts",
+   "tags": [
+    "Tesla",
+    "TSLA",
+    "Tesla stock",
+    "TSLA stock price",
+    "Tesla rally",
+    "stock market",
+    "Nasdaq",
+    "investing",
+    "Why Stocks Moved",
+    "Tesla news",
+    "trading",
+    "stock analysis",
+    "market update",
+    "finance"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "Why did Apple lose 115 billion dollars in value today while your iPhone is more popular than ever?",
+  "hook_why": "It uses 'The Question' formula to create a paradox between a high-familiarity retail product (iPhone) and a massive, unexpected financial loss ($115B), forcing the viewer to stay for the explanation.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "Why did Apple lose 115 billion dollars in market cap today while your iPhone is more popular than ever?",
+    "shown": "A red candlestick chart of AAPL stock dropping sharply with large text: '$115B GONE'."
+   },
+   {
+    "t": "3-10s",
+    "said": "The stock slipped 2.9% to $224.10, even though retail demand is holding steady.",
+    "shown": "A 1-day price line chart moving downward with the ticker AAPL and the percentage drop highlighted in red."
+   },
+   {
+    "t": "10-22s",
+    "said": "The move wasn't about phone sales. It was a reaction to a surprise regulatory shift in the EU and rising interest rate fears.",
+    "shown": "Split screen: A generic 'EU Commission' building photo on one side and a 'Fed Interest Rate' arrow pointing up on the other."
+   },
+   {
+    "t": "22-32s",
+    "said": "When big tech stalls, it drags your entire index fund down because Apple makes up nearly 7% of the S&P 500.",
+    "shown": "An S&P 500 heatmap showing Apple as a large red block compared to other tech giants."
+   },
+   {
+    "t": "32-40s",
+    "said": "Not financial advice. Follow for the real reason your stocks moved today.",
+    "shown": "Channel logo 'Why Stocks Moved' with a 'Follow' button animation."
+   }
+  ],
+  "pacing": "High-velocity cuts every 3-5 seconds. The hook lands in under 1.5 seconds with an immediate visual data point (the chart) to anchor the claim.",
+  "visual_technique": "Data-heavy overlay style. Every beat features a new chart or a specific financial metric on-screen so the video remains understandable on mute.",
+  "reusable_moves": [
+   "The Brand Paradox: Contrast a consumer's positive experience with a company (buying the product) against a negative market move (the stock price drop).",
+   "The Hidden Weight: Explain how one specific company's move affects the viewer's broader portfolio (e.g., its weight in the S&P 500)."
+  ],
+  "remake_plan": "Model 'The Question' structure by identifying a major tech stock move from today's data and framing it as a conflict between product popularity and investor sentiment."
+ },
+ "video_id": "ML1__4v8b0A",
+ "publish_at": "2026-10-07T22:30:00Z"
+}
