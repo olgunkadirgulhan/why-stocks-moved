@@ -287,7 +287,7 @@ def tg_social(mp4, title, url, ticker=None):
             f"{title}\n\n{note}\n\n#stocks #stockmarket{tag} #investing #finance #learnontiktok #fyp",
         "📸 Instagram açıklaması (kutuya dokun → kopyalanır):":
             f"{title}\n\nFollow for one market move explained every day 📈\n{note}\n\n"
-            f"#stocks #stockmarket{tag} #investing #finance #wallstreet #money #reels",
+            f"#stocks #stockmarket #investing{tag} #finance{'' if tag else ' #money'}",  # Instagram: en fazla 5
     }
     import shutil
     soc = BASE / "social"
