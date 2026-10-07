@@ -526,6 +526,16 @@ def produce(idea, mined, td, market):
     pkg = package(idea, script, market)
     if not pkg:
         return None, f"başlık kapısı (<{TITLE_MIN})"
+    as_of = (market.get(idea.get("ticker")) or {}).get("as_of")
+    if as_of:                                       # 'today' → veri gününün adı (reddetmek yerine düzelt)
+        day = datetime.date.fromisoformat(as_of).strftime("%A")
+        fix = lambda t: re.sub(r"\s{2,}", " ", re.sub(r"\b(today|tonight|this morning|right now)\b",
+                                                      lambda m: f"{'On' if m.group(0)[0].isupper() else 'on'} {day}", t or "", flags=re.I)).strip()
+        hook["hook"] = fix(hook["hook"])
+        for b in script["beats"]:
+            b["say"], b["osd"] = fix(b["say"]), fix(b.get("osd"))
+        pkg["title"], pkg["thumb"] = fix(pkg["title"]), fix(pkg.get("thumb", ""))
+        script["beats"][0]["say"] = hook["hook"]
     spoken = " ".join([hook["hook"], pkg["title"], pkg.get("thumb", "")] + [b["say"] + " " + (b.get("osd") or "")
                                                                          for b in script["beats"]])
     if STALE_RE.search(spoken):                     # veri önceki kapanış: "today" yanıltıcı olur
