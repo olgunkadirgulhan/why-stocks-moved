@@ -515,6 +515,10 @@ def produce(idea, mined, td, market):
     if not hook:
         return None, f"hook kapısı (<{HOOK_MIN})"
     script = write_script(idea, hook, td, market)
+    if not script["length_pass"]:                   # bir kez daha, kısaltma notuyla (fikir boşa gitmesin)
+        log(f"  script {script['word_count']} kelime → kısaltılarak yeniden yazılıyor")
+        script = write_script({**idea, "rewrite_note": f"Previous draft had {script['word_count']} words; "
+                                                     "stay within 60-85 words, 4-6 beats."}, hook, td, market)
     if not script["mute_pass"]:
         return None, "mute kapısı (ekran yazısı)"
     if not script["length_pass"]:
