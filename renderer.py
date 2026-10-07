@@ -315,6 +315,18 @@ def frame(bg, beat, market, ticker, t_beat, dur_beat, t_total, dur_total):
 
 # ---------------- ana giriş ----------------
 def render(beats, market_snapshot, out_mp4, ticker=None):
+    """RENDERER=hyperframes → hf_render (HTML/GSAP); hata olursa Pillow renderer'a düşer, video kaçmaz."""
+    if os.environ.get("RENDERER", "").lower() == "hyperframes":
+        try:
+            import hf_render
+            label = "MARKET RECAP" if "fallback" in out_mp4.stem else "WHY IT MOVED"
+            return hf_render.render(beats, market_snapshot, out_mp4, ticker, label)
+        except Exception as e:
+            log(f"  hyperframes render başarısız, eski renderer'a geçiliyor: {str(e)[:300]}")
+    return render_pillow(beats, market_snapshot, out_mp4, ticker)
+
+
+def render_pillow(beats, market_snapshot, out_mp4, ticker=None):
     """beats: [{"say","osd","emphasis","visual","ticker"?}], market_snapshot: market_snapshot.py çıktısı."""
     market = market_snapshot["tickers"]
     ticker = ticker if ticker in market else next(iter(market))

@@ -62,6 +62,9 @@ jobs:
       TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}
       PYTHONUTF8: "1"
+      # hyperframes = HTML/GSAP görünüm (hata olursa eski Pillow renderer'a düşer)
+      RENDERER: ${{ vars.RENDERER }}
+      HYPERFRAMES_NO_TELEMETRY: "1"
 
     steps:
       - uses: actions/checkout@v4
@@ -86,8 +89,13 @@ jobs:
         if: steps.guard.outputs.skip != '1'
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y --no-install-recommends ffmpeg fonts-liberation fonts-dejavu-core
+          sudo apt-get install -y --no-install-recommends ffmpeg fonts-liberation fonts-dejavu-core fonts-inter
           ffmpeg -version | head -n 1
+
+      - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip != '1'
+        with:
+          node-version: "22"
 
       - name: Cache Piper voice (offline backup TTS)
         if: steps.guard.outputs.skip != '1'
