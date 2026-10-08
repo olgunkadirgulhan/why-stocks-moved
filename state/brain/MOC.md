@@ -35,3 +35,5 @@
 - [[2026-10-06-nvidia-up-2-12-to-238-90-hits-indexes]] — FOLLOW · hook 84
 - [[2026-10-07-gold-hits-4-160-70-as-usd-rises]] — SAVE · hook 91
 - [[2026-10-07-tesla-7-89-rally-hits-a-wall]] — FOLLOW · hook 86
+- [[2026-10-08-meta-stock-fell-2-38-now]] — SAVE · hook 86
+- [[2026-10-08-tesla-6-48-vs-meta-0-53-gap]] — FOLLOW · hook 85

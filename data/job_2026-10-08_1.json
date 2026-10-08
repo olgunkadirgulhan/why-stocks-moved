@@ -1,0 +1,155 @@
+{
+ "idea": {
+  "idea": "Ranking the biggest tech moves this week to find where smart money is moving: Tesla's 6.48% 5-day surge versus Nvidia's 3.98% gain and Meta's 0.53% drop.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO + aspiration",
+  "formula": "The Superlative",
+  "ticker": "TSLA",
+  "structure_from": "https://www.youtube.com/shorts/K7UvJQsjMOM",
+  "payoff_withheld_until_end": "The final S-Tier ranking of the mega-cap tech stocks based entirely on their 5-day capital flow strength.",
+  "data_points": [
+   "Tesla 5-day gain of 6.48%",
+   "Nvidia 5-day gain of 3.98%",
+   "Meta 5-day loss of 0.53%",
+   "Tesla price of $377.81"
+  ]
+ },
+ "hook": {
+  "hook": "Why did your Meta stock fall 0.53% this week while your Tesla shares jumped 6.48% before you risk more money?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 100,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 85,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Meta vs Tesla"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did your Meta stock fall 0.53% this week while your Tesla shares jumped 6.48% before you risk more money?",
+    "osd": "Meta vs Tesla",
+    "emphasis": "Tesla",
+    "visual": "chart",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "Amazon and Microsoft are leading the middle pack with 5-day gains of 4.32% and 3.29%.",
+    "osd": "Tech Middle Class",
+    "emphasis": "Leading",
+    "visual": "list",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "How is Nvidia gaining 3.98% this week to $237.47 while the Nasdaq index climbs 2.52%?",
+    "osd": "Nvidia 3.98% Gain",
+    "emphasis": "Nvidia",
+    "visual": "chart",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "The S-tier winner is Tesla with a 6.48% surge to $377.81 on Wednesday.",
+    "osd": "S-Tier Tesla 6.48%",
+    "emphasis": "Tesla",
+    "visual": "counter",
+    "ticker": "TSLA"
+   },
+   {
+    "say": "To track smart money moves, follow Why Stocks Moved. Not financial advice.",
+    "osd": "Not financial advice",
+    "emphasis": "financial",
+    "visual": "text",
+    "ticker": "TSLA"
+   }
+  ],
+  "word_count": 75,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Tesla 6.48% vs Meta -0.53% gap",
+  "chars": 30,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "30 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (6.48%, 0.53%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "SMART MONEY FLOWS",
+  "visual_brief": "A split-screen bar chart. Left side is a tall green bar with a Tesla logo; right side is a red bar dipping below the line with a Meta logo. High contrast background."
+ },
+ "as_of": "2026-10-07",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why is tesla stock going up while meta is down",
+    "tesla vs nvidia stock performance this week",
+    "tech stock rankings 2026 earnings"
+   ],
+   "description": "See why Tesla jumped 6.48% to $377.81 while Meta dropped 0.53% as we rank this week's biggest tech moves including Nvidia and Microsoft.\nUnderstand where the market is rotating and how tech giants compare to the Nasdaq's 2.52% gain. Not financial advice. #shorts",
+   "tags": [
+    "Tesla",
+    "TSLA",
+    "Meta",
+    "META",
+    "Nvidia",
+    "NVDA",
+    "Microsoft",
+    "MSFT",
+    "Amazon",
+    "AMZN",
+    "Nasdaq",
+    "stock market news",
+    "tech stocks",
+    "Why Stocks Moved",
+    "stock ranking"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "Why did Nvidia's record-breaking 75% profit margin suddenly trigger a $200 billion selloff in your S&P 500 index fund today?",
+  "hook_why": "It uses the Everyday Brand Paradox structure by pairing Nvidia's historic corporate success with an unexpected negative consequence for the viewer's personal index fund, immediately triggering loss aversion and curiosity.",
+  "beats": [
+   {
+    "t": "0-4s",
+    "said": "Why did Nvidia's record-breaking 75% profit margin suddenly trigger a $200 billion selloff in your S&P 500 index fund today?",
+    "shown": "Zoomed-in, high-contrast 1-day S&P 500 chart plunging. Bold screen overlay text: '75% MARGIN TRAP?'"
+   },
+   {
+    "t": "4-10s",
+    "said": "When a tech giant makes this much money, competitors rush in. Big buyers like Microsoft and Meta are now building their own chips to stop paying the Nvidia tax.",
+    "shown": "Chart switching to a split comparison of Nvidia's rising capital expenditures versus Microsoft's custom chip timeline. Screen text: 'THE CLIENT COUP'."
+   },
+   {
+    "t": "10-18s",
+    "said": "This means Nvidia's massive sales growth is hitting a wall. Because Nvidia makes up over 6% of your index fund, when its growth slows, your entire retirement account drops.",
+    "shown": "S&P 500 weighting pie chart highlighting Nvidia's massive slice, pulsing in red. Screen text: '6% WEIGHT RISK'."
+   },
+   {
+    "t": "18-26s",
+    "said": "Smart money is already shifting capital back into defensive, high-dividend stocks to hedge against this exact concentration risk.",
+    "shown": "Line chart showing capital flowing out of tech and into consumer staples. Screen text: 'SMART MONEY ROTATION'."
+   },
+   {
+    "t": "26-33s",
+    "said": "To track where the smart money moves next before you lose capital, follow Why Stocks Moved.",
+    "shown": "Clean, animated chart of the Dow Jones recovering, transitioning to a sleek 'Follow' button overlay. Screen text: 'FOLLOW FOR DATA'."
+   }
+  ],
+  "pacing": "Ultra-fast pacing with visual cuts every 4 to 6 seconds, utilizing dynamic financial charts that move constantly on every single beat to maintain high retention.",
+  "visual_technique": "Moving stock and index charts at frame zero, stark minimalist text overlays on every beat, and clean data visualizations instead of talking-head footage.",
+  "reusable_moves": [
+   "The Paradox Frame: Start with a massive corporate win (high margins) and immediately link it to an unexpected risk for the average retail investor's portfolio.",
+   "Index Weighting Shock: Visually demonstrate how a single stock's volatility disproportionately threatens the viewer's supposedly safe index funds to drive emotional urgency."
+  ],
+  "remake_plan": "Adapt the Twinkies paradox format by showing how Nvidia's record-breaking success has actually created a concentration crisis for everyday S&P 500 investors."
+ },
+ "video_id": "MtkKpzaJ02w",
+ "publish_at": "2026-10-08T22:30:00Z"
+}
