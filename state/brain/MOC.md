@@ -37,3 +37,5 @@
 - [[2026-10-07-tesla-7-89-rally-hits-a-wall]] — FOLLOW · hook 86
 - [[2026-10-08-meta-stock-fell-2-38-now]] — SAVE · hook 86
 - [[2026-10-08-tesla-6-48-vs-meta-0-53-gap]] — FOLLOW · hook 85
+- [[2026-10-09-gold-4-219-80-gain-beats-usd-drop]] — SAVE · hook 86
+- [[2026-10-09-nasdaq-1-25-drop-led-by-nvidia]] — FOLLOW · hook 79

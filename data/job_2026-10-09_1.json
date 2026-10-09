@@ -1,0 +1,152 @@
+{
+ "idea": {
+  "idea": "Rank the 3 biggest anchors dragging the Nasdaq down 1.25% on Thursday, ending with the #1 culprit (Nvidia) to drive FOMO-based follows.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO + aspiration",
+  "formula": "The Superlative",
+  "ticker": "^IXIC",
+  "structure_from": "https://www.youtube.com/shorts/K7UvJQsjMOM",
+  "payoff_withheld_until_end": "The #1 anchor (Nvidia at -2.94%) and its 5-day impact on index weighting.",
+  "data_points": [
+   "Nasdaq change: -1.25%",
+   "Nvidia change: -2.94%",
+   "Amazon change: -2.25%",
+   "Microsoft change: -1.35%",
+   "Day: Thursday"
+  ]
+ },
+ "hook": {
+  "hook": "Why did your Nasdaq drop 1.25% on Thursday before you lose money?",
+  "properties": {
+   "SPECIFICITY": 68,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 79,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "NASDAQ DROPS 1.25%"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "Why did your Nasdaq drop 1.25% on Thursday before you lose money?",
+    "osd": "NASDAQ DROPS 1.25%",
+    "emphasis": "DROPS",
+    "visual": "chart",
+    "ticker": "^IXIC"
+   },
+   {
+    "say": "Microsoft dragged your index down 1.35% on Thursday as tech shares faced broad selling pressure.",
+    "osd": "MICROSOFT FALLS 1.35%",
+    "emphasis": "FALLS",
+    "visual": "chart",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "Amazon pushed losses further with a 2.25% drop on Thursday across retail and cloud sectors.",
+    "osd": "AMAZON SLIDES 2.25%",
+    "emphasis": "SLIDES",
+    "visual": "chart",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "Nvidia ranked as the 1 anchor, plunging 2.94% on Thursday to close at $230.48.",
+    "osd": "NVDA PLUNGES 2.94%",
+    "emphasis": "PLUNGES",
+    "visual": "chart",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "Brand nostalgia is not a moat. Follow for daily market moves. Not financial advice.",
+    "osd": "FOLLOW FOR MARKET MOVES",
+    "emphasis": "FOLLOW",
+    "visual": "text",
+    "ticker": "^IXIC"
+   }
+  ],
+  "word_count": 70,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Nasdaq 1.25% drop led by Nvidia",
+  "chars": 31,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "31 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (1.25%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "INDEX TRAP",
+  "visual_brief": "Red Nasdaq chart collapsing downward, close-up on Nvidia ticker in dark red, bold center text clear of top 12% and bottom 20% UI elements."
+ },
+ "as_of": "2026-10-08",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Nasdaq 1.25% drop",
+    "Nvidia stock 2.94% drop",
+    "Nasdaq down Thursday tech stocks"
+   ],
+   "description": "See why the Nasdaq dropped 1.25% on Thursday and how Microsoft, Amazon, and Nvidia dragged the index down.\n\nNot financial advice.\n\n#shorts",
+   "tags": [
+    "Nasdaq",
+    "Nvidia",
+    "Microsoft",
+    "Amazon",
+    "tech stocks",
+    "stock market today",
+    "market drop",
+    "stocks",
+    "investing",
+    "finance"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How did an everyday consumer brand everyone recognizes turn into a five billion dollar corporate balance sheet disaster?",
+  "hook_why": "It pairs universal household familiarity with an unexpectedly massive dollar-denominated paradox, arresting the viewer's scroll by revealing hidden financial danger behind an ordinary product.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did a classic household staple turn into a five billion dollar corporate headache for its owners?",
+    "shown": "Household product visual cutting instantly to a sharp red downward valuation trajectory with a bold headline."
+   },
+   {
+    "t": "3-11s",
+    "said": "On the surface, retail shelves looked completely stable, but private equity leverage loaded the parent company with debt it could never outgrow.",
+    "shown": "Split-screen overlay contrasting steady consumer purchase footage with an escalating debt maturity bar chart."
+   },
+   {
+    "t": "11-20s",
+    "said": "When supply chain costs surged, they lacked pricing power to pass it on, wiping out operating margins across every distribution route.",
+    "shown": "Dynamic line chart showing ingredient input costs spiking while net operating margin lines cross into negative territory."
+   },
+   {
+    "t": "20-28s",
+    "said": "That debt load forced an emergency buyout, leaving investors holding the bag because brand nostalgia cannot service high-yield interest.",
+    "shown": "Enterprise valuation breakdown highlighting the discounted acquisition multiple and sharp equity wipeout."
+   },
+   {
+    "t": "28-35s",
+    "said": "Familiarity is not a financial moat. Follow real cash flow, not nostalgic brand names. Follow for daily market moves. Not financial advice.",
+    "shown": "Clean summary checklist on screen alongside ticker performance chart, ending on a follow prompt."
+   }
+  ],
+  "pacing": "Rapid 2-to-3 second visual cuts through the opening 12 seconds, decelerating slightly in the middle to explain the core margin mechanism, then accelerating into a crisp conclusion under 35 seconds total.",
+  "visual_technique": "Everyday Brand Paradox format: high-recognition consumer visuals juxtaposed against stark institutional balance-sheet graphics, supported by kinetic bold captions on every beat.",
+  "reusable_moves": [
+   "Everyday Brand Paradox: Open with an ultra-recognizable consumer staple to make complex corporate finance instantly accessible to casual viewers.",
+   "Single-Mechanism Autopsy: Isolate one clear financial friction point (leverage versus margins) instead of overwhelming the viewer with Wall Street jargon.",
+   "Quantified Multi-Billion Scale: Frame the conflict with a specific, massive dollar figure directly in the opening 1.5 seconds to anchor urgency."
+  ],
+  "remake_plan": "Execute the Everyday Brand Paradox on Apple's recent hardware slowdown: open on frame-0 with Apple's moving chart, questioning how the world's most familiar smartphone ecosystem faces a multi-billion dollar services margin squeeze."
+ },
+ "video_id": "5SfPJM_NvD0",
+ "publish_at": "2026-10-09T22:30:00Z"
+}

@@ -1,0 +1,150 @@
+{
+ "idea": {
+  "idea": "A macro guide on why Gold hit $4,219.80 on Friday as the Dollar Index slipped, framed as a 'future-you' reference for when rates pivot.",
+  "goal": "SAVE",
+  "emotion": "relief + fear-of-forgetting",
+  "formula": "The Question",
+  "ticker": "GC=F",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The inverse correlation chart showing exactly how much Gold moves for every 0.1% the Dollar Index drops.",
+  "data_points": [
+   "Gold price: $4,219.80",
+   "Gold change: +1.51%",
+   "Dollar Index: 102.04",
+   "Dollar Index change: -0.1%",
+   "Day: Friday"
+  ]
+ },
+ "hook": {
+  "hook": "How did your Gold portfolio gain 1.51 percent on Friday to $4,219.80 before you could even stop the inflation risk?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 96,
+   "STAKES": 100,
+   "CURIOSITY": 76,
+   "BREVITY": 100
+  },
+  "verdict": 86,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "FRIDAY GOLD GAIN"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "How did your Gold portfolio gain 1.51 percent on Friday to $4,219.80 before you could even stop the inflation risk?",
+    "osd": "FRIDAY GOLD GAIN",
+    "emphasis": "GAIN",
+    "visual": "counter",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "When the Dollar Index slipped 0.1 percent down to 102.04 on Friday, traditional safe haven flows rotated directly into precious metals.",
+    "osd": "DOLLAR SLIPPED",
+    "emphasis": "SLIPPED",
+    "visual": "chart",
+    "ticker": "DX-Y.NYB"
+   },
+   {
+    "say": "That 1.51 percent single day surge pushed Friday gold pricing to $4,219.80 while the 5-day return climbed 1.38 percent.",
+    "osd": "GOLD SURGE",
+    "emphasis": "SURGE",
+    "visual": "counter",
+    "ticker": "GC=F"
+   },
+   {
+    "say": "Here is the exact inverse correlation chart showing how much Gold moves for every 0.1 percent the Dollar Index drops. Not financial advice.",
+    "osd": "INVERSE CHART",
+    "emphasis": "CHART",
+    "visual": "chart",
+    "ticker": "GC=F"
+   }
+  ],
+  "word_count": 83,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Gold $4,219.80 gain beats USD drop",
+  "chars": 34,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "34 characters, inside the 60-character desktop cut",
+   "1 all-caps word for emphasis",
+   "carries a concrete figure (4,219.80)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "RATE SHIFT",
+  "visual_brief": "Medium close-up holding a chart highlighting a green spike, clean neutral background with high lighting contrast, text placed safely above bottom 20% UI."
+ },
+ "as_of": "2026-10-09",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "gold price $4219.80",
+    "gold gain dollar drop",
+    "gold inverse correlation dollar index"
+   ],
+   "description": "See why Gold gained 1.51% to $4,219.80 on Friday as the Dollar Index slipped, and how safe-haven flows affect your portfolio.\nNot financial advice.\n\n#shorts #gold #macro #investing",
+   "tags": [
+    "gold price",
+    "gold gain",
+    "dollar index",
+    "USD drop",
+    "safe haven flows",
+    "inflation risk",
+    "precious metals",
+    "macro guide",
+    "portfolio strategy",
+    "GC=F",
+    "DX-Y.NYB",
+    "market analysis",
+    "stocks and macro",
+    "why stocks moved"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "How did an everyday consumer brand everyone recognizes turn into a five billion dollar corporate balance sheet disaster?",
+  "hook_why": "It pairs universal household familiarity with an unexpectedly massive dollar-denominated paradox, arresting the viewer's scroll by revealing hidden financial danger behind an ordinary product.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "How did a classic household staple turn into a five billion dollar corporate headache for its owners?",
+    "shown": "Household product visual cutting instantly to a sharp red downward valuation trajectory with a bold headline."
+   },
+   {
+    "t": "3-11s",
+    "said": "On the surface, retail shelves looked completely stable, but private equity leverage loaded the parent company with debt it could never outgrow.",
+    "shown": "Split-screen overlay contrasting steady consumer purchase footage with an escalating debt maturity bar chart."
+   },
+   {
+    "t": "11-20s",
+    "said": "When supply chain costs surged, they lacked pricing power to pass it on, wiping out operating margins across every distribution route.",
+    "shown": "Dynamic line chart showing ingredient input costs spiking while net operating margin lines cross into negative territory."
+   },
+   {
+    "t": "20-28s",
+    "said": "That debt load forced an emergency buyout, leaving investors holding the bag because brand nostalgia cannot service high-yield interest.",
+    "shown": "Enterprise valuation breakdown highlighting the discounted acquisition multiple and sharp equity wipeout."
+   },
+   {
+    "t": "28-35s",
+    "said": "Familiarity is not a financial moat. Follow real cash flow, not nostalgic brand names. Follow for daily market moves. Not financial advice.",
+    "shown": "Clean summary checklist on screen alongside ticker performance chart, ending on a follow prompt."
+   }
+  ],
+  "pacing": "Rapid 2-to-3 second visual cuts through the opening 12 seconds, decelerating slightly in the middle to explain the core margin mechanism, then accelerating into a crisp conclusion under 35 seconds total.",
+  "visual_technique": "Everyday Brand Paradox format: high-recognition consumer visuals juxtaposed against stark institutional balance-sheet graphics, supported by kinetic bold captions on every beat.",
+  "reusable_moves": [
+   "Everyday Brand Paradox: Open with an ultra-recognizable consumer staple to make complex corporate finance instantly accessible to casual viewers.",
+   "Single-Mechanism Autopsy: Isolate one clear financial friction point (leverage versus margins) instead of overwhelming the viewer with Wall Street jargon.",
+   "Quantified Multi-Billion Scale: Frame the conflict with a specific, massive dollar figure directly in the opening 1.5 seconds to anchor urgency."
+  ],
+  "remake_plan": "Execute the Everyday Brand Paradox on Apple's recent hardware slowdown: open on frame-0 with Apple's moving chart, questioning how the world's most familiar smartphone ecosystem faces a multi-billion dollar services margin squeeze."
+ },
+ "video_id": "fY-XuQ8EIb4",
+ "publish_at": "2026-10-09T17:00:00Z"
+}
