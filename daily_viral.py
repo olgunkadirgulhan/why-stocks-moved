@@ -618,6 +618,27 @@ def main():
             continue
         publish_at = publish_time(hhmm)
         done = False
+        if i == 0 and os.environ.get("INVEST_VS", "1") != "0":   # günün ilk slotu: '1.000 $ A vs B' kıyas formatı
+            try:
+                import invest_vs
+                iv = invest_vs.build()
+                mp4 = renderer.render_pillow(iv["beats"], iv["snapshot"], OUT / f"{TODAY}_vs_{i}.mp4", iv["pair"][0])
+                vid = retry(upload_youtube, mp4, {"title": iv["title"]}, iv["yt"], publish_at)
+                add_to_playlist(vid, key="vs")
+                if not DRY:
+                    invest_vs.record(iv, vid)
+                if not social_sent and not DRY:
+                    social_sent = True
+                    tg_social(mp4, iv["title"], f"https://youtu.be/{vid}")
+                report.append(f"✅ [VS] {iv['title']} · {publish_at}\n   https://youtu.be/{vid}")
+                continue
+            except Exception as e:
+                log(traceback.format_exc())
+                if is_quota_error(e):
+                    quota_hit = True
+                    report.append(f"⏸ [VS] günlük YouTube kotası doldu")
+                    continue
+                report.append(f"↻ [VS] kıyas formatı başarısız: {str(e)[:150]} → normal akış")
         free = [x for x in pool if id(x) not in used]
         # aynı hedefteki fikirler önce; aynı gün aynı hisse tekrar etmesin
         free.sort(key=lambda x: (x.get("goal") != goal, x.get("ticker") in tickers_today))
