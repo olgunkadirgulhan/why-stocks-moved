@@ -1,0 +1,152 @@
+{
+ "idea": {
+  "idea": "Microsoft 3.39% weekly jump vs Nvidia 2.00% drop highlights tech split",
+  "goal": "FOLLOW",
+  "emotion": "FOMO + aspiration",
+  "formula": "The Statistic",
+  "ticker": "MSFT",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "The exact divergence percentage between Microsoft (+3.39%) and Nvidia (-2.00%) over 5 trading days",
+  "data_points": [
+   "Microsoft rose 2.38% on Friday to $535.07",
+   "Microsoft up 3.39% over 5 days",
+   "Nvidia down 2.00% over 5 days to $229.28"
+  ]
+ },
+ "hook": {
+  "hook": "What is the real reason your Microsoft holdings jumped 3.39% while Nvidia fell 2.00% this week before you lose money?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 93,
+   "BREVITY": 100
+  },
+  "verdict": 91,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "WHY BIG TECH SPLIT"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What is the real reason your Microsoft holdings jumped 3.39% while Nvidia fell 2.00% this week before you lose money?",
+    "osd": "WHY BIG TECH SPLIT",
+    "emphasis": "SPLIT",
+    "visual": "chart",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "Nvidia dropped 0.52% on Friday to $229.28 with no clear company headline behind the drop.",
+    "osd": "Nvidia fell to $229.28",
+    "emphasis": "fell",
+    "visual": "counter",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "Yet Microsoft jumped 2.38% on Friday to $535.07 while Nasdaq gained only 0.64%.",
+    "osd": "Microsoft rallied to $535.07",
+    "emphasis": "rallied",
+    "visual": "counter",
+    "ticker": "MSFT"
+   },
+   {
+    "say": "That pushed the S&P 500 up 1.15% this week as tech holdings decoupled.",
+    "osd": "Tech holdings decoupled this week",
+    "emphasis": "decoupled",
+    "visual": "compare",
+    "ticker": "MSFT",
+    "compare_with": "NVDA"
+   },
+   {
+    "say": "The result is an exact 5.39% divergence spread. Follow to see why:",
+    "osd": "Not financial advice. Follow for moves.",
+    "emphasis": "Follow",
+    "visual": "text",
+    "ticker": "MSFT"
+   }
+  ],
+  "word_count": 73,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "MSFT +3.39% beats NVDA -2.00%",
+  "chars": 29,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "29 characters, inside the 60-character desktop cut",
+   "2 all-caps word for emphasis",
+   "carries a concrete figure (3.39%, 2.00%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "CHIP CAPITAL SHIFT",
+  "visual_brief": "Split vertical composition: Microsoft green candlestick chart rising on the left, Nvidia red candlestick falling on the right. Bold yellow sans-serif text centered in middle third, avoiding top 12% and bottom 20%. High contrast black background ensures legibility down to 150px."
+ },
+ "as_of": "2026-10-09",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "why is microsoft stock up and nvidia down",
+    "msft vs nvda stock divergence",
+    "why big tech stocks are splitting"
+   ],
+   "description": "See why Microsoft gained 3.39% while Nvidia dropped 2.00% this week, creating a 5.39% divergence across major tech holdings.\nWe break down the exact numbers behind MSFT and NVDA as the S&P 500 moved up 1.15%.\n\nNot financial advice.\n\n#shorts #stocks #microsoft #nvidia #investing",
+   "tags": [
+    "MSFT",
+    "NVDA",
+    "Microsoft stock",
+    "Nvidia stock",
+    "Why Stocks Moved",
+    "MSFT vs NVDA",
+    "tech stocks",
+    "stock market update",
+    "S&P 500",
+    "Nasdaq",
+    "big tech"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "Ranking every major credit card from absolute worst to God-tier, and the number one card quietly draining your cash.",
+  "hook_why": "It combines an aggressive superlative tier-list premise with immediate loss aversion, forcing the viewer to watch through to see where their own card lands.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "Ranking every popular card from trash tier to elite, and the trap card you need to cut up today.",
+    "shown": "Bold tier list graphic pops up with familiar card logos immediately dragged across tiers."
+   },
+   {
+    "t": "3-10s",
+    "said": "Starting at the bottom: cards charging annual fees with zero real return on everyday spending.",
+    "shown": "Rapid cut to bottom-tier card breakdown, fee highlighted in bright red text overlay."
+   },
+   {
+    "t": "10-18s",
+    "said": "Mid tier: solid cash back options, but the reward caps eat away half the value if you actually use them.",
+    "shown": "Quick comparison graphic showing 2% vs 5% category caps with split-screen bar charts."
+   },
+   {
+    "t": "18-26s",
+    "said": "Top tier: the workhorse card that quietly returns real money on every standard dollar spent.",
+    "shown": "Top tier card sliding into S-rank slot with compounding value counter."
+   },
+   {
+    "t": "26-34s",
+    "said": "Here is how to check your current card lineup against this list before you lose more reward dollars.",
+    "shown": "Full tier list board displayed with clear summary callout and channel follow badge."
+   }
+  ],
+  "pacing": "Rapid-fire 6-to-8 second beat transitions, cutting ruthlessly every 1.5 to 2 seconds visually, maintaining high density of comparative data without downtime across a 30-35 second runtime.",
+  "visual_technique": "Tier maker graphic structure with clear color-coded tiers (F to S), instant drag-and-drop animation for items, dynamic on-screen comparison bars, and high-contrast bold captions readable on mute.",
+  "reusable_moves": [
+   "Rapid tier-list hierarchy that instantly categorizes familiar options to trigger debate and high retention.",
+   "Early warning hook framing the lowest rank as an active financial leak to drive loss aversion."
+  ],
+  "remake_plan": "Rank major mega-cap tech stocks or index funds from worst to best performer this week, showing moving stock charts from frame zero to explain which asset protected investor portfolios."
+ },
+ "video_id": "wtEYbOS6lmw",
+ "publish_at": "2026-10-11T22:30:00Z"
+}

@@ -39,3 +39,4 @@
 - [[2026-10-08-tesla-6-48-vs-meta-0-53-gap]] — FOLLOW · hook 85
 - [[2026-10-09-gold-4-219-80-gain-beats-usd-drop]] — SAVE · hook 86
 - [[2026-10-09-nasdaq-1-25-drop-led-by-nvidia]] — FOLLOW · hook 79
+- [[2026-10-11-msft-3-39-beats-nvda-2-00]] — FOLLOW · hook 91
