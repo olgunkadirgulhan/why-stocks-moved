@@ -69,8 +69,12 @@ def piper_tts(text, wav):
     model = os.path.join(PIPER_DIR, PIPER_VOICE + ".onnx")
     if not os.path.exists(model):
         os.makedirs(PIPER_DIR, exist_ok=True)
-        subprocess.run([sys.executable, "-m", "piper.download_voices", PIPER_VOICE, "--data-dir", PIPER_DIR],
-                       check=True, capture_output=True)
+        import urllib.request   # HF 'main' dalında sesler kaldırıldı (2026-10): sabit v1.0.0 etiketi
+        lang, voice, quality = PIPER_VOICE.split("-", 2)
+        base = (f"https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/{lang.split('_')[0]}/{lang}/"
+                f"{voice}/{quality}/{PIPER_VOICE}")
+        for ext in (".onnx", ".onnx.json"):
+            urllib.request.urlretrieve(base + ext + "?download=true", os.path.join(PIPER_DIR, PIPER_VOICE + ext))
     subprocess.run([sys.executable, "-m", "piper", "-m", model, "-f", str(wav)], input=text, text=True,
                    encoding="utf-8", check=True, capture_output=True)
 
