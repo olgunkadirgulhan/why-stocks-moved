@@ -38,10 +38,33 @@ def history(sym):
     return h
 
 
+def trend_text():
+    """2026-10-12 trendler: günün Google Trends (ABD) + 'stock' arama önerileri; adı geçen varlığın çifti önce gelir."""
+    import xml.etree.ElementTree as ET
+    import requests
+    out = ''
+    try:
+        r = requests.get('https://trends.google.com/trending/rss', params={'geo': 'US'}, timeout=10)
+        out += ' '.join(i.findtext('title') or '' for i in ET.fromstring(r.content).iter('item')).lower()
+        for q in ('stock', 'stocks to buy'):
+            r = requests.get('https://suggestqueries.google.com/complete/search',
+                             params={'client': 'firefox', 'ds': 'yt', 'hl': 'en', 'q': q}, timeout=6)
+            out += ' ' + ' '.join(r.json()[1]).lower()
+    except Exception:
+        pass
+    return out
+
+
 def next_pair():
     done = json.loads(STATE.read_text()) if STATE.exists() else []
     recent = {tuple(d["pair"]) for d in done[-len(PAIRS) + 2:]}
-    return next((p for p in PAIRS if p not in recent), PAIRS[len(done) % len(PAIRS)]), done
+    fresh = [p for p in PAIRS if p not in recent]
+    tt = trend_text()
+    hot = [p for p in fresh if any(NAMES[s].lower() in tt for s in p)]
+    if hot:
+        print("trend çifti:", hot[0], flush=True)
+        return hot[0], done
+    return (fresh[0] if fresh else PAIRS[len(done) % len(PAIRS)]), done
 
 
 def build():
