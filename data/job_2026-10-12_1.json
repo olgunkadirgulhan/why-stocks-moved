@@ -1,0 +1,153 @@
+{
+ "idea": {
+  "idea": "Why Amazon jumped 3.29% to $262.43 on Friday while Nvidia dipped 0.52%.",
+  "goal": "FOLLOW",
+  "emotion": "FOMO + aspiration",
+  "formula": "The Question",
+  "ticker": "AMZN",
+  "structure_from": "https://www.youtube.com/shorts/6f5rmIYBERY",
+  "payoff_withheld_until_end": "Showing which mega-cap stock actually drove index gains heading into the weekend.",
+  "data_points": [
+   "Amazon at $262.43, up 3.29% on Friday",
+   "Nvidia at $229.28, down 0.52% on Friday"
+  ]
+ },
+ "hook": {
+  "hook": "What is the real reason your Amazon stock hit $262.43 up 3.29% while Nvidia dropped before you lose gains?",
+  "properties": {
+   "SPECIFICITY": 90,
+   "ADDRESS": 96,
+   "STAKES": 88,
+   "CURIOSITY": 93,
+   "BREVITY": 100
+  },
+  "verdict": 91,
+  "band": "STRONG",
+  "formula": "The Question",
+  "on_screen": "Why Amazon Jumped"
+ },
+ "script": {
+  "beats": [
+   {
+    "say": "What is the real reason your Amazon stock hit $262.43 up 3.29% while Nvidia dropped before you lose gains?",
+    "osd": "Amazon Jumped 3.29% On Friday",
+    "emphasis": "Amazon",
+    "visual": "chart",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "At F-tier, legacy hardware stocks drop while Nvidia sits down 0.52% to $229.28 on Friday.",
+    "osd": "Nvidia Dips 0.52%",
+    "emphasis": "Nvidia",
+    "visual": "compare",
+    "ticker": "NVDA"
+   },
+   {
+    "say": "In B-tier, the S&P 500 holds baseline index support rising 0.59% on Friday.",
+    "osd": "S&P Up 0.59%",
+    "emphasis": "Baseline",
+    "visual": "chart",
+    "ticker": "^GSPC"
+   },
+   {
+    "say": "S-tier belongs to Amazon carrying index gains as 5-day momentum reaches 4.34%.",
+    "osd": "Amazon S-Tier 4.34%",
+    "emphasis": "Amazon",
+    "visual": "chart",
+    "ticker": "AMZN"
+   },
+   {
+    "say": "Check where your holdings sit before tomorrow's open—follow for daily stock moves. Not financial advice.",
+    "osd": "Follow For Daily Moves",
+    "emphasis": "Follow",
+    "visual": "text",
+    "ticker": "AMZN"
+   }
+  ],
+  "word_count": 74,
+  "mute_pass": true,
+  "length_pass": true
+ },
+ "package": {
+  "title": "Amazon 3.29% rally leaves Nvidia behind",
+  "chars": 39,
+  "score": 100,
+  "issues": [],
+  "good": [
+   "39 characters, inside the 60-character desktop cut",
+   "carries a concrete figure (3.29%)",
+   "thumbnail and title carry different words"
+  ],
+  "thumb": "INDEX DIVERGENCE",
+  "visual_brief": "Split screen showing Amazon's green candle spiking past Nvidia's red dip; high-contrast white text on dark background."
+ },
+ "as_of": "2026-10-09",
+ "platforms": {
+  "youtube": {
+   "queries": [
+    "Amazon stock 3.29 rally",
+    "Amazon vs Nvidia Friday move",
+    "Amazon stock price 262.43"
+   ],
+   "description": "Why Amazon jumped 3.29% to $262.43 while Nvidia dipped 0.52%, and what it means for your portfolio.\nNot financial advice.\n\n#shorts #amazon #nvda #stocks #investing",
+   "tags": [
+    "Amazon",
+    "Nvidia",
+    "AMZN stock",
+    "NVDA stock",
+    "stock market",
+    "tech stocks",
+    "S&P 500",
+    "stock rally",
+    "market update",
+    "investing",
+    "trading",
+    "stocks to watch",
+    "wall street",
+    "market news",
+    "daily stocks"
+   ],
+   "query_test_pass": true
+  }
+ },
+ "teardown": {
+  "hook": "Ranking every mega-cap tech stock from F-tier to God-tier—and the #1 stock taking 30% off your gains.",
+  "hook_why": "Combines a recognizable tier-list framework with high-stakes loss aversion in the first 1.5 seconds, triggering instant curiosity and high retention.",
+  "beats": [
+   {
+    "t": "0-3s",
+    "said": "Which tech giants actually belong in your portfolio this quarter?",
+    "shown": "Frame 0 moving stock chart with a high-contrast F-to-S Tier overlay snapping onto screen."
+   },
+   {
+    "t": "3-10s",
+    "said": "At F-tier, legacy hardware stocks drop while margins shrink.",
+    "shown": "Red candlestick chart dipping lower with bold headline text highlighting margin drop."
+   },
+   {
+    "t": "10-20s",
+    "said": "In B-tier, mega-caps hold baseline index support while awaiting Fed rate signals.",
+    "shown": "Side-by-side moving line charts comparing S&P 500 baseline vs ticker consolidation."
+   },
+   {
+    "t": "20-30s",
+    "said": "S-tier belongs to the single chip driver carrying 40% of index gains today.",
+    "shown": "Breakout green chart surging upward into S-tier slot with percentage overlay."
+   },
+   {
+    "t": "30-35s",
+    "said": "Check where your holdings sit before tomorrow's market open—follow for daily stock moves.",
+    "shown": "Full tier-list summary graphic on screen with simple end-card CTA."
+   }
+  ],
+  "pacing": "Rapid-fire 2-4 second cuts per beat, building kinetic momentum towards the S-tier reveal; total length 33 seconds.",
+  "visual_technique": "Superimposed Tier Maker graphic over live moving stock charts starting at frame 0, featuring high-contrast on-screen text for every beat.",
+  "reusable_moves": [
+   "Tier-List Visual Anchor: Categorizing multiple assets into familiar rank levels (F to S) to instantly simplify complex financial data.",
+   "Ascending Stakes Progression: Starting with low-tier traps to provoke risk-aversion before holding retention for the S-tier winner reveal."
+  ],
+  "remake_plan": "Adapt the rapid tier-ranking structure to rank US mega-cap tech stocks by daily index impact using moving price charts and bold on-screen labels."
+ },
+ "video_id": "r2vYfjkP09Y",
+ "publish_at": "2026-10-12T22:30:00Z"
+}

@@ -40,3 +40,4 @@
 - [[2026-10-09-gold-4-219-80-gain-beats-usd-drop]] — SAVE · hook 86
 - [[2026-10-09-nasdaq-1-25-drop-led-by-nvidia]] — FOLLOW · hook 79
 - [[2026-10-11-msft-3-39-beats-nvda-2-00]] — FOLLOW · hook 91
+- [[2026-10-12-amazon-3-29-rally-leaves-nvidia-behind]] — FOLLOW · hook 91
