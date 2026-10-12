@@ -81,7 +81,7 @@ def build():
         {"say": f"Hint two: {h2}.", "osd": f"Hint 2: {h2}", "emphasis": "Hint", "visual": "chart", "ticker": MYSTERY},
         {"say": f"Last hint: {h3}. Comment your guess now!", "osd": f"Hint 3: {h3}", "emphasis": "Hint",
          "visual": "chart", "ticker": MYSTERY},
-        {"say": f"It is {name}! {pct_text(pct)} over the past year. Did you get it?", "osd": f"It's {name}!",
+        {"say": f"It is {name}! {pct_text(pct).capitalize()} over the past year. Did you get it?", "osd": f"It's {name}!",
          "emphasis": name.split()[0], "visual": "chart", "ticker": sym},
         {"say": "How many hints did you need? Tell us below. This is not financial advice.",
          "osd": "1, 2 or 3 hints?", "emphasis": "hints", "visual": "text", "ticker": sym},
