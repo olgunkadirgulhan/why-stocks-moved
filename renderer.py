@@ -360,6 +360,10 @@ def render_pillow(beats, market_snapshot, out_mp4, ticker=None):
             while bi + 1 < len(beats) and t >= starts[bi + 1]:
                 bi += 1
             img = frame(bg, beats[bi], market, ticker, t - starts[bi], durs[bi], t, total)
+            if fi == 0:
+                first = img.copy()
+            if H > W and t > total - 0.45:   # dikey Short: kesintisiz döngü
+                img = Image.blend(img, first, min(1.0, (t - (total - 0.45)) / 0.45))
             p.stdin.write(img.tobytes())
         p.stdin.close()
         rc = p.wait()
