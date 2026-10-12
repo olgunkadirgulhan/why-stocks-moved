@@ -17,6 +17,11 @@ import renderer
 HERE = Path(__file__).resolve().parent
 STATE = HERE / "data" / "guess_stock.json"
 MYSTERY = "MYSTERY"
+CATEGORY = {"AAPL": "Tech", "NVDA": "Chips", "TSLA": "Cars", "AMZN": "Shopping", "MSFT": "Software", "GOOGL": "Internet",
+            "META": "Social Media", "NFLX": "Streaming", "DIS": "Entertainment", "NKE": "Sportswear", "KO": "Drinks",
+            "MCD": "Fast Food", "SBUX": "Coffee", "COST": "Retail", "WMT": "Retail", "UBER": "Apps", "SPOT": "Music",
+            "ABNB": "Travel", "AMD": "Chips", "BA": "Airplanes", "PEP": "Snacks", "CMG": "Fast Food", "F": "Cars",
+            "GME": "Gaming"}
 # sembol: (ad, sektör ipucu, ürün ipucu, harf ipucu) — herkesin tanıdığı markalar, sadece genel bilgi
 POOL = {
     "AAPL": ("Apple", "It makes phones and computers", "Its logo is a fruit with a bite", "It starts with A"),
@@ -81,7 +86,7 @@ def build():
         {"say": "How many hints did you need? Tell us below. This is not financial advice.",
          "osd": "1, 2 or 3 hints?", "emphasis": "hints", "visual": "text", "ticker": sym},
     ]
-    sector = h1.replace("It is ", "").replace("It ", "").rstrip(".")
+    sector = CATEGORY.get(sym, "Famous Brand")
     titles = [f"Guess the Stock From Its Chart 🤔 ({sector})", "Can You Guess This Stock in 3 Hints? 📈",
               f"Name This Stock! Hint: {sector} 🤔", "Guess the Company From One Year of Its Chart 📉📈"]
     title = titles[len(done) % len(titles)][:95]
