@@ -639,6 +639,24 @@ def main():
                     report.append(f"⏸ [VS] günlük YouTube kotası doldu")
                     continue
                 report.append(f"↻ [VS] kıyas formatı başarısız: {str(e)[:150]} → normal akış")
+        if i == 1 and os.environ.get("GUESS_STOCK", "1") != "0":   # 2026-10-12: ikinci slot 'Guess the Stock' oyunu
+            try:
+                import guess_stock
+                gs = guess_stock.build()
+                mp4 = renderer.render_pillow(gs["beats"], gs["snapshot"], OUT / f"{TODAY}_guess_{i}.mp4", guess_stock.MYSTERY)
+                vid = retry(upload_youtube, mp4, {"title": gs["title"]}, gs["yt"], publish_at)
+                add_to_playlist(vid, key="guess")
+                if not DRY:
+                    guess_stock.record(gs, vid)
+                report.append(f"✅ [GUESS] {gs['title']} · {publish_at}\n   https://youtu.be/{vid}")
+                continue
+            except Exception as e:
+                log(traceback.format_exc())
+                if is_quota_error(e):
+                    quota_hit = True
+                    report.append("⏸ [GUESS] günlük YouTube kotası doldu")
+                    continue
+                report.append(f"↻ [GUESS] tahmin formatı başarısız: {str(e)[:150]} → normal akış")
         free = [x for x in pool if id(x) not in used]
         # aynı hedefteki fikirler önce; aynı gün aynı hisse tekrar etmesin
         free.sort(key=lambda x: (x.get("goal") != goal, x.get("ticker") in tickers_today))
