@@ -376,7 +376,9 @@ def main():
         state['done'].append(dict(fmt=f, key=key, video_id=vid, date=str(datetime.date.today()), title=v['title']))
         STATE.write_text(json.dumps(state, indent=1))
         log(f'  yüklendi https://youtu.be/{vid}')
-    if '--long' in sys.argv and int(sys.argv[sys.argv.index('--long') + 1]) > 0:   # 16:9 uzun videolar (tvn_long.py)
+    long_days = (os.environ.get('LONG_DAYS') or 'mon,wed,fri').split(',')   # 2026-10-14: haftada 3 uzun
+    today_ok = datetime.date.today().strftime('%a').lower()[:3] in long_days or DRY
+    if '--long' in sys.argv and int(sys.argv[sys.argv.index('--long') + 1]) > 0 and today_ok:   # 16:9 uzun videolar (tvn_long.py)
         import tvn_long
         tvn_long.main(int(sys.argv[sys.argv.index('--long') + 1]), slots=(os.environ.get('LONG_SLOTS') or '17:00').split(','))
 
