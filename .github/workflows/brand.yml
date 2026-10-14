@@ -1,0 +1,30 @@
+name: brand
+# Then vs Now kanal kimliği: banner, açıklama, filigran; hide_old=true ise eski borsa videolarını gizler (silmez).
+on:
+  workflow_dispatch:
+    inputs:
+      hide_old:
+        description: Eski videoları gizle (true/false)
+        default: "false"
+permissions:
+  contents: write
+jobs:
+  brand:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install --disable-pip-version-check -r requirements.txt
+      - env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+        run: python brand/tvn_brand.py --apply ${{ inputs.hide_old == 'true' && '--hide-old' || '' }}
+      - name: Gizlenen listesini kaydet
+        run: |
+          git config user.name "brand-bot"; git config user.email "actions@users.noreply.github.com"
+          git add data/tvn/hidden_old.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "tvn: gizlenen eski videolar" && git pull --rebase -q && git push -q)

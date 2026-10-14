@@ -28,9 +28,9 @@ jobs:
           YT_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
-          CHANNEL_NAME: "Why Stocks Moved"
-          CHANNEL_ABOUT: "One real market move explained in plain words, daily. Education only, not financial advice."
-          CHANNEL_KIND: finance
+          CHANNEL_NAME: "Then vs Now"
+          CHANNEL_ABOUT: "Real U.S. prices then vs now (eggs, gas, groceries) from official BLS data, with inflation and minimum-wage comparisons. Ask viewers what they remember paying; never give financial advice."
+          CHANNEL_KIND: general
           CHANNEL_LANG: en
           STATE_FILE: comment_replies.json
           MAX_REPLIES_PER_DAY: "45"
