@@ -75,6 +75,9 @@ jobs:
           # a backup trigger must not produce a second batch; look at the latest main, not the trigger commit
           git fetch -q origin main
           done_today=$(git ls-tree --name-only origin/main data/ | grep -E "data/(job|recap)_$(date -u +%F)" || true)
+          if [ "${{ vars.CONTENT_MODE }}" = "tvn" ]; then
+            done_today=$(git show origin/main:data/tvn/state.json 2>/dev/null | grep -c "\"date\": \"$(date -u +%F)\"" | grep -v '^0$' || true)
+          fi
           if [ "$SCHEDULED" = "true" ] && [ -n "$done_today" ]; then
             echo "skip=1" >> "$GITHUB_OUTPUT"; echo "today's videos already exist, nothing to do"
           fi
@@ -120,7 +123,8 @@ jobs:
           # Scheduled runs only render (videos come as artifacts) until PUBLISH_MODE=live is set.
           if [ "$SCHEDULED" = "true" ] && [ "${{ vars.PUBLISH_MODE }}" != "live" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "$SCHEDULED" != "true" ] && [ "${{ inputs.fallback_only }}" = "true" ]; then ARGS="$ARGS --fallback-only"; fi
-          python daily_viral.py $ARGS
+          # 2026-10-14: kanal "Then vs Now" konseptine geçti (CONTENT_MODE=tvn); eski akış CONTENT_MODE boşsa çalışır
+          if [ "${{ vars.CONTENT_MODE }}" = "tvn" ]; then python tvn.py $ARGS; else python daily_viral.py $ARGS; fi
 
       - name: Videos as artifact
         if: always()
@@ -129,6 +133,7 @@ jobs:
           name: videos-${{ github.run_id }}
           path: |
             out/*.mp4
+            out/tvn/*.mp4
             out/*.json
             logs/
           retention-days: 7
