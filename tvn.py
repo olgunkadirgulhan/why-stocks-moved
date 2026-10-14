@@ -371,7 +371,7 @@ def main():
         log(f'  yüklendi https://youtu.be/{vid}')
     if '--long' in sys.argv and int(sys.argv[sys.argv.index('--long') + 1]) > 0:   # 16:9 uzun videolar (tvn_long.py)
         import tvn_long
-        tvn_long.main(int(sys.argv[sys.argv.index('--long') + 1]), slots=os.environ.get('LONG_SLOTS', '10:00,20:00').split(','))
+        tvn_long.main(int(sys.argv[sys.argv.index('--long') + 1]), slots=(os.environ.get('LONG_SLOTS') or '17:00').split(','))
 
 
 if __name__ == '__main__':
