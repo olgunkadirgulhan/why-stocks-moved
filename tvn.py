@@ -65,9 +65,15 @@ def adj(v, y0, y1):
 def pick(state, rnd, fmt=None):
     done = {json.dumps(d['key']) for d in state.get('done', [])}
     last_fmts = [d['fmt'] for d in state.get('done', [])][-3:]
-    fmts = ['item', 'item', 'dollar', 'basket', 'wage', 'race', 'trio']
-    for _ in range(400):
-        f = fmt or rnd.choice([x for x in fmts if last_fmts.count(x) < 2] or fmts)
+    import tvn_more as TM
+    fmts = ['item', 'dollar', 'basket', 'wage', 'race', 'trio'] + TM.KURGU
+    for _ in range(3000):
+        f = fmt or rnd.choice([x for x in fmts if x not in last_fmts] or fmts)
+        if f in TM.KURGU:
+            key = TM.key_for(f, rnd)
+            if key is not None and json.dumps(key) not in done:
+                return f, key
+            continue
         if f == 'item':
             it = rnd.choice(list(PRICES)); y0 = rnd.choice([y for y in PRICES[it]['years'] if y <= latest(it) - 10])
             key = ['item', it, y0]
@@ -359,9 +365,10 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for i in range(n):
         f, key = pick(state, rnd, fmt)
-        v = build(f, key, rnd)
+        import tvn_more as TM
+        v = TM.build(key, rnd) if f in TM.KURGU else build(f, key, rnd)
         log(f'[tvn] {f} {key} → {v["title"]}')
-        mp4 = render(v, OUT / f'{datetime.date.today()}_{i}.mp4')
+        mp4 = (TM.render if f in TM.KURGU else render)(v, OUT / f'{datetime.date.today()}_{i}.mp4')
         if DRY:
             log(f'  [dry-run] {mp4}'); continue
         from daily_viral import publish_time, SLOTS
