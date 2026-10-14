@@ -217,8 +217,9 @@ def receipt(img, x, y, w, h, prog, year, lines, total, stamp=None, now=False, lh
         st = Image.new('RGBA', (760, 260), (0, 0, 0, 0)); sd = ImageDraw.Draw(st)
         sd.rounded_rectangle([10, 10, 750, 250], radius=30, outline=RED + (235,), width=16)
         sd.text((380, 134), txt, font=font(DISP, 190), fill=RED + (235,), anchor='mm')
+        s *= 0.5   # damga başlığın sağ üstüne: toplam satırını kapatmasın
         st = st.rotate(-10, expand=True, resample=Image.BICUBIC); st = st.resize((int(st.width * s), int(st.height * s)))
-        img.paste(st, (x + w - st.width + 40, y + h - st.height // 3), st)
+        img.paste(st, (x + w - st.width // 2 - 180, y + 50 - st.height // 2), st)
 
 
 def frame(base, v, beat_i, t, kind):
@@ -282,8 +283,8 @@ def render(v, mp4):
         except Exception:
             import renderer
             a = tmp / f'a{i}.wav'; renderer.piper_tts(b['say'], a)
-        w = tmp / f'w{i}.wav'   # hepsi aynı biçime: 24 kHz mono PCM + 0,35 sn sessizlik
-        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', str(a), '-af', 'apad=pad_dur=0.35', '-ar', '24000', '-ac', '1',
+        w = tmp / f'w{i}.wav'   # hepsi aynı biçime: 24 kHz mono PCM + baş/son sessizlik kırpılır + 0,3 sn ara
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', str(a), '-af', 'silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse,apad=pad_dur=0.3', '-ar', '24000', '-ac', '1',
                         '-c:a', 'pcm_s16le', str(w)], check=True)
         auds.append(w); durs.append(dur(w))
     lst = tmp / 'a.txt'; lst.write_text(''.join(f"file '{a}'\n" for a in auds))
