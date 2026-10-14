@@ -1,0 +1,59 @@
+{
+ "done": [
+  {
+   "fmt": "dollar",
+   "key": [
+    "dollar",
+    2015
+   ],
+   "video_id": "BT4AIr-ke2w",
+   "date": "2026-10-14",
+   "title": "What $100 From 2015 Is Worth Now \ud83d\udcb5"
+  },
+  {
+   "fmt": "wage",
+   "key": [
+    "wage",
+    "bread",
+    2007
+   ],
+   "video_id": "p9HXNm2u5eU",
+   "date": "2026-10-14",
+   "title": "How Long You Worked for White Bread in 2007 vs Now \u23f1\ufe0f"
+  },
+  {
+   "fmt": "race",
+   "key": [
+    "race",
+    "rice",
+    "bacon",
+    2005
+   ],
+   "video_id": "yVybLntgOco",
+   "date": "2026-10-14",
+   "title": "Since 2005: White Rice or Sliced Bacon, Which Rose More?"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    2001,
+    "prices"
+   ],
+   "video_id": "LJgzwTpBKy4",
+   "date": "2026-10-14",
+   "title": "Then vs Now: 13 Everyday Prices, 2001 vs 2025"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    2000,
+    "prices"
+   ],
+   "video_id": "PkxRbTMjdSQ",
+   "date": "2026-10-14",
+   "title": "Then vs Now: 13 Everyday Prices, 2000 vs 2025"
+  }
+ ]
+}
