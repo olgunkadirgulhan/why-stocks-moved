@@ -124,7 +124,7 @@ jobs:
           if [ "$SCHEDULED" = "true" ] && [ "${{ vars.PUBLISH_MODE }}" != "live" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "$SCHEDULED" != "true" ] && [ "${{ inputs.fallback_only }}" = "true" ]; then ARGS="$ARGS --fallback-only"; fi
           # 2026-10-14: kanal "Then vs Now" konseptine geçti (CONTENT_MODE=tvn); eski akış CONTENT_MODE boşsa çalışır
-          if [ "${{ vars.CONTENT_MODE }}" = "tvn" ]; then python tvn.py $ARGS; else python daily_viral.py $ARGS; fi
+          if [ "${{ vars.CONTENT_MODE }}" = "tvn" ]; then python tvn.py $ARGS --long "${{ vars.LONG_PER_DAY || 0 }}"; else python daily_viral.py $ARGS; fi
 
       - name: Videos as artifact
         if: always()
@@ -134,6 +134,7 @@ jobs:
           path: |
             out/*.mp4
             out/tvn/*.mp4
+            out/tvn/long_*.mp4
             out/*.json
             logs/
           retention-days: 7

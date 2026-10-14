@@ -65,7 +65,7 @@ def adj(v, y0, y1):
 def pick(state, rnd, fmt=None):
     done = {json.dumps(d['key']) for d in state.get('done', [])}
     last_fmts = [d['fmt'] for d in state.get('done', [])][-3:]
-    fmts = ['item', 'item', 'dollar', 'basket', 'wage', 'race']
+    fmts = ['item', 'item', 'dollar', 'basket', 'wage', 'race', 'trio']
     for _ in range(400):
         f = fmt or rnd.choice([x for x in fmts if last_fmts.count(x) < 2] or fmts)
         if f == 'item':
@@ -73,8 +73,8 @@ def pick(state, rnd, fmt=None):
             key = ['item', it, y0]
         elif f == 'dollar':
             y0 = rnd.choice(list(range(1920, 2016, 5))); key = ['dollar', y0]
-        elif f == 'basket':
-            y0 = rnd.choice(list(range(1996, 2016))); key = ['basket', y0]
+        elif f in ('basket', 'trio'):
+            y0 = rnd.choice(list(range(1996, 2016))); key = [f, y0] if f == 'basket' else [f, y0, rnd.randint(1, 9)]
         elif f == 'wage':
             it = rnd.choice([k for k in PRICES if k != 'electricity']); y0 = rnd.choice([y for y in PRICES[it]['years'] if y in MINWAGE and y <= 2008])
             key = ['wage', it, y0]
@@ -87,72 +87,104 @@ def pick(state, rnd, fmt=None):
 
 
 # ---------------------------------------------------------------- senaryo (beat = söylenen + ekran)
-def build(f, key):
+def C(rnd, *o): return rnd.choice(o)
+
+
+def build(f, key, rnd=None):
+    rnd = rnd or random.Random(json.dumps(key))
     if f == 'item':
         _, it, y0 = key; P = PRICES[it]; y1 = latest(it); p0, p1 = P['years'][y0], P['years'][y1]
-        inf = adj(p0, y0, y1); pct = (p1 / p0 - 1) * 100; faster = p1 > inf
-        beats = [dict(say=f"{P['phrase']} in {y0} cost {money(p0)}. Guess what it costs now.", show='then'),
-                 dict(say=f"In {y1}? {money(p1)}.", show='now'),
-                 dict(say=(f"That's {pct:.0f} percent more." if pct >= 0 else f"That's {-pct:.0f} percent less."), show='stamp'),
-                 dict(say=f"If it had only followed inflation, it would cost {money(inf)}. "
-                          + ("So it went up faster than everything else." if faster else "So it actually got cheaper in real terms."), show='inflation'),
-                 dict(say=f"What did you pay last time? Tell me below.", show='cta')]
+        inf = adj(p0, y0, y1); pct = (p1 / p0 - 1) * 100; faster = p1 > inf; ph = P['phrase']
+        beats = [dict(say=C(rnd, f"{ph} in {y0} cost {money(p0)}. Guess what it costs now.", f"Back in {y0}, {ph.lower()} was {money(p0)}. What is it today?",
+                            f"{y0}. {ph}. {money(p0)}. Now guess the price today.", f"Remember paying {money(p0)} for {ph.lower()}? That was {y0}."), show='then'),
+                 dict(say=C(rnd, f"In {y1}? {money(p1)}.", f"Today: {money(p1)}.", f"The {y1} average: {money(p1)}."), show='now'),
+                 dict(say=(C(rnd, f"That's {pct:.0f} percent more.", f"Up {pct:.0f} percent.", f"A {pct:.0f} percent jump.") if pct >= 0
+                           else C(rnd, f"That's {-pct:.0f} percent less.", f"Down {-pct:.0f} percent.")), show='stamp'),
+                 dict(say=C(rnd, f"If it had only followed inflation, it would cost {money(inf)}. ", f"Inflation alone would put it at {money(inf)}. ",
+                            f"Adjusted for inflation, {y0}'s price would be {money(inf)} today. ")
+                          + (C(rnd, "So it went up faster than everything else.", "So it beat inflation, in the bad way.", "So it rose faster than prices overall.") if faster
+                             else C(rnd, "So it actually got cheaper in real terms.", "So in real terms, it is a better deal now.")), show='inflation'),
+                 dict(say=C(rnd, "What did you pay last time? Tell me below.", f"What does {ph.lower()} cost where you live? Comment below.",
+                            f"Do you remember the {y0} price? Tell me below.", "Too much or fair? Comment below."), show='cta')]
         rec = dict(lines=[(SHORT[it], p0, p1)], y0=y0, y1=y1, inf=[inf], pct=pct)
-        title = f"{P['phrase'].replace('A ', '').replace('a ', '').capitalize()}: {y0} Price vs {y1} {P['emoji']}"
+        nm = ph.replace('A ', '').replace('a ', '').capitalize()
+        title = C(rnd, f"{nm}: {y0} Price vs {y1} {P['emoji']}", f"What {nm} Cost in {y0} vs Today {P['emoji']}", f"{nm} in {y0} vs {y1}: The Real Price {P['emoji']}")
         if len(title) > 70: title = f"{P['label'].title()}: {y0} vs {y1} {P['emoji']}"
-        desc = (f"{P['phrase']} cost {money(p0)} in {y0} and {money(p1)} in {y1} ({pct:+.0f}%). Adjusted only for "
+        desc = (f"{ph} cost {money(p0)} in {y0} and {money(p1)} in {y1} ({pct:+.0f}%). Adjusted only for "
                 f"inflation it would be {money(inf)}.\n\nSeries: {P['series']} (BLS average price, U.S. city average).")
     elif f == 'dollar':
         _, y0 = key; y1 = max(CPI); v = adj(100, y0, y1); k = v / 100
-        beats = [dict(say=f"Here is what one hundred dollars from {y0} is worth today.", show='then'),
-                 dict(say=f"In {y1} money, it's {money(v)}.", show='now'),
-                 dict(say=f"Prices are about {k:.1f} times higher than in {y0}.", show='stamp'),
-                 dict(say=f"Same bill, same paper. It just buys {100 / k:.0f} percent of what it used to.", show='inflation'),
-                 dict(say="Which year do you want to see next? Comment below.", show='cta')]
+        beats = [dict(say=C(rnd, f"Here is what one hundred dollars from {y0} is worth today.", f"A hundred dollar bill in {y0}. What is it worth now?",
+                            f"Take one hundred dollars back to {y0}. Now bring that buying power to today."), show='then'),
+                 dict(say=C(rnd, f"In {y1} money, it's {money(v)}.", f"You would need {money(v)} today.", f"{money(v)} in {y1} dollars."), show='now'),
+                 dict(say=C(rnd, f"Prices are about {k:.1f} times higher than in {y0}.", f"Everything costs about {k:.1f} times as much.",
+                            f"That is {k:.1f} times the {y0} price level."), show='stamp'),
+                 dict(say=C(rnd, f"Same bill, same paper. It just buys {100 / k:.0f} percent of what it used to.",
+                            f"Today a hundred dollar bill buys about {100 / k:.0f} percent of what it bought in {y0}."), show='inflation'),
+                 dict(say=C(rnd, "Which year do you want to see next? Comment below.", "What year were you born? Tell me and I will check it.",
+                            "Did you think it was more or less? Comment below."), show='cta')]
         rec = dict(lines=[('$100 BILL', 100, v)], y0=y0, y1=y1, inf=[None], pct=(k - 1) * 100)
-        title = f"$100 in {y0} Is Worth This Today 💵"
+        title = C(rnd, f"$100 in {y0} Is Worth This Today 💵", f"What $100 From {y0} Is Worth Now 💵", f"$100 in {y0} vs Today 💵")
         desc = f"$100 in {y0} has the same buying power as {money(v)} in {y1} (CPI-U annual averages, {CPI[y0]} → {CPI[y1]})."
-    elif f == 'basket':
-        _, y0 = key; items = [k for k in random.Random(y0).sample(['eggs', 'milk', 'bread', 'beef', 'coffee', 'bananas', 'chicken', 'cheese'], 4) if y0 in PRICES[k]['years']]
+    elif f in ('basket', 'trio'):
+        _, y0 = key[:2]
+        pool = ['eggs', 'milk', 'bread', 'beef', 'coffee', 'bananas', 'chicken', 'cheese'] if f == 'basket' else \
+               ['eggs', 'milk', 'bread', 'gas', 'coffee', 'bananas', 'beef', 'chicken', 'tomatoes', 'sugar', 'electricity', 'cheese', 'rice', 'bacon']
+        items = [k for k in random.Random(json.dumps(key)).sample(pool, 4 if f == 'basket' else 3) if y0 in PRICES[k]['years']]
         y1 = min(latest(k) for k in items)
         lines = [(SHORT[k], PRICES[k]['years'][y0], PRICES[k]['years'][y1]) for k in items]
         t0, t1 = sum(a for _, a, _ in lines), sum(b for _, _, b in lines); pct = (t1 / t0 - 1) * 100; inf = adj(t0, y0, y1)
-        beats = [dict(say=f"The same grocery run, {y0} versus {y1}. In {y0}, these {len(items)} items cost {money(t0)}.", show='then'),
-                 dict(say=f"Today the same cart costs {money(t1)}.", show='now'),
-                 dict(say=(f"Up {pct:.0f} percent." if pct >= 0 else f"Down {-pct:.0f} percent."), show='stamp'),
-                 dict(say=f"With plain inflation it would be {money(inf)}. "
-                          + ("Groceries outran inflation." if t1 > inf else "Groceries actually trailed inflation."), show='inflation'),
-                 dict(say="What would this cart cost where you live? Comment below.", show='cta')]
+        if f == 'basket':
+            beats = [dict(say=C(rnd, f"The same grocery run, {y0} versus {y1}. In {y0}, these {len(items)} items cost {money(t0)}.",
+                                f"{len(items)} groceries in {y0}: {money(t0)} at the register.", f"Your {y0} grocery bag. {len(items)} items, {money(t0)}."), show='then'),
+                     dict(say=C(rnd, f"Today the same cart costs {money(t1)}.", f"Same bag today: {money(t1)}.", f"Fast forward to {y1}: {money(t1)}."), show='now'),
+                     dict(say=(C(rnd, f"Up {pct:.0f} percent.", f"{pct:.0f} percent more.") if pct >= 0 else f"Down {-pct:.0f} percent."), show='stamp'),
+                     dict(say=f"With plain inflation it would be {money(inf)}. "
+                              + ("Groceries outran inflation." if t1 > inf else "Groceries actually trailed inflation."), show='inflation'),
+                     dict(say=C(rnd, "What would this cart cost where you live? Comment below.", "Which item hurts the most now? Tell me below."), show='cta')]
+            title = C(rnd, f"The Same Grocery Run: {y0} vs {y1} 🛒", f"{y0} Groceries vs {y1} Groceries 🛒", f"What 4 Groceries Cost in {y0} vs Today 🛒")
+            desc = f"Basket: {', '.join(PRICES[k]['label'].lower() for k in items)}. {y0}: {money(t0)} · {y1}: {money(t1)} ({pct:+.0f}%)."
+        else:
+            beat = [k for k in items if PRICES[k]['years'][y1] > adj(PRICES[k]['years'][y0], y0, y1)]
+            nm = lambda k: SHORT[k].split('/')[0].strip().lower()
+            beats = [dict(say=C(rnd, f"Three prices from {y0}. Which ones beat inflation? Guess before the end.",
+                                f"{y0} versus today, three items. Which rose faster than inflation?"), show='then'),
+                     dict(say=f"Today: " + ', '.join(f"{nm(k)} {money(PRICES[k]['years'][y1])}" for k in items) + '.', show='now'),
+                     dict(say=(f"{len(beat)} of 3 beat inflation: {', '.join(nm(k) for k in beat)}." if beat else "None of them beat inflation."), show='stamp'),
+                     dict(say=f"All three together would cost {money(inf)} with plain inflation. They cost {money(t1)}.", show='inflation'),
+                     dict(say=C(rnd, "How many did you get right? Comment below.", "Which one surprised you? Tell me below."), show='cta')]
+            title = C(rnd, f"Which of These Beat Inflation Since {y0}? 🤔", f"3 Prices From {y0}: Which Rose Faster Than Inflation?")
+            desc = (f"Items: {', '.join(PRICES[k]['label'].lower() for k in items)}. Beat inflation (CPI-U): {', '.join(nm(k) for k in beat) or 'none'}. "
+                    f"{y0} total {money(t0)}, {y1} total {money(t1)}, inflation-only {money(inf)}.")
         rec = dict(lines=lines, y0=y0, y1=y1, inf=[inf], pct=pct, total=(t0, t1))
-        title = f"The Same Grocery Run: {y0} vs {y1} 🛒"
-        desc = f"Basket: {', '.join(PRICES[k]['label'].lower() for k in items)}. {y0}: {money(t0)} · {y1}: {money(t1)} ({pct:+.0f}%)."
     elif f == 'wage':
         _, it, y0 = key; P = PRICES[it]; y1 = latest(it); p0, p1 = P['years'][y0], P['years'][y1]
         m0, m1 = p0 / MINWAGE[y0] * 60, p1 / MINWAGE[y1] * 60
-        beats = [dict(say=f"How long did you have to work for {P['phrase'].lower()}? In {y0}, at the federal minimum wage of "
-                          f"{money(MINWAGE[y0])}, about {m0:.0f} minutes.", show='then'),
-                 dict(say=f"In {y1}, at {money(MINWAGE[y1])} an hour, it takes {m1:.0f} minutes.", show='now'),
+        beats = [dict(say=C(rnd, f"How long did you have to work for {P['phrase'].lower()}? In {y0}, at the federal minimum wage of {money(MINWAGE[y0])}, about {m0:.0f} minutes.",
+                            f"Minutes of work for {P['phrase'].lower()}: in {y0}, at {money(MINWAGE[y0])} an hour, {m0:.0f} minutes."), show='then'),
+                 dict(say=C(rnd, f"In {y1}, at {money(MINWAGE[y1])} an hour, it takes {m1:.0f} minutes.", f"Today, at {money(MINWAGE[y1])}, it is {m1:.0f} minutes."), show='now'),
                  dict(say=("That's longer than before." if m1 > m0 else "That's actually shorter than before."), show='stamp'),
                  dict(say=f"The price went from {money(p0)} to {money(p1)}, while the federal minimum only went from "
                           f"{money(MINWAGE[y0])} to {money(MINWAGE[y1])}. Many states pay more than the federal minimum.", show='inflation'),
-                 dict(say="How many minutes would it take you? Comment below.", show='cta')]
+                 dict(say=C(rnd, "How many minutes would it take you? Comment below.", "What was your first hourly wage? Tell me below."), show='cta')]
         rec = dict(lines=[(SHORT[it], p0, p1)], y0=y0, y1=y1, inf=[None], pct=(m1 / m0 - 1) * 100, minutes=(m0, m1))
-        title = f"Minutes of Work to Buy {P['label'].split(',')[0].title()}: {y0} vs {y1} ⏱️"
+        title = C(rnd, f"Minutes of Work to Buy {P['label'].split(',')[0].title()}: {y0} vs {y1} ⏱️", f"How Long You Worked for {P['label'].split(',')[0].title()} in {y0} vs Now ⏱️")
         desc = (f"Federal minimum wage: {money(MINWAGE[y0])} ({y0}) vs {money(MINWAGE[y1])} ({y1}). Price: {money(p0)} vs "
                 f"{money(p1)}. Minutes of work: {m0:.0f} vs {m1:.0f}. Many states set a higher minimum.\n\nSeries: {P['series']}.")
     else:
         _, a, b, y0 = key; A, B = PRICES[a], PRICES[b]; y1 = min(latest(a), latest(b))
         pa, pb = (A['years'][y1] / A['years'][y0] - 1) * 100, (B['years'][y1] / B['years'][y0] - 1) * 100
         win = A if pa > pb else B
-        beats = [dict(say=f"Since {y0}, what got more expensive: {A['label'].split(',')[0].lower()} or {B['label'].split(',')[0].lower()}? Guess now.", show='then'),
-                 dict(say=f"{A['label'].split(',')[0].title()}: from {money(A['years'][y0])} to {money(A['years'][y1])}. "
-                          f"{B['label'].split(',')[0].title()}: from {money(B['years'][y0])} to {money(B['years'][y1])}.", show='now'),
+        na, nb = A['label'].split(',')[0], B['label'].split(',')[0]
+        beats = [dict(say=C(rnd, f"Since {y0}, what got more expensive: {na.lower()} or {nb.lower()}? Guess now.", f"{na.title()} versus {nb.title()}. Which rose more since {y0}?"), show='then'),
+                 dict(say=f"{na.title()}: from {money(A['years'][y0])} to {money(A['years'][y1])}. "
+                          f"{nb.title()}: from {money(B['years'][y0])} to {money(B['years'][y1])}.", show='now'),
                  dict(say=f"{win['label'].split(',')[0].title()} wins, {'up' if max(pa, pb) >= 0 else 'down'} {abs(max(pa, pb)):.0f} percent.", show='stamp'),
                  dict(say=f"The other one {'rose' if min(pa, pb) >= 0 else 'fell'} {abs(min(pa, pb)):.0f} percent. Did you guess right?", show='inflation'),
-                 dict(say="Which two should I compare next? Comment below.", show='cta')]
+                 dict(say=C(rnd, "Which two should I compare next? Comment below.", "Give me two items to compare next. Comment below."), show='cta')]
         rec = dict(lines=[(SHORT[a], A['years'][y0], A['years'][y1]), (SHORT[b], B['years'][y0], B['years'][y1])],
                    y0=y0, y1=y1, inf=[None, None], pct=max(pa, pb), race=(pa, pb))
-        title = f"{A['label'].split(',')[0].title()} vs {B['label'].split(',')[0].title()}: What Got Pricier Since {y0}?"
+        title = C(rnd, f"{na.title()} vs {nb.title()}: What Got Pricier Since {y0}?", f"Since {y0}: {na.title()} or {nb.title()}, Which Rose More?")
         desc = (f"{A['label']}: {money(A['years'][y0])} → {money(A['years'][y1])} ({pa:+.0f}%). {B['label']}: "
                 f"{money(B['years'][y0])} → {money(B['years'][y1])} ({pb:+.0f}%). Series: {A['series']}, {B['series']}.")
     return dict(fmt=f, key=key, beats=beats, rec=rec, title=title[:95],
@@ -253,7 +285,7 @@ def frame(base, v, beat_i, t, kind):
         d.text((540, by + 32), money(rec['inf'][0] * a), font=font(DISP, 96), fill=GREEN, anchor='mm')
     if beat_i == 4:
         cy = by + (190 if has_inf else 0)
-        cta = {'dollar': 'WHICH YEAR NEXT?', 'race': 'DID YOU GUESS RIGHT?', 'wage': 'HOW LONG FOR YOU?'}.get(v['fmt'], 'WHAT DID YOU PAY?')
+        cta = {'dollar': 'WHICH YEAR NEXT?', 'race': 'DID YOU GUESS RIGHT?', 'wage': 'HOW LONG FOR YOU?', 'trio': 'HOW MANY RIGHT?'}.get(v['fmt'], 'WHAT DID YOU PAY?')
         d.rounded_rectangle([90, cy - 70, 990, cy + 70], radius=34, fill=YEL)
         d.text((540, cy), cta, font=font(DISP, 100), fill=INK, anchor='mm')
     return img
@@ -327,7 +359,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     for i in range(n):
         f, key = pick(state, rnd, fmt)
-        v = build(f, key)
+        v = build(f, key, rnd)
         log(f'[tvn] {f} {key} → {v["title"]}')
         mp4 = render(v, OUT / f'{datetime.date.today()}_{i}.mp4')
         if DRY:
@@ -337,6 +369,9 @@ def main():
         state['done'].append(dict(fmt=f, key=key, video_id=vid, date=str(datetime.date.today()), title=v['title']))
         STATE.write_text(json.dumps(state, indent=1))
         log(f'  yüklendi https://youtu.be/{vid}')
+    if '--long' in sys.argv and int(sys.argv[sys.argv.index('--long') + 1]) > 0:   # 16:9 uzun videolar (tvn_long.py)
+        import tvn_long
+        tvn_long.main(int(sys.argv[sys.argv.index('--long') + 1]), slots=os.environ.get('LONG_SLOTS', '10:00,20:00').split(','))
 
 
 if __name__ == '__main__':
