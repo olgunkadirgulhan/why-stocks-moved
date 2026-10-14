@@ -282,9 +282,11 @@ def render(v, mp4):
         except Exception:
             import renderer
             a = tmp / f'a{i}.wav'; renderer.piper_tts(b['say'], a)
-        auds.append(a); durs.append(dur(a) + 0.35)
-    lst = tmp / 'a.txt'; lst.write_text(''.join(f"file '{a}'\nfile '{tmp / 'gap.wav'}'\n" for a in auds))
-    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=24000:cl=mono', '-t', '0.35', str(tmp / 'gap.wav')], check=True)
+        w = tmp / f'w{i}.wav'   # hepsi aynı biçime: 24 kHz mono PCM + 0,35 sn sessizlik
+        subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', str(a), '-af', 'apad=pad_dur=0.35', '-ar', '24000', '-ac', '1',
+                        '-c:a', 'pcm_s16le', str(w)], check=True)
+        auds.append(w); durs.append(dur(w))
+    lst = tmp / 'a.txt'; lst.write_text(''.join(f"file '{a}'\n" for a in auds))
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', str(lst), '-ar', '44100', '-ac', '2', str(tmp / 'voice.wav')], check=True)
     base = background()
     p = subprocess.Popen(['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-',
