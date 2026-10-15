@@ -54,6 +54,48 @@
    "video_id": "PkxRbTMjdSQ",
    "date": "2026-10-14",
    "title": "Then vs Now: 13 Everyday Prices, 2000 vs 2025"
+  },
+  {
+   "fmt": "item",
+   "key": [
+    "item",
+    "bananas",
+    1997
+   ],
+   "video_id": "-uJk55j32DY",
+   "date": "2026-10-15",
+   "title": "Pound of bananas: 1997 Price vs 2025 \ud83c\udf4c"
+  },
+  {
+   "fmt": "dollar1",
+   "key": [
+    "dollar1",
+    1989
+   ],
+   "video_id": "soKLzteAmSc",
+   "date": "2026-10-15",
+   "title": "$1 From 1989 Is Worth This Today"
+  },
+  {
+   "fmt": "timeline",
+   "key": [
+    "timeline",
+    "eggs"
+   ],
+   "video_id": "hlfF4uXO2oc",
+   "date": "2026-10-15",
+   "title": "Eggs Prices Every 5 Years, 1995 to 2025"
+  },
+  {
+   "fmt": "hundredbuys",
+   "key": [
+    "hundredbuys",
+    2007,
+    "bananas"
+   ],
+   "video_id": "6G7ZFMnD3K0",
+   "date": "2026-10-15",
+   "title": "What $100 Bought in Bananas: 2007 vs Today"
   }
  ]
 }
