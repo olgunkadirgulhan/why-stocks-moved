@@ -96,6 +96,58 @@
    "video_id": "6G7ZFMnD3K0",
    "date": "2026-10-15",
    "title": "What $100 Bought in Bananas: 2007 vs Today"
+  },
+  {
+   "fmt": "double",
+   "key": [
+    "double",
+    "bacon",
+    1995
+   ],
+   "video_id": "sDQs1NqDQpM",
+   "date": "2026-10-16",
+   "title": "How Long Did It Take Sliced Bacon Prices to Double Since 1995?"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    1995
+   ],
+   "video_id": "92om7mpydgg",
+   "date": "2026-10-16",
+   "title": "Born in 1995? Here's What Things Cost"
+  },
+  {
+   "fmt": "cheaper3",
+   "key": [
+    "cheaper3",
+    2010
+   ],
+   "video_id": "Qe_2hPkH-BQ",
+   "date": "2026-10-16",
+   "title": "3 Things That Are Cheaper Than in 2010 (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "bigjump",
+   "key": [
+    "bigjump",
+    "bread"
+   ],
+   "video_id": "UUAHKmP49K8",
+   "date": "2026-10-16",
+   "title": "The Biggest One-Year Jump in White Bread Prices"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    2002,
+    "prices"
+   ],
+   "video_id": "57sm3WOmo1k",
+   "date": "2026-10-16",
+   "title": "2002 Prices vs Today: 13 Items Compared"
   }
  ]
 }
