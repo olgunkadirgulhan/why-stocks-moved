@@ -36,7 +36,7 @@ jobs:
           MAX_REPLIES_PER_DAY: "45"
           REQUESTS_FILE: viewer_requests.json
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          FIRST_QUESTIONS: "[\"Did you expect this move? 🤔\", \"Which stock should we explain next? 📈\", \"Did you learn something new? 💡\", \"What should we explain next? 👇\", \"Did this surprise you? 😮\"]"
+          FIRST_QUESTIONS: "[\"What did you pay for this last time? 👇\", \"Which year should we check next? 📅\", \"Did this price surprise you? 😮\", \"What do you remember paying back then? 🛒\", \"Which item hurts the most now? 💸\", \"Then or now: which year would you shop in? 🕰️\", \"What item should we compare next? 👇\"]"
         run: python tools/auto_reply.py
       - run: |
           git config user.name "comment-bot"
