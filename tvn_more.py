@@ -58,7 +58,9 @@ def key_for(kg, rnd):
         y0 = rnd.choice([y for y in yrs(it) if y <= 2018]); return [kg, it, y0, rnd.choice([1.5, 2, 3])]
     if kg == 'theme': return [kg, rnd.choice(list(THEMES)), rnd.choice(range(1996, 2016))]
     if kg in ('dollar1', 'minwage'): return [kg, rnd.choice(range(1970 if kg == 'dollar1' else 1995, 2016))]
-    if kg in ('tank', 'elecbill', 'coffeeyear'): return [kg, rnd.choice(range(1995, 2016))]
+    if kg in ('tank', 'elecbill', 'coffeeyear'):
+        it_ = {'tank': 'gas', 'elecbill': 'electricity', 'coffeeyear': 'coffee'}[kg]
+        return [kg, rnd.choice([y for y in range(1995, 2016) if y in PRICES[it_]['years']])]
     return None
 
 
@@ -110,8 +112,11 @@ def build(key, rnd):
             hook = C(rnd, f"{NM(it).capitalize()} across three decades.", f"Same {NAME(it).lower()}, four snapshots: {', '.join(map(str, ys))}.")
             title = f"{NAME(it)}: {', '.join(map(str, ys))}"
         else:
-            y0 = key[1]; mid = (y0 + 2025) // 2; its = [k for k in ['eggs', 'bread', 'milk', 'coffee'] if y0 in PRICES[k]['years']]
-            ys = [y0, mid, min(L(k) for k in its)]
+            y0 = key[1]; its = [k for k in ['eggs', 'bread', 'milk', 'coffee'] if y0 in PRICES[k]['years']]
+            y1 = min(L(k) for k in its)
+            mids = [y for y in range(y0 + 3, y1 - 2) if all(y in PRICES[k]['years'] for k in its)]   # her üründe verisi olan ara yıl
+            mid = min(mids, key=lambda y: abs(y - (y0 + y1) / 2)) if mids else None
+            ys = [y0, mid, y1] if mid else [y0, y1]
             cards = [dict(y=y, l='4 GROCERIES', v=sum(p(k, y) for k in its)) for y in ys]
             hook = f"Three generations, one shopping list: {', '.join(NAME(k).lower() for k in its)}."
             title = f"The Same 4 Groceries in {ys[0]}, {ys[1]} and {ys[2]}"
