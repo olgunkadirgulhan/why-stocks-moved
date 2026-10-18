@@ -189,6 +189,47 @@
    "video_id": "BkeOYxTQtjo",
    "date": "2026-10-17",
    "title": "Your Monthly Electric Bill: 2004 vs Today \ud83d\udca1"
+  },
+  {
+   "fmt": "perunit",
+   "key": [
+    "perunit",
+    "bread"
+   ],
+   "video_id": "c4sPorZ4vEo",
+   "date": "2026-10-18",
+   "title": "The Price of One Ounce of Bread: 1995 vs 2025"
+  },
+  {
+   "fmt": "dollar",
+   "key": [
+    "dollar",
+    1945
+   ],
+   "video_id": "ho9dGaG9FXs",
+   "date": "2026-10-18",
+   "title": "$100 in 1945 vs Today \ud83d\udcb5"
+  },
+  {
+   "fmt": "item",
+   "key": [
+    "item",
+    "electricity",
+    2005
+   ],
+   "video_id": "9LnNGPqW5oY",
+   "date": "2026-10-18",
+   "title": "What 100 kwh of electricity Cost in 2005 vs Today \ud83d\udca1"
+  },
+  {
+   "fmt": "minwage",
+   "key": [
+    "minwage",
+    2011
+   ],
+   "video_id": "xLX2p9WP56A",
+   "date": "2026-10-18",
+   "title": "The 2011 Minimum Wage in Today's Dollars"
   }
  ]
 }
