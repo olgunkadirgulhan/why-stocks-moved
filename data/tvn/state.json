@@ -230,6 +230,59 @@
    "video_id": "xLX2p9WP56A",
    "date": "2026-10-18",
    "title": "The 2011 Minimum Wage in Today's Dollars"
+  },
+  {
+   "fmt": "elecbill",
+   "key": [
+    "elecbill",
+    2013
+   ],
+   "video_id": "YPkPEkpundg",
+   "date": "2026-10-19",
+   "title": "Your Monthly Electric Bill: 2013 vs Today \ud83d\udca1"
+  },
+  {
+   "fmt": "cheaper3",
+   "key": [
+    "cheaper3",
+    1998
+   ],
+   "video_id": "GXIZu9baB18",
+   "date": "2026-10-19",
+   "title": "3 Things That Are Cheaper Than in 1998 (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "bigdrop",
+   "key": [
+    "bigdrop",
+    "coffee"
+   ],
+   "video_id": "HeMQZpfyLSQ",
+   "date": "2026-10-19",
+   "title": "The Biggest One-Year Drop in Ground Coffee Prices"
+  },
+  {
+   "fmt": "truefalse",
+   "key": [
+    "truefalse",
+    "gas",
+    2002,
+    1.5
+   ],
+   "video_id": "Cd45G4QSa4E",
+   "date": "2026-10-19",
+   "title": "True or False: Gasoline Costs 1.5x What It Did in 2002"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    2002,
+    "work"
+   ],
+   "video_id": "2vbmb4OCRgU",
+   "date": "2026-10-19",
+   "title": "Minutes of Work: 2002 vs 2025, 13 Everyday Items"
   }
  ]
 }
