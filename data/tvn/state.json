@@ -283,6 +283,46 @@
    "video_id": "2vbmb4OCRgU",
    "date": "2026-10-19",
    "title": "Minutes of Work: 2002 vs 2025, 13 Everyday Items"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    2005
+   ],
+   "video_id": "ne57cyutdpM",
+   "date": "2026-10-20",
+   "title": "Born in 2005? Here's What Things Cost"
+  },
+  {
+   "fmt": "realpeak",
+   "key": [
+    "realpeak",
+    "bananas"
+   ],
+   "video_id": "cxCh7CgmMsg",
+   "date": "2026-10-20",
+   "title": "The Year Bananas Prices Peaked (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "elecbill",
+   "key": [
+    "elecbill",
+    1999
+   ],
+   "video_id": "TsbOJDIiWvA",
+   "date": "2026-10-20",
+   "title": "Your Monthly Electric Bill: 1999 vs Today \ud83d\udca1"
+  },
+  {
+   "fmt": "basket",
+   "key": [
+    "basket",
+    2014
+   ],
+   "video_id": "XfzCJ1akixI",
+   "date": "2026-10-20",
+   "title": "What 4 Groceries Cost in 2014 vs Today \ud83d\uded2"
   }
  ]
 }
