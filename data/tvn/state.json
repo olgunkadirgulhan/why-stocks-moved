@@ -323,6 +323,58 @@
    "video_id": "XfzCJ1akixI",
    "date": "2026-10-20",
    "title": "What 4 Groceries Cost in 2014 vs Today \ud83d\uded2"
+  },
+  {
+   "fmt": "coffeeyear",
+   "key": [
+    "coffeeyear",
+    2011
+   ],
+   "video_id": "iyEf50957fA",
+   "date": "2026-10-21",
+   "title": "A Year of Coffee: 2011 vs Today \u2615"
+  },
+  {
+   "fmt": "generations",
+   "key": [
+    "generations",
+    2001
+   ],
+   "video_id": "MMOV4KvnwgU",
+   "date": "2026-10-21",
+   "title": "The Same 4 Groceries in 2001, 2013 and 2025"
+  },
+  {
+   "fmt": "cheaper3",
+   "key": [
+    "cheaper3",
+    2011
+   ],
+   "video_id": "jHyzG0dvjcI",
+   "date": "2026-10-21",
+   "title": "3 Things That Are Cheaper Than in 2011 (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "double",
+   "key": [
+    "double",
+    "gas",
+    2003
+   ],
+   "video_id": "3xM08BgaI_E",
+   "date": "2026-10-21",
+   "title": "How Long Did It Take Gasoline Prices to Double Since 2003?"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    1995,
+    "prices"
+   ],
+   "video_id": "SCWt-S9rdkk",
+   "date": "2026-10-21",
+   "title": "Then vs Now: 13 Everyday Prices, 1995 vs 2025"
   }
  ]
 }
