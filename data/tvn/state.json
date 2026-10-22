@@ -375,6 +375,51 @@
    "video_id": "SCWt-S9rdkk",
    "date": "2026-10-21",
    "title": "Then vs Now: 13 Everyday Prices, 1995 vs 2025"
+  },
+  {
+   "fmt": "realpeak",
+   "key": [
+    "realpeak",
+    "bread"
+   ],
+   "video_id": "wnMmd2H-rho",
+   "date": "2026-10-22",
+   "title": "The Year White Bread Prices Peaked (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "race",
+   "key": [
+    "race",
+    "bacon",
+    "bread",
+    2007
+   ],
+   "video_id": "qQZ3QVCH7o8",
+   "date": "2026-10-22",
+   "title": "Sliced Bacon vs White Bread: What Got Pricier Since 2007?"
+  },
+  {
+   "fmt": "trio",
+   "key": [
+    "trio",
+    2003,
+    8
+   ],
+   "video_id": "vsswFSKe1V4",
+   "date": "2026-10-22",
+   "title": "3 Prices From 2003: Which Rose Faster Than Inflation?"
+  },
+  {
+   "fmt": "truefalse",
+   "key": [
+    "truefalse",
+    "rice",
+    1995,
+    1.5
+   ],
+   "video_id": "12RNuu0V_dA",
+   "date": "2026-10-22",
+   "title": "True or False: White Rice Costs 1.5x What It Did in 1995"
   }
  ]
 }
