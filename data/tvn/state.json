@@ -420,6 +420,60 @@
    "video_id": "12RNuu0V_dA",
    "date": "2026-10-22",
    "title": "True or False: White Rice Costs 1.5x What It Did in 1995"
+  },
+  {
+   "fmt": "wage",
+   "key": [
+    "wage",
+    "oranges",
+    2007
+   ],
+   "video_id": "9IT1rIl2Stk",
+   "date": "2026-10-23",
+   "title": "How Long You Worked for Navel Oranges in 2007 vs Now \u23f1\ufe0f"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    2013
+   ],
+   "video_id": "D7hQFCBcP3U",
+   "date": "2026-10-23",
+   "title": "Born in 2013? Here's What Things Cost"
+  },
+  {
+   "fmt": "cheaper3",
+   "key": [
+    "cheaper3",
+    2012
+   ],
+   "video_id": "nF6R_MAhcXc",
+   "date": "2026-10-23",
+   "title": "3 Things That Are Cheaper Than in 2012 (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "race",
+   "key": [
+    "race",
+    "tomatoes",
+    "beef",
+    2001
+   ],
+   "video_id": "FVkDSRk9e2w",
+   "date": "2026-10-23",
+   "title": "Since 2001: Tomatoes or Ground Beef, Which Rose More?"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    2009,
+    "work"
+   ],
+   "video_id": "FHUjPE_7EdQ",
+   "date": "2026-10-23",
+   "title": "How Long You Had to Work for Groceries in 2009 vs Now"
   }
  ]
 }
