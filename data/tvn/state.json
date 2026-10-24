@@ -474,6 +474,46 @@
    "video_id": "FHUjPE_7EdQ",
    "date": "2026-10-23",
    "title": "How Long You Had to Work for Groceries in 2009 vs Now"
+  },
+  {
+   "fmt": "bigdrop",
+   "key": [
+    "bigdrop",
+    "chicken"
+   ],
+   "video_id": "7RgcKDntxjU",
+   "date": "2026-10-24",
+   "title": "The Biggest One-Year Drop in Whole Chicken Prices"
+  },
+  {
+   "fmt": "basket",
+   "key": [
+    "basket",
+    1999
+   ],
+   "video_id": "ZH9DeNuXX3E",
+   "date": "2026-10-24",
+   "title": "The Same Grocery Run: 1999 vs 2025 \ud83d\uded2"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    2014
+   ],
+   "video_id": "FK7U_liEklU",
+   "date": "2026-10-24",
+   "title": "Born in 2014? Here's What Things Cost"
+  },
+  {
+   "fmt": "bigjump",
+   "key": [
+    "bigjump",
+    "milk"
+   ],
+   "video_id": "VAjGRS3o1Cc",
+   "date": "2026-10-24",
+   "title": "The Biggest One-Year Jump in Whole Milk Prices"
   }
  ]
 }
