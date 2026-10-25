@@ -59,6 +59,7 @@ jobs:
       MARKET_TICKERS: ${{ vars.MARKET_TICKERS || '^GSPC,^IXIC,^DJI,GC=F,CL=F,DX-Y.NYB,NVDA,AAPL,MSFT,TSLA,AMZN,META' }}
       CHANNEL_NAME: ${{ vars.CHANNEL_NAME }}
       LONG_SLOTS: ${{ vars.LONG_SLOTS }}
+      LONG_DAYS: ${{ vars.LONG_DAYS || 'mon,wed,fri' }}
       TTS_VOICE: ${{ vars.TTS_VOICE || 'en-US-AndrewMultilingualNeural' }}
       TG_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TG_CHAT: ${{ secrets.TELEGRAM_CHAT_ID }}

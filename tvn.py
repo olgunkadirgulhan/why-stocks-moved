@@ -13,6 +13,7 @@ import json
 import math
 import os
 import random
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -62,13 +63,52 @@ def adj(v, y0, y1):
 
 
 # ---------------------------------------------------------------- konu seçimi
+def tkey(t):
+    return ' '.join(re.sub(r'[^a-z0-9 ]', ' ', re.sub(r'#\w+', ' ', t.lower())).split())
+
+
+_KW = None
+
+
+def fmt_weights(state):
+    """2026-10-25: format seçimi kanalın kendi izlenmesine göre (≥1 günlük Shorts'ların format medyanı / genel medyan).
+    Veri yoksa hepsi 1; hiç denenmemiş format 1.5 (keşif). Sınırlar 0.3-4."""
+    global _KW
+    if _KW is not None: return _KW
+    _KW = {}
+    try:
+        today = str(datetime.date.today())
+        sh = [d for d in state.get('done', []) if d.get('video_id') and d.get('date', today) < today]
+        if not sh or not os.environ.get('YOUTUBE_REFRESH_TOKEN'): return _KW
+        import statistics as st
+        from googleapiclient.discovery import build as gbuild
+        from common import yt_creds
+        api = gbuild('youtube', 'v3', credentials=yt_creds(), cache_discovery=False); views = {}
+        for i in range(0, len(sh), 50):
+            for it in api.videos().list(part='statistics', id=','.join(d['video_id'] for d in sh[i:i + 50])).execute().get('items', []):
+                views[it['id']] = int(it['statistics'].get('viewCount', 0))
+        by = {}
+        for d in sh:
+            if d['video_id'] in views: by.setdefault(d['fmt'], []).append(views[d['video_id']])
+        allv = [v for vs in by.values() for v in vs]
+        if not allv: return _KW
+        m = st.median(allv)
+        _KW = {k: max(0.3, min(4.0, (st.median(vs) + 10) / (m + 10))) for k, vs in by.items()}
+        log('format ağırlıkları: ' + ', '.join(f'{k}={w:.2f}' for k, w in sorted(_KW.items(), key=lambda x: -x[1])))
+    except Exception as e:
+        log(f'format ağırlıkları alınamadı: {e}')
+    return _KW
+
+
 def pick(state, rnd, fmt=None):
     done = {json.dumps(d['key']) for d in state.get('done', [])}
     last_fmts = [d['fmt'] for d in state.get('done', [])][-3:]
     import tvn_more as TM
     fmts = ['item', 'dollar', 'basket', 'wage', 'race', 'trio'] + TM.KURGU
+    kw = fmt_weights(state)
     for _ in range(3000):
-        f = fmt or rnd.choice([x for x in fmts if x not in last_fmts] or fmts)
+        pool = [x for x in fmts if x not in last_fmts] or fmts
+        f = fmt or rnd.choices(pool, weights=[kw.get(x, 1.5 if kw else 1) for x in pool])[0]
         if f in TM.KURGU:
             key = TM.key_for(f, rnd)
             if key is not None and json.dumps(key) not in done:
@@ -364,9 +404,15 @@ def main():
     rnd = random.Random()
     OUT.mkdir(parents=True, exist_ok=True)
     for i in range(n):
-        f, key = pick(state, rnd, fmt)
         import tvn_more as TM
-        v = TM.build(key, rnd) if f in TM.KURGU else build(f, key, rnd)
+        # 2026-10-25: aynı başlık iki kez yüklenmez (tekrar eden başlıkları YouTube dağıtmıyor)
+        seen = {tkey(d.get('title', '')) for d in state.get('done', [])}
+        for _ in range(25):
+            f, key = pick(state, rnd, fmt)
+            v = TM.build(key, rnd) if f in TM.KURGU else build(f, key, rnd)
+            if tkey(v['title']) not in seen: break
+        else:
+            raise SystemExit('25 denemede yeni başlık bulunamadı')
         log(f'[tvn] {f} {key} → {v["title"]}')
         mp4 = (TM.render if f in TM.KURGU else render)(v, OUT / f'{datetime.date.today()}_{i}.mp4')
         if DRY:
