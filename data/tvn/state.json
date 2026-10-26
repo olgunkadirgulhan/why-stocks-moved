@@ -556,6 +556,38 @@
    "video_id": "FGs4iZHGH9g",
    "date": "2026-10-25",
    "title": "Filling Up a 15-Gallon Tank: 2004 vs Today \u26fd"
+  },
+  {
+   "fmt": "realpeak",
+   "key": [
+    "realpeak",
+    "chicken"
+   ],
+   "video_id": "GOGX7cT-cag",
+   "date": "2026-10-26",
+   "title": "The Year Whole Chicken Prices Peaked (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "truefalse",
+   "key": [
+    "truefalse",
+    "sugar",
+    1997,
+    3
+   ],
+   "video_id": "ewfYjBfUZG0",
+   "date": "2026-10-26",
+   "title": "True or False: White Sugar Costs 3x What It Did in 1997"
+  },
+  {
+   "fmt": "dollar1",
+   "key": [
+    "dollar1",
+    1981
+   ],
+   "video_id": "erEJrMmFacE",
+   "date": "2026-10-26",
+   "title": "$1 From 1981 Is Worth This Today"
   }
  ]
 }
