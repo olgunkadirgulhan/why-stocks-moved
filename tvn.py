@@ -338,12 +338,21 @@ def frame(base, v, beat_i, t, kind):
 
 
 # ---------------------------------------------------------------- ses + video
-def tts(text, path):
-    import edge_tts
+KOKORO_VOICE = os.environ.get('TVN_KOKORO_VOICE', 'am_michael')   # bu kanalın sesi (Kokoro, Apache-2.0: ücretsiz, ticari kullanım serbest)
+_kokoro = None
 
-    async def go():
-        await edge_tts.Communicate(text, VOICE, rate='+6%').save(str(path))
-    asyncio.run(go())
+
+def tts(text, path):
+    """Seslendirme: Kokoro (açık kaynak, GitHub'da çalışır). Hata olursa çağıran Piper yedeğine geçer."""
+    global _kokoro
+    import numpy as np, soundfile as sf
+    if _kokoro is None:
+        from kokoro import KPipeline
+        _kokoro = KPipeline(lang_code='a' if KOKORO_VOICE[0] == 'a' else 'b')
+    audio = np.concatenate([a for _, _, a in _kokoro(text, voice=KOKORO_VOICE, speed=1.05)])
+    wav = Path(str(path) + '.wav'); sf.write(str(wav), audio, 24000)
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', str(wav), '-ar', '44100', '-ac', '1', '-b:a', '160k', str(path)], check=True)
+    wav.unlink(missing_ok=True)
 
 
 def dur(p):

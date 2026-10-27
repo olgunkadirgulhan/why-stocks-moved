@@ -32,7 +32,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y --no-install-recommends ffmpeg fonts-liberation fonts-dejavu-core fonts-inter
-      - run: pip install --disable-pip-version-check -r requirements.txt
+      - run: pip install --disable-pip-version-check --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
       - run: python hf_pilot.py
       - name: Videos as artifact
         if: always()

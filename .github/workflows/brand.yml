@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
-      - run: pip install --disable-pip-version-check -r requirements.txt
+      - run: pip install --disable-pip-version-check --extra-index-url https://download.pytorch.org/whl/cpu -r requirements.txt
       - env:
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
           YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}

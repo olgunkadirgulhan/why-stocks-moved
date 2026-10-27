@@ -114,7 +114,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/Jakeschincariol/youtube-agent-skill.git vendor/youtube-agent-skill
           git clone --depth 1 https://github.com/Ootto-AI/claude-content-skills.git vendor/claude-content-skills
-          pip install --disable-pip-version-check -U -r requirements.txt
+          pip install --disable-pip-version-check --extra-index-url https://download.pytorch.org/whl/cpu -U -r requirements.txt
 
       - name: Produce and publish
         if: steps.guard.outputs.skip != '1'
