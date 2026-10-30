@@ -681,6 +681,36 @@
    "video_id": "A9s5sZDHKOA",
    "date": "2026-10-29",
    "title": "Whole Chicken: 1995, 2005, 2015, 2025"
+  },
+  {
+   "fmt": "coffeeyear",
+   "key": [
+    "coffeeyear",
+    1996
+   ],
+   "video_id": "lJrgr270eS4",
+   "date": "2026-10-30",
+   "title": "A Year of Coffee: 1996 vs Today \u2615"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    2012
+   ],
+   "video_id": "hU4PMdaRmBo",
+   "date": "2026-10-30",
+   "title": "Born in 2012? Here's What Things Cost"
+  },
+  {
+   "fmt": "realpeak",
+   "key": [
+    "realpeak",
+    "electricity"
+   ],
+   "video_id": "4wxNsYYYhXs",
+   "date": "2026-10-30",
+   "title": "The Year Electricity Prices Peaked (Adjusted for Inflation)"
   }
  ]
 }
