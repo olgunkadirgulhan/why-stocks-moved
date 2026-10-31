@@ -711,6 +711,38 @@
    "video_id": "4wxNsYYYhXs",
    "date": "2026-10-30",
    "title": "The Year Electricity Prices Peaked (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "decades",
+   "key": [
+    "decades",
+    "gas"
+   ],
+   "video_id": "8PzqnjVTqzc",
+   "date": "2026-10-31",
+   "title": "Gasoline: 1995, 2005, 2015, 2025"
+  },
+  {
+   "fmt": "timeline",
+   "key": [
+    "timeline",
+    "tomatoes"
+   ],
+   "video_id": "bAgnKSR_zik",
+   "date": "2026-10-31",
+   "title": "Tomatoes Prices Every 5 Years, 1995 to 2025"
+  },
+  {
+   "fmt": "truefalse",
+   "key": [
+    "truefalse",
+    "gas",
+    2005,
+    2
+   ],
+   "video_id": "96hei3pUTvI",
+   "date": "2026-10-31",
+   "title": "True or False: Gasoline Costs 2x What It Did in 2005"
   }
  ]
 }
