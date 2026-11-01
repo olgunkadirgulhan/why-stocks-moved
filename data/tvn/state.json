@@ -743,6 +743,47 @@
    "video_id": "96hei3pUTvI",
    "date": "2026-10-31",
    "title": "True or False: Gasoline Costs 2x What It Did in 2005"
+  },
+  {
+   "fmt": "dollar",
+   "key": [
+    "dollar",
+    1985
+   ],
+   "video_id": "AG-d4lSuHcg",
+   "date": "2026-11-01",
+   "title": "$100 in 1985 Is Worth This Today \ud83d\udcb5"
+  },
+  {
+   "fmt": "dollar1",
+   "key": [
+    "dollar1",
+    1975
+   ],
+   "video_id": "UdQtC_1l_EM",
+   "date": "2026-11-01",
+   "title": "$1 From 1975 Is Worth This Today"
+  },
+  {
+   "fmt": "bigdrop",
+   "key": [
+    "bigdrop",
+    "sugar"
+   ],
+   "video_id": "MhztEKdDGB4",
+   "date": "2026-11-01",
+   "title": "The Biggest One-Year Drop in White Sugar Prices"
+  },
+  {
+   "fmt": "long",
+   "key": [
+    "long",
+    2003,
+    "work"
+   ],
+   "video_id": "Z3A8iYveju0",
+   "date": "2026-11-01",
+   "title": "How Long You Had to Work for Groceries in 2003 vs Now"
   }
  ]
 }
