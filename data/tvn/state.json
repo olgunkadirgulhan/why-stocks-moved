@@ -784,6 +784,38 @@
    "video_id": "Z3A8iYveju0",
    "date": "2026-11-01",
    "title": "How Long You Had to Work for Groceries in 2003 vs Now"
+  },
+  {
+   "fmt": "trio",
+   "key": [
+    "trio",
+    2013,
+    5
+   ],
+   "video_id": "r4RSTqFYiTs",
+   "date": "2026-11-02",
+   "title": "Which of These Beat Inflation Since 2013? \ud83e\udd14"
+  },
+  {
+   "fmt": "elecbill",
+   "key": [
+    "elecbill",
+    2008
+   ],
+   "video_id": "BpDhw57WTqs",
+   "date": "2026-11-02",
+   "title": "Your Monthly Electric Bill: 2008 vs Today \ud83d\udca1"
+  },
+  {
+   "fmt": "hundredbuys",
+   "key": [
+    "hundredbuys",
+    2013,
+    "gas"
+   ],
+   "video_id": "f2x2Gt4gBiM",
+   "date": "2026-11-02",
+   "title": "What $100 Bought in Gasoline: 2013 vs Today"
   }
  ]
 }
