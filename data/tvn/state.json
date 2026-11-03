@@ -816,6 +816,36 @@
    "video_id": "f2x2Gt4gBiM",
    "date": "2026-11-02",
    "title": "What $100 Bought in Gasoline: 2013 vs Today"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    2011
+   ],
+   "video_id": "bvIdZkKFLko",
+   "date": "2026-11-03",
+   "title": "Born in 2011? Here's What Things Cost"
+  },
+  {
+   "fmt": "bigjump",
+   "key": [
+    "bigjump",
+    "chicken"
+   ],
+   "video_id": "g6ImLbe-cOs",
+   "date": "2026-11-03",
+   "title": "The Biggest One-Year Jump in Whole Chicken Prices"
+  },
+  {
+   "fmt": "dollar",
+   "key": [
+    "dollar",
+    1955
+   ],
+   "video_id": "71NLtp9NF7Y",
+   "date": "2026-11-03",
+   "title": "What $100 From 1955 Is Worth Now \ud83d\udcb5"
   }
  ]
 }
