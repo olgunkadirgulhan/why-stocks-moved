@@ -846,6 +846,40 @@
    "video_id": "71NLtp9NF7Y",
    "date": "2026-11-03",
    "title": "What $100 From 1955 Is Worth Now \ud83d\udcb5"
+  },
+  {
+   "fmt": "coffeeyear",
+   "key": [
+    "coffeeyear",
+    2012
+   ],
+   "video_id": "_LHqnCIVbQ4",
+   "date": "2026-11-04",
+   "title": "A Year of Coffee: 2012 vs Today \u2615"
+  },
+  {
+   "fmt": "higherlower",
+   "key": [
+    "higherlower",
+    "gas",
+    "bacon",
+    2002
+   ],
+   "video_id": "8e-fzmW-78Y",
+   "date": "2026-11-04",
+   "title": "Higher or Lower: Gasoline Today vs Sliced Bacon in 2002"
+  },
+  {
+   "fmt": "truefalse",
+   "key": [
+    "truefalse",
+    "gas",
+    1998,
+    2
+   ],
+   "video_id": "XYDwSfJVpMg",
+   "date": "2026-11-04",
+   "title": "True or False: Gasoline Costs 2x What It Did in 1998"
   }
  ]
 }
