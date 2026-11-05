@@ -880,6 +880,37 @@
    "video_id": "XYDwSfJVpMg",
    "date": "2026-11-04",
    "title": "True or False: Gasoline Costs 2x What It Did in 1998"
+  },
+  {
+   "fmt": "birthyear",
+   "key": [
+    "birthyear",
+    2003
+   ],
+   "video_id": "EIR9R_Qqd0k",
+   "date": "2026-11-05",
+   "title": "Born in 2003? Here's What Things Cost"
+  },
+  {
+   "fmt": "wage",
+   "key": [
+    "wage",
+    "bacon",
+    1995
+   ],
+   "video_id": "b2JYSTbgfx0",
+   "date": "2026-11-05",
+   "title": "How Long You Worked for Sliced Bacon in 1995 vs Now \u23f1\ufe0f"
+  },
+  {
+   "fmt": "coffeeyear",
+   "key": [
+    "coffeeyear",
+    2003
+   ],
+   "video_id": "mBdrXdwl21o",
+   "date": "2026-11-05",
+   "title": "A Year of Coffee: 2003 vs Today \u2615"
   }
  ]
 }
