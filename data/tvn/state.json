@@ -911,6 +911,38 @@
    "video_id": "mBdrXdwl21o",
    "date": "2026-11-05",
    "title": "A Year of Coffee: 2003 vs Today \u2615"
+  },
+  {
+   "fmt": "race",
+   "key": [
+    "race",
+    "cheese",
+    "bacon",
+    2002
+   ],
+   "video_id": "rFJy9frBJeY",
+   "date": "2026-11-06",
+   "title": "Since 2002: Cheddar Cheese or Sliced Bacon, Which Rose More?"
+  },
+  {
+   "fmt": "decades",
+   "key": [
+    "decades",
+    "coffee"
+   ],
+   "video_id": "fGSBMTPrRVw",
+   "date": "2026-11-06",
+   "title": "Ground Coffee: 1995, 2005, 2015, 2025"
+  },
+  {
+   "fmt": "cheaper3",
+   "key": [
+    "cheaper3",
+    2000
+   ],
+   "video_id": "-SZNQZGIuYM",
+   "date": "2026-11-06",
+   "title": "3 Things That Are Cheaper Than in 2000 (Adjusted for Inflation)"
   }
  ]
 }
