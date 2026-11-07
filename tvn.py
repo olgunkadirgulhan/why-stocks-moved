@@ -392,7 +392,7 @@ def upload(mp4, v, publish_at):
     from googleapiclient.discovery import build
     from googleapiclient.http import MediaFileUpload
     from common import yt_creds
-    body = {"snippet": {"title": v['title'], "description": v['desc'], "categoryId": "27", "defaultLanguage": "en",
+    body = {"snippet": {"title": v['title'], "description": v['desc'] + "\n\nJob hunting? Write in your own language, get a resume for the US, UK, Germany or the Gulf: https://cvfennec.com (our tool, free preview)", "categoryId": "27", "defaultLanguage": "en",
                         "defaultAudioLanguage": "en", "tags": ['then vs now', 'prices then and now', 'inflation', 'cost of living',
                                                               'nostalgia', 'grocery prices', 'how much things cost']},
             "status": {"selfDeclaredMadeForKids": False, "containsSyntheticMedia": False}}
