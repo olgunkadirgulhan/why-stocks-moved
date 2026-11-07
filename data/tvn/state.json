@@ -943,6 +943,38 @@
    "video_id": "-SZNQZGIuYM",
    "date": "2026-11-06",
    "title": "3 Things That Are Cheaper Than in 2000 (Adjusted for Inflation)"
+  },
+  {
+   "fmt": "hundredbuys",
+   "key": [
+    "hundredbuys",
+    1995,
+    "rice"
+   ],
+   "video_id": "H6CdncE9CWk",
+   "date": "2026-11-07",
+   "title": "What $100 Bought in White Rice: 1995 vs Today"
+  },
+  {
+   "fmt": "theme",
+   "key": [
+    "theme",
+    "breakfast",
+    2014
+   ],
+   "video_id": "VpLchAlF6uI",
+   "date": "2026-11-07",
+   "title": "Breakfast: 2014 Prices vs Today"
+  },
+  {
+   "fmt": "dollar",
+   "key": [
+    "dollar",
+    1975
+   ],
+   "video_id": "_NxvBvwA5BA",
+   "date": "2026-11-07",
+   "title": "What $100 From 1975 Is Worth Now \ud83d\udcb5"
   }
  ]
 }
