@@ -126,6 +126,7 @@ jobs:
           if [ "$SCHEDULED" = "true" ] && [ "${{ vars.PUBLISH_MODE }}" != "live" ]; then ARGS="$ARGS --dry-run"; fi
           if [ "$SCHEDULED" != "true" ] && [ "${{ inputs.fallback_only }}" = "true" ]; then ARGS="$ARGS --fallback-only"; fi
           # 2026-10-14: kanal "Then vs Now" konseptine geçti (CONTENT_MODE=tvn); eski akış CONTENT_MODE boşsa çalışır
+          if [ "${{ vars.CONTENT_MODE }}" = "morexp" ]; then echo "kanal Which Cost More konseptinde (morexp.yml) → eski akış kapalı"; exit 0; fi
           if [ "${{ vars.CONTENT_MODE }}" = "tvn" ]; then python tvn.py $ARGS --long "${{ vars.LONG_PER_DAY || 0 }}"; else python daily_viral.py $ARGS; fi
 
       - name: Videos as artifact
