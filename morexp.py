@@ -101,7 +101,7 @@ def main():
     A0, B0 = rounds[0]
     seen = {K.tkey(r['title']) for r in K.rows(LOG)}
     opts = [t.format(a=A0['em'], b=B0['em'], n=n) for t in TITLES]; rnd.shuffle(opts)
-    title = next(o for o in opts if K.tkey(o) not in seen)
+    title = next((o for o in opts if K.tkey(o) not in seen), opts[0])
     desc = ('Which cost more? Guess before the prices appear!\n\n'
             + '\n'.join(f"{i + 1}. {A['phrase']} ({'today' if A['y'] == latest_year(A['k']) else A['y']}): ${A['p']:,.2f}  vs  "
                         f"{B['phrase']} ({'today' if B['y'] == latest_year(B['k']) else B['y']}): ${B['p']:,.2f}" for i, (A, B) in enumerate(rounds))
