@@ -297,11 +297,5 @@ def tg_social(mp4, title, url, ticker=None):
     (soc / "post.json").write_text(json.dumps({"channel": "Why Stocks Moved", "title": title, "url": url,
                                                "tiktok": labels[0], "instagram": labels[1]},
                                               ensure_ascii=False, indent=1), encoding="utf-8")
-    if not (TG_TOKEN and TG_CHAT) or os.path.getsize(mp4) > 49 * 1024 * 1024:
-        return
-    with open(mp4, "rb") as f:
-        tg_send("sendDocument", "caption", f"🎬 Why Stocks Moved — günün videosu (TikTok/Instagram için)\n{title}\n{url}",
-                files={"document": (os.path.basename(str(mp4)), f, "video/mp4")})
-    for label, text in captions.items():
-        esc = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-        tg_send("sendMessage", "text", f"{label}\n<pre>{esc}</pre>", parse_mode="HTML")
+    if TG_TOKEN and TG_CHAT:   # 2026-11-11: dosya yok, sadece "paylaşıldı" yazısı
+        tg_send("sendMessage", "text", f"✅ YouTube'da paylaşıldı\n{title}\n{url}")
