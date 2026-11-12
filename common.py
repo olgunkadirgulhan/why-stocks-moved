@@ -253,12 +253,18 @@ def yt_creds():
     return creds
 
 
+def _quiet():   # kullanıcı isteği (2026-11-12): TR 21:00–09:00 arası Telegram bildirimi sessiz gelsin
+    from datetime import datetime, timedelta, timezone
+    h = (datetime.now(timezone.utc) + timedelta(hours=3)).hour
+    return {'disable_notification': 'true'} if (h >= 21 or h < 9) else {}
+
+
 def tg(msg):
     if not (TG_TOKEN and TG_CHAT):
         return
     try:
         requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/sendMessage",
-                      json={"chat_id": TG_CHAT, "text": msg[:4000]}, timeout=20)
+                      json={"chat_id": TG_CHAT, "text": msg[:4000], **({"disable_notification": True} if _quiet() else {})}, timeout=20)
     except Exception as e:
         log(f"telegram gönderilemedi: {e}")
 
@@ -268,7 +274,7 @@ def tg_send(method, text_field, text, files=None, **extra):
         return False
     try:
         r = requests.post(f"https://api.telegram.org/bot{TG_TOKEN}/{method}",
-                          data={"chat_id": TG_CHAT, text_field: text, **extra}, files=files, timeout=180)
+                          data={"chat_id": TG_CHAT, text_field: text, **_quiet(), **extra}, files=files, timeout=180)
         r.raise_for_status()
         return True
     except Exception as e:
