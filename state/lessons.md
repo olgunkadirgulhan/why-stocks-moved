@@ -1,100 +1,100 @@
-# Lessons (2026-11-09)
+# Lessons (2026-11-16)
 
 ## Retention
 (yeterli retention verisi yok)
 
 ## Audit (STOP / KEEP / TEST)
-### STOP
+### **STOP**
 
-* **Isolated single-asset news without comparison or sector context:** Performing poorly compared to median (e.g., Apple drops 1.63% at **0.13x**, Dollar up 0.86% at **0.33x**, Nvidia gained 2.80% at **0.50x**).
-* **Flat index updates without clear conflict:** Generic headline reporting generates low engagement (e.g., Nasdaq up 22% while Dow drops at **0.17x**, Tesla rally hits a wall at **0.30x**).
-* **"The Statistic" formula structure:** Underperformed baseline across available samples (Nasdaq up 1.19% at **0.87x**, Tesla 7.89% rally at **0.30x**; overall formula average of **0.58x** median).
-
----
-
-### KEEP
-
-* **Gold & Commodity price movement posts:** Consistently generate the highest multiples on your account (Gold price gains hit **4.27x** twice, WTI oil sector impact hit **2.77x**).
-* **Direct Stock-vs-Stock head-to-head comparisons:** Contrast titles generate strong multi-item interest (Amazon vs Nvidia at **3.53x**, MSFT vs NVDA at **2.57x**).
-* **Posts structured around the "SAVE" goal:** Outperform all other content goals, averaging **2.00x** median across 10 posts (e.g., Meta drop at **2.80x**, Gold updates at **4.27x**).
+* **"The Statistic" Formula:** Both posts using this formula severely underperformed the median (0.30x and 0.87x median views).
+* **Generic Single-Ticker Tesla Updates:** 4 out of 6 standalone Tesla posts fell below your median views (0.30x, 0.30x, 0.57x, and 0.90x median views).
+* **Broad Macro / Currency Updates:** Generic commodity and dollar movements without a clear stock angle consistently choked (Dollar update at 0.33x, Gold/USD at 0.50x median views).
+* **"SHARE" Goal Posts:** Out of 6 posts targeting shares, 4 underperformed your median views (ranging from 0.13x to 0.97x median views).
 
 ---
 
-### TEST
+### **KEEP**
 
-* **Combining Gold updates with Stock-vs-Asset comparisons:** Test if pairing your top topic (**4.27x**) with your top contrast structure (**3.53x**) creates higher ceiling outliers (e.g., *"Gold +2.4% vs S&P 500 flat"*).
-* **Applying the "SAVE" goal to Big Tech vs Big Tech battles:** Test if assigning a SAVE goal (averages **2.00x** median) to high-performing stock match-ups (MSFT vs NVDA at **2.57x**) increases overall retention.
-* **Macro impact framing over simple percentage drops:** Test multi-sector framing (*"hits 3 sectors"* at **2.77x**) on single tech stock moves to replace flat percentage posts (**0.13x–0.50x**).
+* **Gold Price Movements:** Gold-focused posts delivered your highest outliers (tied at **4.27x** median views).
+* **Comparative Stock Hooks ("X vs. Y"):** Direct stock comparison angles generated strong engagement, such as *Amazon vs. Nvidia* (**3.53x** median) and *MSFT vs. NVDA* (**2.57x** median).
+* **High-Score Hooks (91+):** Posts with hook scores of 91 averaged **2.42x** median views (3.53x, 2.57x, and 1.17x).
+* **Ripple-Effect Sector Posts:** Content framed around downstream impact, such as oil drops hitting 3 sectors (**2.77x** median) or Nvidia hitting indexes (**2.23x** median), consistently beat your baseline.
+* **"SAVE" Goal Posts:** Frameworks designed for saves generated your top overall views (averaging ~**2.02x** median).
+
+---
+
+### **TEST**
+
+* **Gold + Stock Comparisons:** Combine your highest-performing topic (Gold at **4.27x**) with your highest-performing framing format (Comparative Stock Angles at **3.53x**).
+* **Expanded Sector Impact Angles:** Scale the "hits 3 sectors" framework (**2.77x** median) to tech and chip market movements.
+* **90+ Hook Scores with Alternative Formulas:** Test if high-quality hooks (which average **2.42x** median) can revive underperforming formulas like "The Statistic" (which currently sits at **0.30x** and **0.87x**).
 
 ## Trends (TAKE / ADAPT / SIT OUT)
-Here is the trend breakdown based strictly on the performance data from the last 7 days of finance Shorts.
+Here is your trend analysis based strictly on the last 7 days of performance data and view multiples across finance Shorts.
 
 ---
 
 ### 1. FORMATS MOVING NOW
 
-#### **Format 1: Everyday Brand & Oddity Business Secrets**
+#### Format A: "Everyday Brand Mechanics" (Curiosity-Driven Business Breakdown)
 *   **Examples:** 
-    *   *WSJ:* "How Twinkies Became a $5 Billion Problem" (**2.3M+ views, 110x median**)
-    *   *CNBC Make It:* "How Costco keeps gas so cheap" (**195K views, 35x median**)
-*   **What makes it spread:** Takes an everyday consumer brand or junk-food product and reveals the bizarre financial machinery operating behind the scenes. High curiosity gap, ultra-broad demographic appeal.
+    *   *The Wall Street Journal:* "How Twinkies Became a $5 Billion Problem" (**113.5x median multiple** | 2.37M views)
+    *   *CNBC Make It:* "How Costco keeps gas so cheap" (**35.7x median multiple** | 195k views)
+*   **What makes it spread:** Takes a universally familiar item (Twinkies, Costco gas) and exposes the hidden economic engine behind it. The content feels like secret knowledge about everyday life.
 
-#### **Format 2: The Definitive Tier List / Superlative Rank**
+#### Format B: Definitive Tier Lists & Ranked Summaries
 *   **Examples:**
-    *   *Graham Stephan:* "Ranking The BEST Credit Cards 💳" (**1.48M+ views, 45x median**)
-    *   *Graham Stephan:* "Ranking The BEST Money Books 📚" (**344K views, 10x median**)
-*   **What makes it spread:** High-utility decision reduction. Viewers skip the research and want the creator to hand them the "winners." Sparks massive comment section debate over what was excluded or misranked.
+    *   *Graham Stephan:* "Ranking The BEST Credit Cards 💳" (**45.4x median multiple** | 1.48M views)
+    *   *Graham Stephan:* "Ranking The BEST Money Books 📚" (**10.2x median multiple** | 344k views)
+*   **What makes it spread:** Solves choice paralysis instantly. High search/save intent. Viewers watch to see if their choice is included—and comment angrily if it’s missing.
 
-#### **Format 3: Authority Name-Drop & Portfolio Tease**
+#### Format C: Authority Name-Drop + Specific Forecast
 *   **Examples:**
-    *   *MarketBeat:* "Jensen Huang Says These 3 Stocks Are The Future of AI" (**311K views, 13x median**)
-*   **What makes it spread:** Borrows trust from a household-name CEO or billionaire, pairing authority with an actionable list ("3 stocks").
+    *   *MarketBeat:* "Jensen Huang Says These 3 Stocks Are The Future of AI" (**13.6x median multiple** | 311k views)
+    *   *Forbes:* "Billionaire Ray Dalio Warns AI Bubble Could Soon Burst" (**13.6x median multiple** | 72k views)
+*   **What makes it spread:** Leverages authority bias (Jensen Huang, Ray Dalio) attached to high-stakes trends (AI bubble, AI stocks) to trigger immediate urgency.
 
-#### **Format 4: Physical Novelty Asset Showcase**
+#### Format D: Visual Novelty Assets / Tangible Wealth Flexes
 *   **Examples:**
-    *   *Humphrey Yang:* "Selling my Diet Coke Silver Bar 👀" (**948K views, 12x median**)
-*   **What makes it spread:** Tangible visual anchor (a custom silver bar) paired with personal transaction storytelling. Breaks away from dry charts with a physical prop.
+    *   *Humphrey Yang:* "Selling my Diet Coke Silver Bar 👀" (**12.1x median multiple** | 948k views)
+*   **What makes it spread:** Combines pop culture or everyday objects with real commodity value. High visual hook in the first 0.5 seconds.
 
 ---
 
-### 2. THE ANGLE UNDERNEATH (Emotional Job)
+### 2. THE ANGLE UNDERNEATH (Emotional Jobs)
 
-*   **Everyday Brand Secrets:** **Intellectual Superiority.** Gives the viewer a cool stat or business secret to share at dinner ("Did you know Costco actually loses money on...").
-*   **Tier List / Superlatives:** **Status & Efficiency.** Direct relief from decision fatigue; hits the fear of leaving money/perks on the table.
-*   **Authority Name-Drop:** **FOMO & Greed.** Leverage insider signaling to make quick financial plays before the crowd catches on.
-*   **Novelty Physical Assets:** **Curiosity & Tactile Joy.** Makes finance feel like a hands-on hobby rather than homework.
+*   **Everyday Brand Mechanics:** *Curiosity & Deconstruction.* Viewer feels smart for understanding the hidden system behind a brand they interact with.
+*   **Definitive Rankings:** *Status & Validation / Fear of Wrong Choice.* "Am I using the wrong credit card?" or "Did I buy the right book?"
+*   **Authority Name-Drop:** *FOMO & Self-Preservation.* Viewer wants to front-run the market or protect their portfolio using billionaire intel.
+*   **Novelty Assets:** *Novel Curiosity & Visual Proof.* "Is that real?" visual pattern interrupt.
 
 ---
 
-### 3. FIT FOR YOUR BRAND
+### 3. FIT FOR ME (Strategic Evaluation)
 
 | Format | Decision | Why |
 | :--- | :--- | :--- |
-| **Everyday Brand Secrets** | `TAKE IT` | Highest multiple performance in the dataset (110x and 35x). Drives top-of-funnel reach without alienating beginner investors. |
-| **Tier List Rankings** | `TAKE IT` | Highly repeatable, massive view volume (1.4M+ views), and prime placement for affiliate links or product recommendations. |
-| **Novelty Physical Assets** | `ADAPT IT` | Works great if you have physical investments (gold, sneakers, rare coins), but don't force it with fake props. |
-| **Authority Name-Drop** | `ADAPT IT` | High traffic, but watch out for compliance/aging issues. Focus on analyzing *why* the leader said it rather than touting stock picks. |
-| **Geopolitical / Fear Headlines** | `SIT IT OUT` | (*e.g., Russian plague scares, political news*) Spikes view counts temporarily, but builds zero long-term trust or subscriber retention for financial education. |
+| **Everyday Brand Mechanics** | **`TAKE IT`** | High viral ceiling (100x+ multiples). Works for any creator who can explain basic unit economics in under 60 seconds. |
+| **Definitive Tier Lists** | **`TAKE IT`** | Strongest utility format. High save/share rates and easy to brand around your specific expertise. |
+| **Authority Name-Drop** | **`ADAPT IT`** | Don't just repeat quotes like a news channel. Filter expert opinions through your own analysis, or you'll get lumped in with generic news aggregators. |
+| **Visual Novelty Assets** | **`SIT IT OUT`** | Requires niche physical props (custom silver bars, cash stacks). Hard to sustain regularly unless your entire channel is physical finance props. |
 
 ---
 
-### 4. FIRST MOVE (Hooks & Opening Shots)
+### 4. FIRST MOVE (Hooks & Opening Shots for `TAKE IT`)
 
-#### **For Format 1: Everyday Brand Secrets (`TAKE IT`)**
-*   **Hook Line:** *"Costco’s gas pumps actually lose millions every year—and it’s the smartest financial trap ever built."*
-*   **Opening Shot:** Hold a receipt up close to the camera, snap it out of frame to reveal a close-up of your face at a gas station or pump.
+#### For Format A: Everyday Brand Mechanics
+*   **Hook Line:** *"The real reason [Brand/Item, e.g., Chipotle / Arizona Iced Tea / iPhone chargers] is actually a hidden real estate company."*
+*   **Opening Shot:** Close-up of the physical item being cut in half, unboxed, or held up right against the lens, followed by a bold text overlay of the total revenue number.
 
-#### **For Format 2: The Definitive Tier List (`TAKE IT`)**
-*   **Hook Line:** *"I reviewed all 50 major credit cards so you don't have to—here are the only 3 worth keeping in 2025."*
-*   **Opening Shot:** Slap three real credit cards onto a wooden table one by one in fast succession (0.5s per slap).
-
-#### **For Format 3: Authority Name-Drop (`ADAPT IT`)**
-*   **Hook Line:** *"Nvidia’s CEO isn't buying more chip stocks—here are the 3 sectors Jensen Huang is quietly betting on next."*
-*   **Opening Shot:** Point up to a green screen showing a screenshot of Jensen Huang's quote or headline, then zoom fast into your face.
+#### For Format B: Definitive Tier Lists
+*   **Hook Line:** *"I reviewed 20 [Credit Cards / High-Yield Savings Accounts / Index Funds]. Here are the only 3 actually worth your money in 2025."*
+*   **Opening Shot:** Fast-cut motion of 5–10 cards/logos being thrown onto a table or swiped off-screen, settling on a clean Tier List graphic on screen.
 
 ---
 
-### 5. FADING / LEAVE BEHIND
+### 5. FADING / OVERPOPULATED TRENDS
 
-*   **Generic 60-Second Technical Charts:** *(e.g., "Candlestick Patterns Explained in 60 Seconds" at 11x-13x multiple).* While consistent for niche channels, its ceiling is far lower than story-driven content. Unless your core offer is technical trading coaching, skip basic chart breakdowns.
-*   **Breaking Political News Clips:** High view volume from casual scrollers, but low conversion to brand trust or product offers.
+*   **Generic News Snippets Without Commentary:**
+    *   *Examples in data:* Basic clips like *"Trump presents Elon Musk with National Medal of Science"* or *"Fired AI researchers write letter"* had low overall traction compared to format-driven breakdowns.
+    *   *Why to skip:* Pure news aggregation is heavily saturated by corporate channels (CNBC, Forbes, Yahoo Finance). Independent creators win on **frameworks, breakdowns, and opinions**, not raw news reporting.
